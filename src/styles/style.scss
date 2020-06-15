@@ -2,3 +2,7 @@
 
 @import "./variables";
 @import "~bulma/bulma.sass";
+
+.punch-viewer-nav.punch-viewer-nav-fixed {
+  display: none !important;
+}
