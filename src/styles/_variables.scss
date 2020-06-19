@@ -1,4 +1,5 @@
 @import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
+@import url("https://fonts.googleapis.com/css2?family=Faster+One&display=swap");
 
 // Custom colors
 $myGrey: #6a6864;
@@ -10,3 +11,7 @@ $myLight: #dcc8b5;
 $primary: $myLight;
 
 $body-background-color: #000;
+$family-primary: $family-monospace;
+$family-secondary: "Faster One", cursive;
+$link: white;
+$navbar-background-color: black;

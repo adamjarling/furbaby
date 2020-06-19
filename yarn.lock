@@ -2850,10 +2850,10 @@ builtin-status-codes@^3.0.0:
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
 
-bulma@^0.8.2:
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.8.2.tgz#5d928f16ed4a84549c2873f95c92c38c69c631a7"
-  integrity sha512-vMM/ijYSxX+Sm+nD7Lmc1UgWDy2JcL2nTKqwgEqXuOMU+IGALbXd5MLt/BcjBAPLIx36TtzhzBcSnOP974gcqA==
+bulma@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.9.0.tgz#948c5445a49e9d7546f0826cb3820d17178a814f"
+  integrity sha512-rV75CJkubNUroAt0qCRkjznZLoaXq/ctfMXsMvKSL84UetbSyx5REl96e8GoQ04G4Tkw0XF3STECffTOQrbzOQ==
 
 bytes@3.0.0:
   version "3.0.0"
@@ -10648,6 +10648,13 @@ react-hot-loader@^4.12.21:
     react-lifecycles-compat "^3.0.4"
     shallowequal "^1.1.0"
     source-map "^0.7.3"
+
+react-icons@^3.10.0:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-3.10.0.tgz#6c217a2dde2e8fa8d293210023914b123f317297"
+  integrity sha512-WsQ5n1JToG9VixWilSo1bHv842Cj5aZqTGiS3Ud47myF6aK7S/IUY2+dHcBdmkQcCFRuHsJ9OMUI0kTDfjyZXQ==
+  dependencies:
+    camelcase "^5.0.0"
 
 react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"

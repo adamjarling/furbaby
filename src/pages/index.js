@@ -1,34 +1,39 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import Img from "gatsby-image"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import mp3 from "../boxed-in-sample.mp3"
+import gif from "../images/exploding-star.gif"
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
 
-    {/* <section className="section">
-      <h1 className="title is-primary">Furbaby</h1>
-    </section> */}
+    <section className={`hero has-background is-dark is-medium`}>
+      <Img
+        fluid={data.bgImage.childImageSharp.fluid}
+        className="hero-background"
+      />
+      <div className="hero-body is-flex">
+        <div className="container">
+          <h1 className="is-sr-only">
+            <span className="title hero-image-bg-title is-inline-block">
+              Furbaby garage rock
+            </span>
+          </h1>
 
-    <figure className="image is-16by9">
-      <iframe
-        className="has-ratio"
-        src="https://docs.google.com/presentation/d/e/2PACX-1vQKsHuTtpD9LmeC1GgXfRLwH6gAXPN5dzu1rRmGZboEK7dIetJdYBvB8WeUITFHf2rl6ZlwqbkVrTOY/embed?start=true&loop=true&delayms=3000"
-        frameBorder="0"
-        width="1440"
-        height="839"
-        allowFullScreen={true}
-      ></iframe>
-    </figure>
+          <img
+            src={gif}
+            className="is-pulled-right mt-6"
+            style={{ width: "600px" }}
+            alt="Furbaby in a box"
+          />
+        </div>
+      </div>
+    </section>
 
-    <section
-      className="section has-text-white has-text-centered"
-      style={{ fontFamily: "monospace" }}
-    >
+    <section className="section has-text-white has-text-centered">
       <div>
         <figure>
           <audio controls src={mp3}>
@@ -39,7 +44,38 @@ const IndexPage = () => (
         <p>New trashy garage single "Boxed In" coming soon...fur u.</p>
       </div>
     </section>
+
+    <section className="section">
+      <div className="container">
+        <Img fluid={data.boxPic.childImageSharp.fluid} />
+      </div>
+    </section>
   </Layout>
 )
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  query IndexPageTemplate {
+    bgImage: file(
+      sourceInstanceName: { eq: "images" }
+      relativePath: { eq: "FURBABY-design.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 2048, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    boxPic: file(
+      sourceInstanceName: { eq: "images" }
+      relativePath: { eq: "IMG_2203.jpeg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 2048, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
