@@ -47,6 +47,7 @@ const ExplodingFur = ({ className }) => {
 }
 
 const StyledBackgroundSection = styled(ExplodingFur)`
+  border-bottom: 20px solid #000;
   &:before {
     opacity: 0.5 !important;
   }

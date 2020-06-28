@@ -11,12 +11,12 @@ const AboutPage = ({ data }) => (
       <div className="container content">
         <div className="column is-10 is-offset-1">
           <p>
-            <span>FURBABY</span> is a garage rock experiment for the 2020s, born
-            in the midst of uncertain times. Perhaps a by-product of
-            acknowledging we need to think a little differently nowadays, ahem
-            outside THE BOX, try something new, re-frame what we thought we
-            knew, and open up our minds to shape the world our way, not their
-            way.
+            <span className="fur-font">FURBABY</span> is a garage rock
+            experiment for the 2020s, born in the midst of uncertain times.
+            Perhaps a by-product of acknowledging we need to think a little
+            differently nowadays, ahem outside THE BOX, try something new,
+            re-frame what we thought we knew, and open up our minds to shape the
+            world our way, not their way.
           </p>
         </div>
       </div>
