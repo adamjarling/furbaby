@@ -3,7 +3,28 @@
 @import "./variables";
 @import "~bulma/bulma.sass";
 
+h1,
+h2,
+h3,
+h4 {
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.button {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.fur-font {
+  font-family: $fontFasterOne;
+}
+
 .hero {
+  // &.faded:before {
+  //   opacity: 0.5 !important;
+  // }
   &.has-background {
     position: relative;
     overflow: hidden;
@@ -18,4 +39,18 @@
       opacity: 0.75;
     }
   }
+}
+
+.explosion {
+  @media screen and (min-width: 640px) {
+    width: 600px;
+  }
+  @media screen and (max-width: 640px) {
+    margin-top: 0 !important;
+    width: 200px;
+  }
+}
+
+.navbar-brand {
+  font-family: $fontFasterOne;
 }

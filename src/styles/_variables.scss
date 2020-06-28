@@ -1,5 +1,5 @@
 @import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
-@import url("https://fonts.googleapis.com/css2?family=Faster+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Faster+One&family=Fjalla+One&display=swap");
 
 // Custom colors
 $myGrey: #6a6864;
@@ -8,10 +8,32 @@ $myTan: #85704f;
 $myTanLight: #b29674;
 $myLight: #dcc8b5;
 
-$primary: $myLight;
+$neonGreen: #00ff01;
+$yellow: #e9f61f;
+$violet: #d21de7;
+
+$primary: $neonGreen;
+$info: $yellow;
+$fontFasterOne: "Faster One", cursive;
 
 $body-background-color: #000;
 $family-primary: $family-monospace;
-$family-secondary: "Faster One", cursive;
-$link: white;
+$family-secondary: "Anton", sans-serif;
+//$family-secondary: "Fjalla One", sans-serif;
+$text: $white;
+
+$button-family: $family-secondary;
+
 $navbar-background-color: black;
+
+$content-heading-color: $white;
+
+$footer-background-color: $black;
+$footer-color: white;
+
+$link: white;
+$link-hover: #ccc;
+
+$title-color: $white;
+$title-family: $family-secondary;
+$title-size: $size-2;

@@ -1,5 +1,24 @@
 import React, { useState } from "react"
-import { FaInstagram } from "react-icons/fa"
+import { FaInstagram, FaFacebook, FaEnvelope } from "react-icons/fa"
+import { Link } from "gatsby"
+
+var socialMedia = [
+  {
+    service: "Instagram",
+    url: "https://www.instagram.com/furbaby_rocks/",
+    icon: <FaInstagram />,
+  },
+  {
+    service: "Facebook",
+    url: "https://www.instagram.com/furbaby_rocks/",
+    icon: <FaFacebook />,
+  },
+  {
+    service: "Email",
+    url: "aarling@gmail.com",
+    icon: <FaEnvelope />,
+  },
+]
 
 export default function Navbar() {
   const [burgerOpen, setBurgerOpen] = useState()
@@ -15,12 +34,9 @@ export default function Navbar() {
       aria-label="main navigation"
     >
       <div className="navbar-brand">
-        <a
-          className="navbar-item is-family-secondary is-size-4"
-          href="https://www.furbaby.rocks/"
-        >
+        <Link to="/" className="navbar-item is-size-4">
           Furbaby
-        </a>
+        </Link>
 
         <a
           role="button"
@@ -41,19 +57,19 @@ export default function Navbar() {
         className={`navbar-menu ${burgerOpen ? "is-active" : ""}`}
       >
         <div className="navbar-end">
-          <div className="navbar-item">
-            <a
-              href="https://www.instagram.com/furbaby_rocks/"
-              className="is-flex"
-              target="_blank"
-              style={{ alignItems: "center" }}
-            >
-              <span className="icon is-large is-size-4">
-                <FaInstagram />
-              </span>
-              Instagram
-            </a>
-          </div>
+          {socialMedia.map(sm => (
+            <div key={sm.service} className="navbar-item">
+              <a
+                href={sm.url}
+                className="is-flex"
+                target="_blank"
+                style={{ alignItems: "center" }}
+                title={sm.service}
+              >
+                <span className="icon is-size-4">{sm.icon}</span>
+              </a>
+            </div>
+          ))}
         </div>
       </div>
     </nav>

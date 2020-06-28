@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from "./footer"
 import "../styles/style.scss"
 
 const Layout = ({ children }) => {
@@ -28,11 +29,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <main>{children}</main>
-        <footer className="footer">
-          <div className="content has-text-centered">
-            © {new Date().getFullYear()}, Furbaby. Made in Chicago, USA
-          </div>
-        </footer>
+        <Footer />
       </div>
     </>
   )

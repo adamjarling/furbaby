@@ -1,17 +1,25 @@
 module.exports = {
   siteMetadata: {
     title: `Furbaby rocks`,
-    description: `Trashy garage rock fur u.`,
+    description: `Chicago garage rock fur u.`,
     author: `@gatsbyjs`,
+    boxedInYouTube: `https://youtu.be/piCdPUIlJlw`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-171029760-1",
       },
     },
     `gatsby-transformer-sharp`,
