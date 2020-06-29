@@ -25,7 +25,7 @@ const HeroAbout = ({ className }) => {
       <div className="hero-body">
         <div className="container">
           <h2 className="title">About</h2>
-          <h3 className="subtitle">asdfas asdfasdf asdfasdf</h3>
+          <h3 className="subtitle">What's the deal with this?</h3>
         </div>
       </div>
     </BackgroundImage>
@@ -34,7 +34,7 @@ const HeroAbout = ({ className }) => {
 
 const StyledBackgroundSection = styled(HeroAbout)`
   &:before {
-    opacity: 0.4 !important;
+    opacity: 0.8 !important;
   }
 `
 

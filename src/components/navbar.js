@@ -15,7 +15,7 @@ var socialMedia = [
   },
   {
     service: "Email",
-    url: "aarling@gmail.com",
+    url: "mailto:aarling@gmail.com",
     icon: <FaEnvelope />,
   },
 ]
@@ -70,6 +70,12 @@ export default function Navbar() {
               </a>
             </div>
           ))}
+          <div className="navbar-item">
+            <Link to="/about">About</Link>
+          </div>
+          {/* <div className="navbar-item">
+            <Link to="/visuals">Visuals</Link>
+          </div> */}
         </div>
       </div>
     </nav>

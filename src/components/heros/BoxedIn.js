@@ -43,9 +43,10 @@ const HeroBoxedIn = ({ className }) => {
   )
 }
 
+// TODO: Make background darker on mobile below
 const StyledBackgroundSection = styled(HeroBoxedIn)`
   &:before {
-    opacity: 0.3 !important;
+    opacity: 0.7 !important;
   }
 `
 
