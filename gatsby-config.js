@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Furbaby rocks`,
-    description: `Chicago garage rock fur u.`,
-    author: `@gatsbyjs`,
+    title: `Furbaby garage rock art project`,
+    description: `FURBABY is a garage rock experiment for the 2020s, fronted by Chicago musician Adam J. Arling.`,
+    author: `Adam J. Arling`,
     boxedInYouTube: `https://youtu.be/piCdPUIlJlw`,
+    youTubeChannel: `https://www.youtube.com/channel/UCSoulFKYB6zGzHhbV-rkPzg/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

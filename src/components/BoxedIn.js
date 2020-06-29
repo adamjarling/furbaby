@@ -1,7 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
-import mp3 from "../boxed-in-sample.mp3"
 import {
   FaSpotify,
   FaAmazon,

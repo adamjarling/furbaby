@@ -1,11 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PhotoGrid from "../components/PhotoGrid"
-import BoxedIn from "../components/BoxedIn"
-import BoxedInVideo from "../components/videos/BoxedInVideo"
 import ExplodingFur from "../components/heros/ExplodingFur"
 import HeroBoxedIn from "../components/heros/BoxedIn"
 
@@ -67,9 +63,9 @@ const IndexPage = ({ data }) => (
             <Img fluid={data.boxPic.childImageSharp.fluid} />
             <p className="has-text-justified pt-4">
               Yes, fur better or worse. Creating a soundtrack for Chicago's
-              northside beaches; fur beach-goers seen every day from Europe,
-              Africa, and USA, hippies, punks, reggae-dudes, families, all just
-              chillin'.
+              northside beaches; fur beach-goers seen every day from all edges
+              and insides of the world; hippies, punks, reggae-dudes, families,
+              all just chillin'.
             </p>
           </div>
         </div>

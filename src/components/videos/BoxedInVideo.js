@@ -10,6 +10,7 @@ export default function BoxedInVideo() {
         src="https://www.youtube.com/embed/piCdPUIlJlw"
         frameBorder="0"
         allowFullScreen
+        title="Boxed In by FURBABY"
       ></iframe>
     </figure>
     //    https://www.youtube.com/embed/JfPbeTd2PW0

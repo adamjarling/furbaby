@@ -9,18 +9,22 @@ const AboutPage = ({ data }) => (
     <HeroAbout />
     <section className="section">
       <div className="container content">
-        <div className="column is-10 is-offset-1">
+        <div className="column is-10 is-offset-1 has-text-justified">
           <p>
             <span className="fur-font">FURBABY</span> is a garage rock
             experiment for the 2020s, born in the midst of uncertain times.
             Perhaps a by-product of acknowledging we need to think a little
-            differently nowadays, ahem outside THE BOX, try something new,
-            re-frame what we thought we knew, and open up our minds to shape the
-            world our way, not their way.
+            differently nowadays, ahem outside{" "}
+            <a href="https://www.youtube.com/channel/UCSoulFKYB6zGzHhbV-rkPzg/">
+              the box
+            </a>
+            , try something new, re-frame what we thought we knew, and open up
+            our minds to shape the world our way, not their way.
           </p>
           <p>
             In past and current lives <span className="fur-font">FURBABY</span>{" "}
-            played with <a href="https://urgeoverkill.com/">Urge Overkill</a>,{" "}
+            has toured and/or recorded with{" "}
+            <a href="https://urgeoverkill.com/">Urge Overkill</a>,{" "}
             <a href="https://thelastvegas.com">The Last Vegas</a>,{" "}
             <a href="https://www.gethip.com/site/artists/cynics/">The Cynics</a>
             , <a href="https://www.warriorsoulofficial.com/">Warrior Soul</a>,{" "}

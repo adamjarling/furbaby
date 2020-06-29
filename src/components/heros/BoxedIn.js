@@ -29,7 +29,7 @@ const HeroBoxedIn = ({ className }) => {
       <div className="hero-body">
         <div className="container has-text-centered">
           <h2 className="title">Boxed In</h2>
-          <h3 className="subtitle">New single out now</h3>
+          <h3 className="subtitle">New single out June 30, 2020</h3>
           <div className="pb-6">
             <BoxedIn />
           </div>

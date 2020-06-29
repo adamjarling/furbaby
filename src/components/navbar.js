@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { FaInstagram, FaFacebook, FaEnvelope } from "react-icons/fa"
+import { FaInstagram, FaFacebook, FaEnvelope, FaYoutube } from "react-icons/fa"
 import { Link } from "gatsby"
 
 var socialMedia = [
@@ -9,8 +9,13 @@ var socialMedia = [
     icon: <FaInstagram />,
   },
   {
+    service: "YouTube",
+    url: "https://www.youtube.com/channel/UCSoulFKYB6zGzHhbV-rkPzg",
+    icon: <FaYoutube />,
+  },
+  {
     service: "Facebook",
-    url: "https://www.instagram.com/furbaby_rocks/",
+    url: "https://www.facebook.com/adam.arling",
     icon: <FaFacebook />,
   },
   {
@@ -34,7 +39,7 @@ export default function Navbar() {
       aria-label="main navigation"
     >
       <div className="navbar-brand">
-        <Link to="/" className="navbar-item is-size-4">
+        <Link to="/" className="navbar-item is-size-4 has-text-primary">
           Furbaby
         </Link>
 

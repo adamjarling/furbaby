@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import gif from "../../images/exploding-star.gif"
-import Img from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
 import styled from "styled-components"
 
