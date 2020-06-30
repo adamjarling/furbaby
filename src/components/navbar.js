@@ -1,8 +1,21 @@
 import React, { useState } from "react"
-import { FaInstagram, FaFacebook, FaEnvelope, FaYoutube } from "react-icons/fa"
+import {
+  FaInstagram,
+  FaFacebook,
+  FaEnvelope,
+  FaYoutube,
+  FaSpotify,
+  FaGooglePlay,
+} from "react-icons/fa"
 import { Link } from "gatsby"
 
 var socialMedia = [
+  {
+    service: "Spotify",
+    url:
+      "https://open.spotify.com/artist/1hpsUJGJST9u6Qf8KWn8CR?si=Faiv2grEQX6vwJ9z_4sMQQ",
+    icon: <FaSpotify />,
+  },
   {
     service: "Instagram",
     url: "https://www.instagram.com/furbaby_rocks/",
@@ -17,6 +30,12 @@ var socialMedia = [
     service: "Facebook",
     url: "https://www.facebook.com/adam.arling",
     icon: <FaFacebook />,
+  },
+  {
+    service: "Google Play",
+    url:
+      "https://play.google.com/store/music/album/Furbaby_Boxed_In?id=Bfzfwy4277nj3eer6wsleaj2zce",
+    icon: <FaGooglePlay />,
   },
   {
     service: "Email",

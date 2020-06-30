@@ -62,7 +62,7 @@ const AboutPage = ({ data }) => (
             </p>
           </div>
           <div className="column content">
-            <h3 className="title">Adam</h3>
+            <h3 className="title">Who?</h3>
             <figure>
               <Img fluid={data.onStage.childImageSharp.fluid} />
               <figcaption>Newcastle, England - Renegade Photography</figcaption>
@@ -107,7 +107,7 @@ const AboutPage = ({ data }) => (
                 Keith Scott Blues Band
               </ExternalLink>
               , <ExternalLink url="#">The Electric Blues Junkies</ExternalLink>,{" "}
-              and lots of other jammin with friends. <Furbaby>Furbaby</Furbaby>{" "}
+              and lots of other jammin with friends. <Furbaby>FURBABY</Furbaby>{" "}
               plays anywhere for wine &amp; cheese, especially Spain.
             </p>
           </div>

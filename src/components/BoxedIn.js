@@ -10,7 +10,12 @@ import {
 } from "react-icons/fa"
 
 export const musicSources = [
-  { label: "Spotify", url: "", icon: <FaSpotify /> },
+  {
+    label: "Spotify",
+    url:
+      "https://open.spotify.com/artist/1hpsUJGJST9u6Qf8KWn8CR?si=Faiv2grEQX6vwJ9z_4sMQQ",
+    icon: <FaSpotify />,
+  },
   {
     label: "Apple Music",
     url: "https://music.apple.com/us/album/boxed-in-single/1520141383",

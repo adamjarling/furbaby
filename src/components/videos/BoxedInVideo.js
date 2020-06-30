@@ -15,7 +15,7 @@ export default function BoxedInVideo() {
           title="Boxed In by FURBABY"
         ></iframe>
       </figure>
-      <div className="content mt-4">
+      <div className="content mt-4 has-text-left-mobile is-size-7-mobile">
         <p>
           Featuring Denmark's{" "}
           <ExternalLink url="https://www.facebook.com/ratshredder">
