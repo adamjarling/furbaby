@@ -39,7 +39,7 @@ export default function Navbar() {
       aria-label="main navigation"
     >
       <div className="navbar-brand">
-        <Link to="/" className="navbar-item is-size-4 has-text-primary">
+        <Link to="/" className="navbar-item is-size-4 ">
           Furbaby
         </Link>
 
@@ -78,6 +78,7 @@ export default function Navbar() {
           <div className="navbar-item">
             <Link to="/about">About</Link>
           </div>
+
           {/* <div className="navbar-item">
             <Link to="/visuals">Visuals</Link>
           </div> */}

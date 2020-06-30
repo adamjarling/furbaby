@@ -2,8 +2,23 @@ import React from "react"
 import BoxedIn from "../BoxedIn"
 import BackgroundImage from "gatsby-background-image"
 import { useStaticQuery, graphql } from "gatsby"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import BoxedInVideo from "../videos/BoxedInVideo"
+
+const background = css`
+  background: black;
+  padding: 0.75rem 1.25rem;
+  color: white;
+  display: inline-block;
+`
+const Title = styled.span`
+  ${background}
+`
+const Subtitle = styled.h3`
+  ${background}
+  line-height: 1;
+  padding: 0.25rem 0.5rem;
+`
 
 const HeroBoxedIn = ({ className }) => {
   console.log("className", className)
@@ -28,8 +43,15 @@ const HeroBoxedIn = ({ className }) => {
     >
       <div className="hero-body">
         <div className="container has-text-centered">
+          {/* <h2 className="title">
+            <Title>Boxed In</Title>
+          </h2>
+          <Subtitle className="subtitle is-size-6-mobile">
+            New single out June 30th
+          </Subtitle> */}
           <h2 className="title">Boxed In</h2>
-          <h3 className="subtitle">New single out June 30, 2020</h3>
+
+          <h3 className="subtitle">New single out June 30th, 2020</h3>
           <div className="pb-6">
             <BoxedIn />
           </div>

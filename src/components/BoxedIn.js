@@ -39,6 +39,7 @@ function MusicButton({ label, url, icon }) {
     <div className="column is-half">
       <a
         href={url}
+        target="_blank"
         className="button is-outlined is-black is-inverted is-fullwidth"
       >
         <span className="icon">{icon}</span>

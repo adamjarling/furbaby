@@ -4,6 +4,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ExplodingFur from "../components/heros/ExplodingFur"
 import HeroBoxedIn from "../components/heros/BoxedIn"
+import { Link } from "gatsby"
+import HeroAboutTeaser from "../components/heros/AboutTeaser"
+import InspiredBy from "../components/InspiredBy"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -29,48 +32,9 @@ const IndexPage = ({ data }) => (
 
     <HeroBoxedIn />
 
-    {/* <section className="hero is-light">
-      <div className="hero-body">
-        <div className="container">
-          <h2 className="title">Visions of the Fur</h2>
-          <h3 className="subtitle">
-            Art &amp; photos from Furbaby's neighborhood
-          </h3>
-          <Link to="/visuals" className="button">
-            Go to Visuals
-          </Link>
-        </div>
-      </div>
-    </section> */}
+    <HeroAboutTeaser />
 
-    <section className="section">
-      <div className="container">
-        <div className="columns">
-          <div className="column content">
-            <h3 className="title">Fur What?</h3>
-            <p className="has-text-justified">
-              <span>FURBABY</span> is a garage rock experiment for the 2020s,
-              born in the midst of uncertain times. Perhaps a by-product of
-              acknowledging we need to think a little differently nowadays, ahem
-              outside THE BOX, try something new, re-frame what we thought we
-              knew, and open up our minds to shape the world our way, not their
-              way.
-            </p>
-            <Img fluid={data.silkscreen.childImageSharp.fluid} />
-          </div>
-          <div className="column content">
-            <h3 className="title">Fur Real?</h3>
-            <Img fluid={data.boxPic.childImageSharp.fluid} />
-            <p className="has-text-justified pt-4">
-              Yes, fur better or worse. Creating a soundtrack for Chicago's
-              northside beaches; fur beach-goers seen every day from all edges
-              and insides of the world; hippies, punks, reggae-dudes, families,
-              all just chillin'.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <InspiredBy />
   </Layout>
 )
 
