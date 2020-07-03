@@ -9,7 +9,7 @@ const ExplodingFur = ({ className }) => {
     query {
       bgImage: file(
         sourceInstanceName: { eq: "images" }
-        relativePath: { eq: "FURBABY-design.jpg" }
+        relativePath: { eq: "IMG_2401.jpg" }
       ) {
         childImageSharp {
           fluid(maxWidth: 2048, quality: 100, grayscale: false) {
