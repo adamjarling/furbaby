@@ -81,6 +81,18 @@ export default function Navbar() {
         className={`navbar-menu ${burgerOpen ? "is-active" : ""}`}
       >
         <div className="navbar-end">
+          <div className="navbar-item">
+            <Link to="/music">Music</Link>
+          </div>
+          <div className="navbar-item">
+            <Link to="/videos">Videos</Link>
+          </div>
+          <div className="navbar-item">
+            <Link to="/screen-prints">Screen Prints</Link>
+          </div>
+          <div className="navbar-item">
+            <Link to="/photos">Photos</Link>
+          </div>
           {socialMedia.map(sm => (
             <div key={sm.service} className="navbar-item">
               <a
