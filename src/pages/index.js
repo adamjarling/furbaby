@@ -41,7 +41,7 @@ const IndexPage = ({ data }) => (
             className="has-ratio"
             width="1024"
             height="576"
-            src="https://www.youtube.com/embed/4XSiZITTc7o"
+            src="https://www.youtube.com/embed/ZDVW2WS5nUc"
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
