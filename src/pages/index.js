@@ -8,6 +8,7 @@ import { Link } from "gatsby"
 import HeroAboutTeaser from "../components/heros/AboutTeaser"
 import InspiredBy from "../components/InspiredBy"
 import HomeSlider from "../components/HomeSlider"
+import HeroCocoa from "../components/heros/Cocoa"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -29,7 +30,25 @@ const IndexPage = ({ data }) => (
       </div>
     </section> */}
 
-    <HomeSlider />
+    {/* <HomeSlider /> */}
+
+    <HeroCocoa />
+
+    <section className="section">
+      <div className="container">
+        <figure className="image is-16by9">
+          <iframe
+            className="has-ratio"
+            width="1024"
+            height="576"
+            src="https://www.youtube.com/embed/4XSiZITTc7o"
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </figure>
+      </div>
+    </section>
 
     <HeroBoxedIn />
 

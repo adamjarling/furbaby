@@ -50,8 +50,6 @@ const HeroBoxedIn = ({ className }) => {
             New single out June 30th
           </Subtitle> */}
           <h2 className="title">Boxed In</h2>
-
-          <h3 className="subtitle">New single out June 30th, 2020</h3>
           <div className="pb-6">
             <BoxedIn />
           </div>

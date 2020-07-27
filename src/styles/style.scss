@@ -29,6 +29,15 @@ figcaption {
   letter-spacing: 4px;
 }
 
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 4rem;
+  }
+  .subtitle {
+    font-size: 1.75rem;
+  }
+}
+
 .content a {
   border-bottom: dashed 1px;
 }

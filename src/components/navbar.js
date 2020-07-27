@@ -81,7 +81,7 @@ export default function Navbar() {
         className={`navbar-menu ${burgerOpen ? "is-active" : ""}`}
       >
         <div className="navbar-end">
-          <div className="navbar-item">
+          {/* <div className="navbar-item">
             <Link to="/music">Music</Link>
           </div>
           <div className="navbar-item">
@@ -92,7 +92,7 @@ export default function Navbar() {
           </div>
           <div className="navbar-item">
             <Link to="/photos">Photos</Link>
-          </div>
+          </div> */}
           {socialMedia.map(sm => (
             <div key={sm.service} className="navbar-item">
               <a
