@@ -23,10 +23,10 @@ const ExplodingFur = ({ className }) => {
   return (
     <BackgroundImage
       Tag="section"
-      className={`hero is-medium faded ${className}`}
+      className={`hero is-medium faded`}
       fluid={data.bgImage.childImageSharp.fluid}
     >
-      <div className="hero-body pt-0 pb-0">
+      <div className="hero-body">
         <div className="container">
           <h1 className="is-sr-only">
             <span className="title hero-image-bg-title is-inline-block">

@@ -7,6 +7,7 @@ import HeroBoxedIn from "../components/heros/BoxedIn"
 import { Link } from "gatsby"
 import HeroAboutTeaser from "../components/heros/AboutTeaser"
 import InspiredBy from "../components/InspiredBy"
+import HomeSlider from "../components/HomeSlider"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -28,7 +29,7 @@ const IndexPage = ({ data }) => (
       </div>
     </section> */}
 
-    <ExplodingFur />
+    <HomeSlider />
 
     <HeroBoxedIn />
 
