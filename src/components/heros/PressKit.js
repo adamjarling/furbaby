@@ -18,10 +18,10 @@ const Subtitle = styled.h3`
   padding: 0.25rem 0.5rem;
 `
 
-const HeroCocoa = () => {
+const HeroPressKit = () => {
   var data = useStaticQuery(graphql`
     query {
-      bgImage: file(relativePath: { eq: "photo-triangle-wall.jpg" }) {
+      bgImage: file(relativePath: { eq: "banner-lying-on-beach.jpg" }) {
         childImageSharp {
           fluid(quality: 70, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
@@ -34,30 +34,18 @@ const HeroCocoa = () => {
   return (
     <BackgroundImage
       Tag="section"
-      className={`hero is-large faded`}
+      className={`hero is-medium faded`}
       fluid={data.bgImage.childImageSharp.fluid}
       backgroundColor={`#040e18`}
     >
       <div className="hero-body">
         <div className="container">
           <h2 className="title">
-            <Title>Cocoa</Title>
+            <Title>Press Kit</Title>
           </h2>
           <h3 className="subtitle">
-            <Subtitle>New single out August 4th, 2020</Subtitle>
+            <Subtitle>Digital assets fur the press</Subtitle>
           </h3>
-          <div className="buttons">
-            <a
-              href="https://youtu.be/ZDVW2WS5nUc"
-              target="_blank"
-              className="button is-outlined is-black is-inverted"
-            >
-              Watch Video
-            </a>
-            <Link className="button" to="/music">
-              More Info
-            </Link>
-          </div>
         </div>
       </div>
     </BackgroundImage>
@@ -65,7 +53,7 @@ const HeroCocoa = () => {
 }
 
 // TODO: Make background darker on mobile below
-const StyledCocoa = styled(HeroCocoa)`
+const StyledCocoa = styled(HeroPressKit)`
   &:before {
     opacity: 0.7 !important;
   }

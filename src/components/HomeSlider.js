@@ -4,6 +4,8 @@ import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
+import HeroCocoa from "./heros/Cocoa"
+import HeroInstagram from "./heros/Instagram"
 
 // install Swiper components
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
@@ -26,45 +28,11 @@ export default function HomeSlider() {
 
   return (
     <Swiper autoPlay={true} slidesPerView={1} centeredSlides={true} navigation>
-      {/* <SwiperSlide>
-        <HerosExplodingFur />
-      </SwiperSlide> */}
       <SwiperSlide>
-        <figure className="image is-16by9">
-          <iframe
-            className="has-ratio"
-            width="1024"
-            height="576"
-            src="https://www.youtube.com/embed/4XSiZITTc7o"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </figure>
+        <HeroCocoa />
       </SwiperSlide>
       <SwiperSlide>
-        <figure className="image is-16by9">
-          <iframe
-            className="has-ratio"
-            width="1024"
-            height="576"
-            src="https://www.youtube.com/embed/piCdPUIlJlw"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </figure>
-      </SwiperSlide>
-      <SwiperSlide>
-        <BackgroundImage
-          Tag="section"
-          className={`hero is-large`}
-          fluid={data.bgImage.childImageSharp.fluid}
-        >
-          <div className="hero-body">
-            <div className="container"></div>
-          </div>
-        </BackgroundImage>
+        <HeroInstagram />
       </SwiperSlide>
     </Swiper>
   )

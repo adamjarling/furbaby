@@ -4,6 +4,7 @@ import BackgroundImage from "gatsby-background-image"
 import { useStaticQuery, graphql } from "gatsby"
 import styled, { css } from "styled-components"
 import BoxedInVideo from "../videos/BoxedInVideo"
+import ExternalLink from "../ExternalLink"
 
 const background = css`
   background: black;
@@ -56,6 +57,16 @@ const HeroBoxedIn = ({ className }) => {
           <div className="mt-6">
             <h2 className="title">Official Video</h2>
             <BoxedInVideo />
+            <div className="content mt-4 has-text-left-mobile is-size-7-mobile">
+              <p>
+                Featuring Denmark's{" "}
+                <ExternalLink url="https://www.facebook.com/ratshredder">
+                  Dennis "El Guapo" Post
+                </ExternalLink>{" "}
+                from Warrior Soul/City Kids ripping a proper solo.
+              </p>
+              <p>Thanks dude!</p>
+            </div>
           </div>
         </div>
       </div>

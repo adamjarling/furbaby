@@ -30,9 +30,9 @@ const IndexPage = ({ data }) => (
       </div>
     </section> */}
 
-    {/* <HomeSlider /> */}
+    <HomeSlider />
 
-    <HeroCocoa />
+    {/* <HeroCocoa /> */}
 
     <section className="section">
       <div className="container">

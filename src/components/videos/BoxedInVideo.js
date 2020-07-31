@@ -15,16 +15,6 @@ export default function BoxedInVideo() {
           title="Boxed In by FURBABY"
         ></iframe>
       </figure>
-      <div className="content mt-4 has-text-left-mobile is-size-7-mobile">
-        <p>
-          Featuring Denmark's{" "}
-          <ExternalLink url="https://www.facebook.com/ratshredder">
-            Dennis "El Guapo" Post
-          </ExternalLink>{" "}
-          from Warrior Soul/City Kids ripping a proper solo.
-        </p>
-        <p>Thanks dude!</p>
-      </div>
     </div>
     //    https://www.youtube.com/embed/JfPbeTd2PW0
   )

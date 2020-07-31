@@ -18,10 +18,10 @@ const Subtitle = styled.h3`
   padding: 0.25rem 0.5rem;
 `
 
-const HeroCocoa = () => {
+const HeroInstagram = () => {
   var data = useStaticQuery(graphql`
     query {
-      bgImage: file(relativePath: { eq: "photo-triangle-wall.jpg" }) {
+      bgImage: file(relativePath: { eq: "screenprint-colors.jpg" }) {
         childImageSharp {
           fluid(quality: 70, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
@@ -41,22 +41,19 @@ const HeroCocoa = () => {
       <div className="hero-body">
         <div className="container">
           <h2 className="title">
-            <Title>Cocoa</Title>
+            <Title>Instagram</Title>
           </h2>
           <h3 className="subtitle">
-            <Subtitle>New single out August 4th, 2020</Subtitle>
+            <Subtitle>Follow the Fur @furbaby_rocks</Subtitle>
           </h3>
           <div className="buttons">
             <a
-              href="https://youtu.be/ZDVW2WS5nUc"
+              href="https://www.instagram.com/furbaby_rocks/"
               target="_blank"
               className="button is-outlined is-black is-inverted"
             >
-              Watch Video
+              Go to Instagram
             </a>
-            <Link className="button" to="/music">
-              More Info
-            </Link>
           </div>
         </div>
       </div>
@@ -65,7 +62,7 @@ const HeroCocoa = () => {
 }
 
 // TODO: Make background darker on mobile below
-const StyledCocoa = styled(HeroCocoa)`
+const StyledCocoa = styled(HeroInstagram)`
   &:before {
     opacity: 0.7 !important;
   }

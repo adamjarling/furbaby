@@ -119,7 +119,7 @@ const AboutPage = ({ data }) => (
 
 export default AboutPage
 
-export const pageQuery = graphql`
+export const AboutPageQuery = graphql`
   query AboutPageTemplate {
     boxPic: file(
       sourceInstanceName: { eq: "images" }

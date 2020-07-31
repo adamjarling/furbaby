@@ -8,6 +8,7 @@ import {
   FaSpotify,
 } from "react-icons/fa"
 import styled from "styled-components"
+import ExternalLink from "../components/ExternalLink"
 
 const Icon = styled.a`
   display: inline-block;
@@ -66,8 +67,15 @@ export default function Footer() {
             <span className="icon is-size-4">{sm.icon}</span>
           </Icon>
         ))}
-        <br />
-        Made in Chicago, USA
+        <p>
+          Art, Photography and Videography:{" "}
+          <ExternalLink url="https://www.instagram.com/caseymurtaugh/">
+            Casey
+          </ExternalLink>{" "}
+          | Music:{" "}
+          <ExternalLink url="https://adamarling.com">Adam</ExternalLink>
+        </p>
+        <p>Made in Chicago, USA</p>
       </div>
     </footer>
   )

@@ -21,8 +21,12 @@ $family-primary: $family-monospace;
 $family-secondary: "Anton", sans-serif;
 //$family-secondary: "Fjalla One", sans-serif;
 $text: $white;
+$text-strong: white;
 
+$button-background-color: white;
 $button-family: $family-secondary;
+$button-color: black;
+$button-hover-color: lighten(black, 30);
 
 $navbar-background-color: black;
 

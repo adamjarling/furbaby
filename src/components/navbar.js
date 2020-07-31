@@ -81,6 +81,12 @@ export default function Navbar() {
         className={`navbar-menu ${burgerOpen ? "is-active" : ""}`}
       >
         <div className="navbar-end">
+          <div className="navbar-item">
+            <Link to="/press-kit">Press Kit</Link>
+          </div>
+          {/* <div className="navbar-item">
+            <Link to="/music">Music</Link>
+          </div> */}
           {/* <div className="navbar-item">
             <Link to="/music">Music</Link>
           </div>
@@ -106,9 +112,9 @@ export default function Navbar() {
               </a>
             </div>
           ))}
-          <div className="navbar-item">
+          {/* <div className="navbar-item">
             <Link to="/about">About</Link>
-          </div>
+          </div> */}
 
           {/* <div className="navbar-item">
             <Link to="/visuals">Visuals</Link>
