@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import {
+  FaItunes,
   FaInstagram,
   FaFacebook,
   FaEnvelope,
@@ -15,6 +16,11 @@ var socialMedia = [
     url:
       "https://open.spotify.com/artist/1hpsUJGJST9u6Qf8KWn8CR?si=Faiv2grEQX6vwJ9z_4sMQQ",
     icon: <FaSpotify />,
+  },
+  {
+    service: "Apple Music",
+    url: "https://music.apple.com/us/artist/furbaby/1520136448",
+    icon: <FaItunes />,
   },
   {
     service: "Instagram",
