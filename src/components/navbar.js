@@ -9,6 +9,7 @@ import {
   FaGooglePlay,
 } from "react-icons/fa"
 import { Link } from "gatsby"
+import Obfuscate from "react-obfuscate"
 
 var socialMedia = [
   {
@@ -42,11 +43,6 @@ var socialMedia = [
     url:
       "https://play.google.com/store/music/album/Furbaby_Boxed_In?id=Bfzfwy4277nj3eer6wsleaj2zce",
     icon: <FaGooglePlay />,
-  },
-  {
-    service: "Email",
-    url: "mailto:aarling@gmail.com",
-    icon: <FaEnvelope />,
   },
 ]
 
@@ -90,21 +86,10 @@ export default function Navbar() {
           <div className="navbar-item">
             <Link to="/press-kit">Press Kit</Link>
           </div>
-          {/* <div className="navbar-item">
-            <Link to="/music">Music</Link>
-          </div> */}
-          {/* <div className="navbar-item">
-            <Link to="/music">Music</Link>
-          </div>
           <div className="navbar-item">
             <Link to="/videos">Videos</Link>
           </div>
-          <div className="navbar-item">
-            <Link to="/screen-prints">Screen Prints</Link>
-          </div>
-          <div className="navbar-item">
-            <Link to="/photos">Photos</Link>
-          </div> */}
+
           {socialMedia.map(sm => (
             <div key={sm.service} className="navbar-item">
               <a
@@ -118,13 +103,19 @@ export default function Navbar() {
               </a>
             </div>
           ))}
-          {/* <div className="navbar-item">
-            <Link to="/about">About</Link>
-          </div> */}
-
-          {/* <div className="navbar-item">
-            <Link to="/visuals">Visuals</Link>
-          </div> */}
+          <div className="navbar-item">
+            <Obfuscate
+              email="aarling@gmail.com"
+              headers={{
+                subject: "Email from Furbaby.rocks",
+              }}
+              style={{ display: "flex", alignItems: "center" }}
+            >
+              <span className="icon is-size-4">
+                <FaEnvelope />
+              </span>
+            </Obfuscate>
+          </div>
         </div>
       </div>
     </nav>

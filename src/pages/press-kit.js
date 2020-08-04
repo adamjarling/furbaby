@@ -7,6 +7,8 @@ import styled from "styled-components"
 import ExternalLink from "../components/ExternalLink"
 import { FaDownload } from "react-icons/fa"
 import BoxedInVideo from "../components/videos/BoxedInVideo"
+import Obfuscate from "react-obfuscate"
+import VideoResponsive from "../components/VideoResponsive"
 
 const Furbaby = styled.span`
   font-family: "Faster One", cursive;
@@ -22,16 +24,27 @@ const PressKitPage = ({ data }) => (
           <div className="column is-two-thirds content">
             <h2 className="title">Bio</h2>
             <p>
-              <Furbaby>FURBABY</Furbaby> is a garage rock experiment for the
-              2020s, born in the midst of a unsettling times.
+              <Furbaby>FURBABY</Furbaby> is a garage rock band for the 2020s,
+              born in the middle of a global pandemic. Why not?
             </p>
             <p>
               Given time to think a little differently about the everything,{" "}
-              <Furbaby>FURBABY</Furbaby> records home demos and takes long walks
-              on the beach in the Rogers Park Chicago neighborhood...watching
-              the world change.{" "}
+              <Furbaby>FURBABY</Furbaby> records home studio demos, does yoga,
+              drinks wine and takes long walks on the beach in the diverse,
+              arts-centric, multicultural Rogers Park neighborhood of Chicago.
             </p>
-            <p>Why not create a soundtrack and some art to it?</p>
+            <p>
+              <Furbaby>FURBABY</Furbaby> will most likely never play live, but
+              if so it'd be nice to do a little tour of Spain.{" "}
+              <Obfuscate
+                email="aarling@gmail.com"
+                headers={{
+                  subject: "Email from Furbaby.rocks",
+                }}
+              >
+                Interested?
+              </Obfuscate>
+            </p>
             <p>
               <ExternalLink url="https://www.instagram.com/caseymurtaugh/">
                 Casey
@@ -62,7 +75,16 @@ const PressKitPage = ({ data }) => (
         <div className="columns">
           <div className="column content">
             <h2 className="title">Videos</h2>
-            <BoxedInVideo />
+            <div className="mb-3">
+              <VideoResponsive
+                url="https://www.youtube.com/embed/5bRFZN4X_3g"
+                title="Cocoa by FURBABY"
+              />
+            </div>
+            <VideoResponsive
+              url="https://www.youtube.com/embed/piCdPUIlJlw"
+              title="Boxed In by FURBABY"
+            />
           </div>
           <div className="column content">
             <h2 className="title">Photos</h2>

@@ -1,29 +1,27 @@
 import React from "react"
+import BoxedIn from "../BoxedIn"
+import SinglesCocoa from "../singles/Cocoa"
 import BackgroundImage from "gatsby-background-image"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import styled, { css } from "styled-components"
+import BoxedInVideo from "../videos/BoxedInVideo"
+import ExternalLink from "../ExternalLink"
+import VideoResponsive from "../VideoResponsive"
 
 const background = css`
-  background: rgba(0, 0, 0, 0.6);
-  padding: 0.5rem 1rem;
+  background: black;
+  padding: 0.75rem 1.25rem;
   color: white;
   display: inline-block;
 `
-const Title = styled.span`
-  ${background}
-`
-const Subtitle = styled.h3`
-  ${background}
-  line-height: 1;
-  padding: 0.25rem 0.5rem;
-`
 
-const HeroCocoa = () => {
+const HeroCocoa = ({ className }) => {
+  console.log("className", className)
   var data = useStaticQuery(graphql`
     query {
-      bgImage: file(relativePath: { eq: "photo-triangle-wall.jpg" }) {
+      desktop: file(relativePath: { eq: "photo-triangle-wall.jpg" }) {
         childImageSharp {
-          fluid(quality: 70, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920, grayscale: true) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -34,29 +32,32 @@ const HeroCocoa = () => {
   return (
     <BackgroundImage
       Tag="section"
-      className={`hero is-large faded`}
-      fluid={data.bgImage.childImageSharp.fluid}
+      className={`hero is-medium faded ${className}`}
+      fluid={data.desktop.childImageSharp.fluid}
       backgroundColor={`#040e18`}
     >
       <div className="hero-body">
-        <div className="container">
-          <h2 className="title">
-            <Title>Cocoa</Title>
-          </h2>
-          <h3 className="subtitle">
-            <Subtitle>New single out August 4th, 2020</Subtitle>
-          </h3>
-          <div className="buttons">
-            <a
-              href="https://youtu.be/ZDVW2WS5nUc"
-              target="_blank"
-              className="button is-outlined is-black is-inverted"
-            >
-              Watch Video
-            </a>
-            <Link className="button" to="/music">
-              More Info
-            </Link>
+        <div className="container has-text-centered">
+          <h2 className="title">Cocoa</h2>
+          <div className="pb-6">
+            <SinglesCocoa />
+          </div>
+          <div className="mt-6">
+            <VideoResponsive
+              url="https://www.youtube.com/embed/5bRFZN4X_3g"
+              title="Cocoa by FURBABY"
+            />
+
+            <div className="content mt-4 has-text-left-mobile is-size-7-mobile">
+              <p>
+                Featuring Denmark's{" "}
+                <ExternalLink url="https://www.facebook.com/ratshredder">
+                  Dennis "El Guapo" Post
+                </ExternalLink>{" "}
+                from Warrior Soul/City Kids ripping a proper solo.
+              </p>
+              <p>Thanks dude!</p>
+            </div>
           </div>
         </div>
       </div>
@@ -65,10 +66,10 @@ const HeroCocoa = () => {
 }
 
 // TODO: Make background darker on mobile below
-const StyledCocoa = styled(HeroCocoa)`
+const StyledBackgroundSection = styled(HeroCocoa)`
   &:before {
-    opacity: 0.7 !important;
+    opacity: 0.5 !important;
   }
 `
 
-export default StyledCocoa
+export default StyledBackgroundSection

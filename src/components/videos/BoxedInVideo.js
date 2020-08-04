@@ -1,5 +1,4 @@
 import React from "react"
-import ExternalLink from "../ExternalLink"
 
 export default function BoxedInVideo() {
   return (
@@ -7,8 +6,8 @@ export default function BoxedInVideo() {
       <figure className="image is-16by9">
         <iframe
           className="has-ratio"
-          width="640"
-          height="360"
+          width="1600"
+          height="900"
           src="https://www.youtube.com/embed/piCdPUIlJlw"
           frameBorder="0"
           allowFullScreen
@@ -16,6 +15,5 @@ export default function BoxedInVideo() {
         ></iframe>
       </figure>
     </div>
-    //    https://www.youtube.com/embed/JfPbeTd2PW0
   )
 }

@@ -32,23 +32,7 @@ const IndexPage = ({ data }) => (
 
     <HomeSlider />
 
-    {/* <HeroCocoa /> */}
-
-    <section className="section">
-      <div className="container">
-        <figure className="image is-16by9">
-          <iframe
-            className="has-ratio"
-            width="1024"
-            height="576"
-            src="https://www.youtube.com/embed/ZDVW2WS5nUc"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </figure>
-      </div>
-    </section>
+    <HeroCocoa />
 
     <HeroBoxedIn />
 

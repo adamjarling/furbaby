@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa"
 import styled from "styled-components"
 import ExternalLink from "../components/ExternalLink"
+import Obfuscate from "react-obfuscate"
 
 const Icon = styled.a`
   display: inline-block;
@@ -50,11 +51,6 @@ var socialMedia = [
       "https://play.google.com/store/music/album/Furbaby_Boxed_In?id=Bfzfwy4277nj3eer6wsleaj2zce",
     icon: <FaGooglePlay />,
   },
-  {
-    service: "Email",
-    url: "mailto:aarling@gmail.com",
-    icon: <FaEnvelope />,
-  },
 ]
 
 export default function Footer() {
@@ -73,6 +69,21 @@ export default function Footer() {
             <span className="icon is-size-4">{sm.icon}</span>
           </Icon>
         ))}
+        <Obfuscate
+          email="aarling@gmail.com"
+          headers={{
+            subject: "Email from Furbaby.rocks",
+          }}
+          style={{
+            display: "inline-block",
+            padding: "0.75rem 1rem 0.5rem",
+            border: "none",
+          }}
+        >
+          <span className="icon is-size-4">
+            <FaEnvelope />
+          </span>
+        </Obfuscate>
         <p>
           Art, Photography and Videography:{" "}
           <ExternalLink url="https://www.instagram.com/caseymurtaugh/">

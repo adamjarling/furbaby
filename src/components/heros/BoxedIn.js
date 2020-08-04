@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled, { css } from "styled-components"
 import BoxedInVideo from "../videos/BoxedInVideo"
 import ExternalLink from "../ExternalLink"
+import VideoResponsive from "../VideoResponsive"
 
 const background = css`
   background: black;
@@ -25,7 +26,7 @@ const HeroBoxedIn = ({ className }) => {
   console.log("className", className)
   var data = useStaticQuery(graphql`
     query {
-      desktop: file(relativePath: { eq: "IMG_2366.jpg" }) {
+      desktop: file(relativePath: { eq: "IMG_2205.jpeg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
@@ -55,8 +56,11 @@ const HeroBoxedIn = ({ className }) => {
             <BoxedIn />
           </div>
           <div className="mt-6">
-            <h2 className="title">Official Video</h2>
-            <BoxedInVideo />
+            <VideoResponsive
+              url="https://www.youtube.com/embed/piCdPUIlJlw"
+              title="Boxed In by FURBABY"
+            />
+
             <div className="content mt-4 has-text-left-mobile is-size-7-mobile">
               <p>
                 Featuring Denmark's{" "}

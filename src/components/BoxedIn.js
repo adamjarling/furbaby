@@ -22,11 +22,6 @@ export const musicSources = [
     icon: <FaApple />,
   },
   {
-    label: "iTunes",
-    url: "https://music.apple.com/us/album/boxed-in-single/1520141383",
-    icon: <FaItunes />,
-  },
-  {
     label: "Google Play",
     url:
       "https://play.google.com/store/music/album/Furbaby_Boxed_In?id=Bfzfwy4277nj3eer6wsleaj2zce",
