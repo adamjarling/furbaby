@@ -21,7 +21,7 @@ const PressKitPage = ({ data }) => (
     <section className="section">
       <div className="container">
         <div className="columns">
-          <div className="column is-two-thirds content">
+          <div className="column is-two-thirds content has-text-justified">
             <h2 className="title">Bio</h2>
             <p>
               <Furbaby>FURBABY</Furbaby> is a garage rock band for the 2020s,

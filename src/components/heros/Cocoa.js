@@ -50,13 +50,12 @@ const HeroCocoa = ({ className }) => {
 
             <div className="content mt-4 has-text-left-mobile is-size-7-mobile">
               <p>
-                Featuring Denmark's{" "}
-                <ExternalLink url="https://www.facebook.com/ratshredder">
-                  Dennis "El Guapo" Post
+                Featuring Chicago's{" "}
+                <ExternalLink url="https://www.instagram.com/lifebygoose/">
+                  Andrew "Goose" Giese
                 </ExternalLink>{" "}
-                from Warrior Soul/City Kids ripping a proper solo.
+                playing some mean drums.
               </p>
-              <p>Thanks dude!</p>
             </div>
           </div>
         </div>

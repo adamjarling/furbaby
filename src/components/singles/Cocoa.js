@@ -37,11 +37,7 @@ export const musicSources = [
 function MusicButton({ label, url, icon }) {
   return (
     <div className="column is-half">
-      <a
-        href={url}
-        target="_blank"
-        className="button is-outlined is-black is-inverted is-fullwidth"
-      >
+      <a href={url} target="_blank" className="button is-fullwidth">
         <span className="icon">{icon}</span>
         <span>{label}</span>
       </a>

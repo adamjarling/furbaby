@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
-import ExternalLink from "../components/ExternalLink"
 import VideoResponsive from "../components/VideoResponsive"
 
 const Furbaby = styled.span`
@@ -15,7 +14,7 @@ const VideosPage = ({ data }) => (
 
     <section className="section">
       <div className="container">
-        <h1 className="title">Videos</h1>
+        <h1 className="title is-sr-only">Videos</h1>
         <h2 className="title is-size-2 has-text-centered">Cocoa</h2>
 
         <VideoResponsive
