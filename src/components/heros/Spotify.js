@@ -44,9 +44,9 @@ const HeroSpotify = () => {
           <h2 className="title">
             <Title>Fur U on Spotify</Title>
           </h2>
-          <h3 className="subtitle">
+          <div className="subtitle">
             <Subtitle>New single "Cocoa" now on Spotify</Subtitle>
-          </h3>
+          </div>
           <div className="buttons">
             <a
               href="https://open.spotify.com/artist/1hpsUJGJST9u6Qf8KWn8CR?si=3Z6sOxHvTUG9P-lqLf3Gvg"

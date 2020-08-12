@@ -1,14 +1,19 @@
 import React from "react"
-import HerosExplodingFur from "./heros/ExplodingFur"
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper"
+import SwiperCore, {
+  A11y,
+  Autoplay,
+  Navigation,
+  Pagination,
+  Scrollbar,
+} from "swiper"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { useStaticQuery, graphql } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
 import HeroInstagram from "./heros/Instagram"
 import HeroSpotify from "./heros/Spotify"
+import HeroHarperRadio from "./heros/HarperRadio"
 
 // install Swiper components
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
+SwiperCore.use([A11y, Autoplay, Navigation, Pagination, Scrollbar])
 
 export default function HomeSlider() {
   var data = useStaticQuery(graphql`
@@ -27,11 +32,13 @@ export default function HomeSlider() {
   `)
 
   return (
-    <Swiper autoPlay={true} slidesPerView={1} centeredSlides={true} navigation>
+    <Swiper autoplay slidesPerView={1} centeredSlides={true} navigation>
       <SwiperSlide>
         <HeroSpotify />
       </SwiperSlide>
-
+      <SwiperSlide>
+        <HeroHarperRadio />
+      </SwiperSlide>
       <SwiperSlide>
         <HeroInstagram />
       </SwiperSlide>

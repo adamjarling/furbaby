@@ -28,11 +28,21 @@ const VideosPage = ({ data }) => (
           title="Boxed In by FURBABY"
         />
 
-        <h2 className="title is-size-2 has-text-centered mt-6">Cocoa Teaser</h2>
-        <VideoResponsive
-          url="https://www.youtube.com/embed/ZDVW2WS5nUc"
-          title="Cocoa Teaser Video"
-        />
+        <h2 className="title is-size-2 has-text-centered mt-6">Promo Videos</h2>
+        <div className="columns">
+          <div className="column">
+            <VideoResponsive
+              url="https://www.youtube.com/embed/ZDVW2WS5nUc"
+              title="Cocoa Teaser Video"
+            />
+          </div>
+          <div className="column">
+            <VideoResponsive
+              url="https://www.youtube.com/embed/FoAahoFIfeg"
+              title="Cocoa Teaser Video"
+            />
+          </div>
+        </div>
       </div>
     </section>
   </Layout>

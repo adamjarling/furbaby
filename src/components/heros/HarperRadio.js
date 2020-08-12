@@ -2,6 +2,7 @@ import React from "react"
 import BackgroundImage from "gatsby-background-image"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import styled, { css } from "styled-components"
+import { FaSpotify } from "react-icons/fa"
 
 const background = css`
   background: rgba(0, 0, 0, 0.6);
@@ -18,10 +19,12 @@ const Subtitle = styled.h3`
   padding: 0.25rem 0.5rem;
 `
 
-const HeroInstagram = () => {
+const HeroHarperRadio = () => {
   var data = useStaticQuery(graphql`
     query {
-      bgImage: file(relativePath: { eq: "screenprint-colors.jpg" }) {
+      bgImage: file(
+        relativePath: { eq: "boxed-in-harper-college-radio-youtube-thumb.jpg" }
+      ) {
         childImageSharp {
           fluid(quality: 70, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
@@ -41,18 +44,24 @@ const HeroInstagram = () => {
       <div className="hero-body">
         <div className="container">
           <h2 className="title">
-            <Title>Instagram</Title>
+            <Title>College Radio</Title>
           </h2>
           <div className="subtitle">
-            <Subtitle>Follow the Fur @furbaby_rocks</Subtitle>
+            <Subtitle>
+              "Boxed In" gets its first spin on 88.3FM - Harper College Radio
+              Chicago
+            </Subtitle>
           </div>
           <div className="buttons">
             <a
-              href="https://www.instagram.com/furbaby_rocks/"
+              href="https://youtu.be/FoAahoFIfeg"
               target="_blank"
-              className="button is-outlined is-black is-inverted"
+              className="button is-black"
             >
-              Go to Instagram
+              <span className="icon">
+                <FaSpotify />
+              </span>
+              <span>Watch video</span>
             </a>
           </div>
         </div>
@@ -62,10 +71,10 @@ const HeroInstagram = () => {
 }
 
 // TODO: Make background darker on mobile below
-const StyledCocoa = styled(HeroInstagram)`
+const StyledHarperRadio = styled(HeroHarperRadio)`
   &:before {
     opacity: 0.7 !important;
   }
 `
 
-export default StyledCocoa
+export default StyledHarperRadio
