@@ -21,7 +21,7 @@ const PressKitPage = ({ data }) => (
     <section className="section">
       <div className="container">
         <div className="columns">
-          <div className="column is-two-thirds content has-text-justified">
+          <div className="column content is-two-thirds has-text-justified">
             <h2 className="title">Bio</h2>
             <p>
               <Furbaby>FURBABY</Furbaby> is a garage rock band for the 2020s,
@@ -59,9 +59,11 @@ const PressKitPage = ({ data }) => (
               June 30th, 2020.
             </p>
           </div>
+
           <div className="column is-one-third content">
-            <h2 className="title">Music</h2>
-            <Img fluid={data.boxedIn.childImageSharp.fluid} />
+            <h2 className="title">Latest Release</h2>
+
+            <Img fluid={data.cocoa.childImageSharp.fluid} />
             <a href="#" className="button is-fullwidth mt-3">
               <span className="icon">
                 <FaDownload />
@@ -85,6 +87,15 @@ const PressKitPage = ({ data }) => (
               url="https://www.youtube.com/embed/piCdPUIlJlw"
               title="Boxed In by FURBABY"
             />
+            <h2 className="title">Music</h2>
+            <Img fluid={data.boxedIn.childImageSharp.fluid} />
+            <a href="#" className="button is-fullwidth mt-3">
+              <span className="icon">
+                <FaDownload />
+              </span>
+              <span>Download WAV audio file</span>
+            </a>
+            <p className="has-text-centered">Coming soon...</p>
           </div>
           <div className="column content">
             <h2 className="title">Photos</h2>
@@ -103,6 +114,16 @@ export const pressKitPageQuery = graphql`
     boxedIn: file(
       sourceInstanceName: { eq: "images" }
       relativePath: { eq: "FURBABY-boxed-in-cover-art-no-outline.png" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 2048, quality: 100, grayscale: false) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    cocoa: file(
+      sourceInstanceName: { eq: "images" }
+      relativePath: { eq: "cocoa-single-cover.jpg" }
     ) {
       childImageSharp {
         fluid(maxWidth: 2048, quality: 100, grayscale: false) {
