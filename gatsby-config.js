@@ -4,7 +4,6 @@ module.exports = {
     title: `Furbaby garage rock art project`,
     description: `FURBABY is a garage rock experiment for the 2020s, fronted by Chicago musician Adam J. Arling.`,
     author: `Adam J. Arling`,
-    ogImage: `/images/og-image.png`,
     boxedInYouTube: `https://youtu.be/piCdPUIlJlw`,
     youTubeChannel: `https://www.youtube.com/channel/UCSoulFKYB6zGzHhbV-rkPzg/`,
   },
