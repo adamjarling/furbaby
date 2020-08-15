@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa"
 import { Link } from "gatsby"
 import Obfuscate from "react-obfuscate"
+import logo from "../images/web-logo2.png"
 
 var socialMedia = [
   {
@@ -61,7 +62,7 @@ export default function Navbar() {
     >
       <div className="navbar-brand">
         <Link to="/" className="navbar-item is-size-4 ">
-          Furbaby
+          <img src={logo} alt="Furbaby logo" />
         </Link>
 
         <a

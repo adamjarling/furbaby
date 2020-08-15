@@ -39,12 +39,6 @@ const IndexPage = ({ data }) => (
     <HeroAboutTeaser />
 
     <InspiredBy />
-
-    <iframe
-      width="700"
-      height="400"
-      src="https://www.youtube.com/live_chat?is_popout=1&v=YoQqxFHSC24&embed_domain=https://www.furbaby.rocks/"
-    ></iframe>
   </Layout>
 )
 
