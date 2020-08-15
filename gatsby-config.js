@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    url: "https://furbaby.rocks",
+    url: "https://www.furbaby.rocks/",
     title: `Furbaby garage rock art project`,
     description: `FURBABY is a garage rock experiment for the 2020s, fronted by Chicago musician Adam J. Arling.`,
     author: `Adam J. Arling`,
