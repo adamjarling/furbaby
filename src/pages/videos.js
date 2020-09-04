@@ -15,8 +15,16 @@ const VideosPage = ({ data }) => (
     <section className="section">
       <div className="container">
         <h1 className="title is-sr-only">Videos</h1>
-        <h2 className="title is-size-2 has-text-centered">Cocoa</h2>
 
+        <h2 className="title is-size-2 has-text-centered">
+          Behind The Door (Teaser)
+        </h2>
+        <VideoResponsive
+          url="https://www.youtube.com/embed/ZGC17B3cQTU"
+          title="Behind The Door (Teaser) by FURBABY"
+        />
+
+        <h2 className="title is-size-2 has-text-centered mt-6">Cocoa</h2>
         <VideoResponsive
           url="https://www.youtube.com/embed/5bRFZN4X_3g"
           title="Cocoa by FURBABY"

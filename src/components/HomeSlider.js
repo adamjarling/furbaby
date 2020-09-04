@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import HeroInstagram from "./heros/Instagram"
 import HeroSpotify from "./heros/Spotify"
 import HeroHarperRadio from "./heros/HarperRadio"
+import HeroBehindTheDoorTeaser from "./heros/BehindTheDoorTeaser"
 
 // install Swiper components
 SwiperCore.use([A11y, Autoplay, Navigation, Pagination, Scrollbar])
@@ -33,6 +34,9 @@ export default function HomeSlider() {
 
   return (
     <Swiper autoplay slidesPerView={1} centeredSlides={true} navigation>
+      <SwiperSlide>
+        <HeroBehindTheDoorTeaser />
+      </SwiperSlide>
       <SwiperSlide>
         <HeroSpotify />
       </SwiperSlide>
