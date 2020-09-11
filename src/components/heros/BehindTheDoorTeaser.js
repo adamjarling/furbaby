@@ -52,7 +52,7 @@ const HeroBehindTheDoorTeaser = () => {
               to="/videos"
               className="button is-outlined is-black is-inverted"
             >
-              Watch Teaser Video
+              Watch Video
             </Link>
           </div>
         </div>
