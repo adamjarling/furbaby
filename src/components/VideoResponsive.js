@@ -3,7 +3,7 @@ import React from "react"
 export default function VideoResponsive({ url, title }) {
   return (
     <div>
-      <figure className="image is-16by9">
+      <figure className="image is-16by9 mx-0">
         <iframe
           className="has-ratio"
           width="1600"

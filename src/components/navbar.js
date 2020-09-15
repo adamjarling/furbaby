@@ -85,6 +85,9 @@ export default function Navbar() {
       >
         <div className="navbar-end">
           <div className="navbar-item">
+            <Link to="/singles">Singles</Link>
+          </div>
+          <div className="navbar-item">
             <Link to="/press-kit">Press Kit</Link>
           </div>
           <div className="navbar-item">
