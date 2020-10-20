@@ -10,6 +10,7 @@ import InspiredBy from "../components/InspiredBy"
 import HomeSlider from "../components/HomeSlider"
 import HeroCocoa from "../components/heros/Cocoa"
 import HeroBehindTheDoor from "../components/heros/BehindTheDoor"
+import HeroReachingOut from "../components/heros/ReachingOut"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -31,7 +32,9 @@ const IndexPage = ({ data }) => (
       </div>
     </section> */}
 
-    <HomeSlider />
+    {/* <HomeSlider /> */}
+
+    <HeroReachingOut />
 
     <HeroBehindTheDoor />
 

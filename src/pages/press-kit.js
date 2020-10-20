@@ -10,12 +10,13 @@ import VideoResponsive from "../components/VideoResponsive"
 import boxedInWav from "../assets/boxed-in_44.1k_16bit-master3.wav"
 import cocoaWav from "../assets/cocoa_44.1k_16bit-master4.wav"
 import behindTheDoorWav from "../assets/behind-the-door_44.1k_16bit-master4.wav"
-import { behindTheDoor as behindTheDoorManifest } from "../music-release-manifest"
+import reachingOutWav from "../assets/reaching-out-(higher-ground)_44.1k_16bit-master2.wav"
+import * as musicManifest from "../music-release-manifest"
 import DownloadAudioButton from "../components/DownloadAudioButton"
 import DownloadPhoto from "../components/DownloadPhoto"
 
 const Furbaby = styled.span`
-  font-family: "Faster One", cursive;
+  text-transform: uppercase;
 `
 const AudioEl = styled.audio`
   width: 100%;
@@ -54,9 +55,8 @@ const PressKitPage = ({ data }) => (
                 lot of 'why nots'. Time to get to work."
               </p>
               <p>
-                In past and current lives{" "}
-                <span className="fur-font">FURBABY</span> has toured and/or
-                recorded with{" "}
+                In past and current lives <Furbaby>FURBABY</Furbaby> has toured
+                and/or recorded with{" "}
                 <ExternalLink url="https://thelastvegas.com">
                   The Last Vegas
                 </ExternalLink>
@@ -117,8 +117,8 @@ const PressKitPage = ({ data }) => (
 
           <div className="column is-one-third content">
             <h2 className="title">Latest Release</h2>
-            <Img fluid={data.behindTheDoor.childImageSharp.fluid} />
-            <DownloadAudioButton fileStr={behindTheDoorWav} />
+            <Img fluid={data.reachingOut.childImageSharp.fluid} />
+            <DownloadAudioButton fileStr={reachingOutWav} />
           </div>
         </div>
 
@@ -127,8 +127,14 @@ const PressKitPage = ({ data }) => (
           <div className="columns is-multiline">
             <div className="column content is-half">
               <VideoResponsive
-                url={`https://www.youtube.com/embed/${behindTheDoorManifest.youTubeId}`}
-                title="Cocoa by FURBABY"
+                url={`https://www.youtube.com/embed/${musicManifest.reachingOut.youTubeId}`}
+                title="Reaching Out (for Higher Ground) FURBABY"
+              />
+            </div>
+            <div className="column content is-half">
+              <VideoResponsive
+                url={`https://www.youtube.com/embed/${musicManifest.behindTheDoor.youTubeId}`}
+                title="Behind the Door FURBABY"
               />
             </div>
             <div className="column content is-half">
@@ -148,7 +154,11 @@ const PressKitPage = ({ data }) => (
 
         <section className="section">
           <h2 className="title">Music</h2>
-          <div className="columns">
+          <div className="columns is-multiline">
+            <div className="column content is-one-third">
+              <Img fluid={data.reachingOut.childImageSharp.fluid} />
+              <DownloadAudioButton fileStr={reachingOutWav} />
+            </div>
             <div className="column content is-one-third">
               <Img fluid={data.behindTheDoor.childImageSharp.fluid} />
               <DownloadAudioButton fileStr={behindTheDoorWav} />
@@ -168,6 +178,10 @@ const PressKitPage = ({ data }) => (
           <h2 className="title">Photos</h2>
           <div className="columns">
             <div className="column">
+              <Img fluid={data.fringeArm.childImageSharp.fluid} />
+              <DownloadPhoto
+                fileStr={data.fringeArm.childImageSharp.fluid.src}
+              />
               <Img fluid={data.triangleWall.childImageSharp.fluid} />
               <DownloadPhoto
                 fileStr={data.triangleWall.childImageSharp.fluid.src}
@@ -220,12 +234,32 @@ export const pressKitPageQuery = graphql`
         }
       }
     }
+    fringeArm: file(
+      sourceInstanceName: { eq: "images" }
+      relativePath: { eq: "furbaby-fringe-arm.JPG" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 80, grayscale: false) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     promoPhoto: file(
       sourceInstanceName: { eq: "images" }
       relativePath: { eq: "promo-photo-bw.PNG" }
     ) {
       childImageSharp {
         fluid(maxWidth: 2048, quality: 80, grayscale: false) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    reachingOut: file(
+      sourceInstanceName: { eq: "images" }
+      relativePath: { eq: "reaching-out-album-art-v2.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 80, grayscale: false) {
           ...GatsbyImageSharpFluid
         }
       }

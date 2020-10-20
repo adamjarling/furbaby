@@ -52,7 +52,7 @@ export default function SinglesBehindTheDoor() {
         relativePath: { eq: "behind-the-door-cover-art-v2.jpg" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 500, quality: 70) {
+          fluid(maxWidth: 1000, quality: 80) {
             ...GatsbyImageSharpFluid
           }
         }

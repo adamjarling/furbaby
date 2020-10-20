@@ -27,3 +27,14 @@ export const cocoa = {
     "https://open.spotify.com/album/2BUiOdFxCOYRRt2sWUj2Bk?si=PpTgsQeeSeOrE8HoVpL2cg",
   youTubeId: "5bRFZN4X_3g",
 }
+
+export const reachingOut = {
+  amazonMusic:
+    "https://www.amazon.com/Reaching-Out-For-Higher-Ground/dp/B08LC6H6YW",
+  appleMusic:
+    "https://music.apple.com/us/album/reaching-out-for-higher-ground-single/1535390059",
+  googlePlay: "https://music.youtube.com/watch?v=vU_-n-9qmPk&feature=share",
+  spotify:
+    "https://open.spotify.com/album/4Yi5mSplUm16yKifHA4dVh?si=jgQm9E4LR96FfTCGy_NSIw",
+  youTubeId: "vU_-n-9qmPk",
+}

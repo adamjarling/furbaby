@@ -53,7 +53,7 @@ export default function SinglesCocoa() {
         relativePath: { eq: "cocoa-single-cover.jpg" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 500, quality: 100) {
+          fluid(maxWidth: 1000, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }

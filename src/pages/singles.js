@@ -9,10 +9,15 @@ const SinglesPage = ({ data }) => (
     <SEO title="Singles" />
     <div className="container mt-6">
       <h1 className="title">Singles</h1>
-      <p className="subtitle">The Furbaby swingin' singles club.</p>
+      <p className="subtitle">A new single every month, fur u.</p>
     </div>
     <section className="section">
       <div className="columns is-multiline">
+        <div className="column is-half">
+          <Link to="/reaching-out">
+            <Img fluid={data.reachingOut.childImageSharp.fluid} />
+          </Link>
+        </div>
         <div className="column is-half">
           <Link to="/behind-the-door">
             <Img fluid={data.behindTheDoor.childImageSharp.fluid} />
@@ -60,6 +65,16 @@ export const singlesPageQuery = graphql`
     cocoa: file(
       sourceInstanceName: { eq: "images" }
       relativePath: { eq: "cocoa-single-cover.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 80, grayscale: false) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    reachingOut: file(
+      sourceInstanceName: { eq: "images" }
+      relativePath: { eq: "reaching-out-album-art-v2.jpg" }
     ) {
       childImageSharp {
         fluid(maxWidth: 1600, quality: 80, grayscale: false) {

@@ -11,6 +11,7 @@ import {
 import styled from "styled-components"
 import ExternalLink from "../components/ExternalLink"
 import Obfuscate from "react-obfuscate"
+import LogoInline from "../components/LogoInline"
 
 const Icon = styled.a`
   display: inline-block;
@@ -57,8 +58,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="content has-text-centered">
-        © {new Date().getFullYear()}, <span className="fur-font">Furbaby</span>.{" "}
-        <br />
+        <LogoInline /> <br />
         {socialMedia.map(sm => (
           <Icon
             key={sm.service}
@@ -84,15 +84,7 @@ export default function Footer() {
             <FaEnvelope />
           </span>
         </Obfuscate>
-        <p>
-          Art, Photography and Videography:{" "}
-          <ExternalLink url="https://www.instagram.com/caseymurtaugh/">
-            Casey
-          </ExternalLink>{" "}
-          | Music:{" "}
-          <ExternalLink url="https://adamarling.com">Adam</ExternalLink>
-        </p>
-        <p>Made in Chicago, USA</p>
+        <p>© {new Date().getFullYear()}. Made in Chicago, USA</p>
       </div>
     </footer>
   )

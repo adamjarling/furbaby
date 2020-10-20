@@ -12,7 +12,7 @@ const background = css`
 const Title = styled.span`
   ${background}
 `
-const Subtitle = styled.h3`
+const Subtitle = styled.span`
   ${background}
   line-height: 1;
   padding: 0.25rem 0.5rem;
