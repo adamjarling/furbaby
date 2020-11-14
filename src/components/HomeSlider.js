@@ -9,9 +9,8 @@ import SwiperCore, {
 import { Swiper, SwiperSlide } from "swiper/react"
 import { useStaticQuery, graphql } from "gatsby"
 import HeroInstagram from "./heros/Instagram"
+import HeroYouTube from "./heros/YouTube"
 import HeroSpotify from "./heros/Spotify"
-import HeroHarperRadio from "./heros/HarperRadio"
-import HeroBehindTheDoorTeaser from "./heros/BehindTheDoorTeaser"
 
 // install Swiper components
 SwiperCore.use([A11y, Autoplay, Navigation, Pagination, Scrollbar])
@@ -35,16 +34,14 @@ export default function HomeSlider() {
   return (
     <Swiper autoplay slidesPerView={1} centeredSlides={true} navigation>
       <SwiperSlide>
-        <HeroBehindTheDoorTeaser />
+        <HeroInstagram />
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <HeroYouTube />
       </SwiperSlide>
       <SwiperSlide>
         <HeroSpotify />
-      </SwiperSlide>
-      <SwiperSlide>
-        <HeroHarperRadio />
-      </SwiperSlide>
-      <SwiperSlide>
-        <HeroInstagram />
       </SwiperSlide>
     </Swiper>
   )

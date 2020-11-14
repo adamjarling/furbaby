@@ -178,19 +178,15 @@ const PressKitPage = ({ data }) => (
           <h2 className="title">Photos</h2>
           <div className="columns">
             <div className="column">
-              <Img fluid={data.fringeArm.childImageSharp.fluid} />
-              <DownloadPhoto
-                fileStr={data.fringeArm.childImageSharp.fluid.src}
-              />
               <Img fluid={data.triangleWall.childImageSharp.fluid} />
               <DownloadPhoto
                 fileStr={data.triangleWall.childImageSharp.fluid.src}
               />
             </div>
             <div className="column">
-              <Img fluid={data.promoPhoto.childImageSharp.fluid} />
+              <Img fluid={data.promoPhotoBox.childImageSharp.fluid} />
               <DownloadPhoto
-                fileStr={data.promoPhoto.childImageSharp.fluid.src}
+                fileStr={data.promoPhotoBox.childImageSharp.fluid.src}
               />
             </div>
           </div>
@@ -234,12 +230,12 @@ export const pressKitPageQuery = graphql`
         }
       }
     }
-    fringeArm: file(
+    promoPhotoBox: file(
       sourceInstanceName: { eq: "images" }
-      relativePath: { eq: "furbaby-fringe-arm.JPG" }
+      relativePath: { eq: "photo-box-lake.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 1600, quality: 80, grayscale: false) {
+        fluid(maxWidth: 1600, quality: 80, grayscale: true) {
           ...GatsbyImageSharpFluid
         }
       }

@@ -30,15 +30,6 @@ figcaption {
   letter-spacing: 4px;
 }
 
-// @media screen and (min-width: 1024px) {
-//   .title {
-//     font-size: 4rem;
-//   }
-//   .subtitle {
-//     font-size: 1.75rem;
-//   }
-// }
-
 .content a {
   border-bottom: dashed 1px;
 }
@@ -55,10 +46,6 @@ figcaption {
   a {
     color: black;
   }
-}
-
-.fur-font {
-  font-family: $fontFasterOne;
 }
 
 .hero {
@@ -81,16 +68,15 @@ figcaption {
   }
 }
 
-.explosion {
-  @media screen and (min-width: 640px) {
-    width: 600px;
-  }
-  @media screen and (max-width: 640px) {
-    margin-top: 0 !important;
-    width: 200px;
-  }
+.navbar {
+  font-family: $family-secondary;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
-.navbar-brand {
-  font-family: $fontFasterOne;
+.singles-pr-box {
+  a {
+    color: black;
+    font-weight: bold;
+  }
 }

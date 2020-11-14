@@ -9,6 +9,10 @@ import {
   FaItunes,
 } from "react-icons/fa"
 import { reachingOut } from "../../music-release-manifest"
+import ExternalLink from "../../components/ExternalLink"
+import MusicButton from "../MusicButton"
+import MusicButtonsWrapper from "../MusicButtonsWrapper"
+import SinglesPRBox from "../SinglesPRBox"
 
 export const musicSources = [
   {
@@ -33,17 +37,6 @@ export const musicSources = [
   },
 ]
 
-function MusicButton({ label, url, icon }) {
-  return (
-    <div className="column is-half">
-      <a href={url} target="_blank" className="button is-fullwidth">
-        <span className="icon">{icon}</span>
-        <span>{label}</span>
-      </a>
-    </div>
-  )
-}
-
 export default function SinglesReachingOut() {
   var data = useStaticQuery(graphql`
     query {
@@ -63,11 +56,9 @@ export default function SinglesReachingOut() {
   return (
     <>
       <div className="columns is-centered">
-        <div className="column is-8">
-          <div className="mb-4">
-            <Img fluid={data.boxedInSingle.childImageSharp.fluid} />
-          </div>
-          <div className="columns is-multiline">
+        <div className="column is-half">
+          <Img fluid={data.boxedInSingle.childImageSharp.fluid} />
+          <MusicButtonsWrapper>
             {musicSources.map(item => (
               <MusicButton
                 key={item.label}
@@ -76,7 +67,41 @@ export default function SinglesReachingOut() {
                 icon={item.icon}
               />
             ))}
-          </div>
+          </MusicButtonsWrapper>
+        </div>
+        <div className="column is-half">
+          <SinglesPRBox>
+            <h4 className="has-text-dark">
+              For Immediate Release - October 20, 2020
+            </h4>
+            <p>
+              Official FURBABY video for the new single "Reaching Out (for
+              Higher Ground)" out now.
+            </p>
+
+            <p>
+              This tune asks, what is it about higher places? Why do living
+              things climb mountains, build houses on hills, go to the top of
+              the Sears tower in Chicago, or climb a tree? What do we get out of
+              that vantage point, and why go there?"
+            </p>
+
+            <p>
+              Armed with a cheap green screen getup, a wicked thrift-store
+              fringe and some space videos from NASA's digital archives, Furbaby
+              uses these rudimentary tools to see what's up. Outer space seems
+              an increasingly decent alternative these days as well.
+            </p>
+
+            <p>
+              Special thanks to the mad man from Spain,{" "}
+              <ExternalLink url="https://www.facebook.com/ivan.t.bachiller">
+                Iván Tambac
+              </ExternalLink>{" "}
+              for laying some awesome drums down on Reaching Out (for Higher
+              Ground).
+            </p>
+          </SinglesPRBox>
         </div>
       </div>
     </>

@@ -23,7 +23,7 @@ const HeroPressKit = () => {
     query {
       bgImage: file(relativePath: { eq: "banner-lying-on-beach.jpg" }) {
         childImageSharp {
-          fluid(quality: 70, maxWidth: 1920) {
+          fluid(quality: 70, maxWidth: 1920, grayscale: true) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -43,9 +43,6 @@ const HeroPressKit = () => {
           <h2 className="title">
             <Title>Press Kit</Title>
           </h2>
-          <h3 className="subtitle">
-            <Subtitle>Digital assets fur the press</Subtitle>
-          </h3>
         </div>
       </div>
     </BackgroundImage>

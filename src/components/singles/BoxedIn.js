@@ -8,40 +8,41 @@ import {
   FaApple,
   FaItunes,
 } from "react-icons/fa"
-import { behindTheDoor } from "../../music-release-manifest"
+import { boxedIn } from "../../music-release-manifest"
+import ExternalLink from "../../components/ExternalLink"
 import MusicButton from "../MusicButton"
-import SinglesPRBox from "../SinglesPRBox"
 import MusicButtonsWrapper from "../MusicButtonsWrapper"
+import SinglesPRBox from "../SinglesPRBox"
 
 export const musicSources = [
   {
     label: "Spotify",
-    url: behindTheDoor.spotify,
+    url: boxedIn.spotify,
     icon: <FaSpotify />,
   },
   {
     label: "Apple Music",
-    url: behindTheDoor.appleMusic,
+    url: boxedIn.appleMusic,
     icon: <FaApple />,
   },
   {
     label: "Google Play",
-    url: behindTheDoor.googlePlay,
+    url: boxedIn.googlePlay,
     icon: <FaGooglePlay />,
   },
   {
     label: "Amazon Music",
-    url: behindTheDoor.amazonMusic,
+    url: boxedIn.amazonMusic,
     icon: <FaAmazon />,
   },
 ]
 
-export default function SinglesBehindTheDoor() {
+export default function SinglesBoxedIn() {
   var data = useStaticQuery(graphql`
     query {
       boxedInSingle: file(
         sourceInstanceName: { eq: "images" }
-        relativePath: { eq: "behind-the-door-cover-art-v2.jpg" }
+        relativePath: { eq: "FURBABY-boxed-in-cover-art-no-outline.png" }
       ) {
         childImageSharp {
           fluid(maxWidth: 1000, quality: 80) {
@@ -56,12 +57,7 @@ export default function SinglesBehindTheDoor() {
     <>
       <div className="columns is-centered">
         <div className="column is-half">
-          <div className="mb-4">
-            <Img
-              fluid={data.boxedInSingle.childImageSharp.fluid}
-              style={{ border: "1px solid white" }}
-            />
-          </div>
+          <Img fluid={data.boxedInSingle.childImageSharp.fluid} />
           <MusicButtonsWrapper>
             {musicSources.map(item => (
               <MusicButton
@@ -76,28 +72,27 @@ export default function SinglesBehindTheDoor() {
         <div className="column is-half">
           <SinglesPRBox>
             <h4 className="has-text-dark">
-              For Immediate Release - September 10, 2020
+              For Immediate Release - June 30, 2020
             </h4>
             <p>
-              Chicago's FURBABY releases it's third single, "Behind The Door" on
-              September 10, 2020.
+              Chicago's FURBABY releases it's debut single, "Boxed In" on June
+              30, 2020.
             </p>
             <p>
-              "This tune jumped out from a droning riff I was messing with
-              backstage in Key West, Florida. While procrastinating learning a
-              crazy complicated end synth run to ABBA's "Lay Your Love On Me",
-              this bendy 2-string thing sounded so simple and cave-man. It's
-              amazing what one comes up with when your mind gets lost in the
-              clouds."
+              Featuring Denmark's{" "}
+              <ExternalLink url="https://www.facebook.com/ratshredder">
+                Dennis "El Guapo" Post
+              </ExternalLink>{" "}
+              from Warrior Soul/City Kids ripping a proper solo. Thanks dude!
             </p>
             <p>
-              The lyrics are further inspired by some kind of relationship
-              between perception and hiding places. Perhaps a poor-man's Doors
-              Jim Morrison reference, but nonetheless a psych-rock vantage point
-              from which to approach a tune.
+              Furbaby quotes, "I can't really sing, but I gotta a lotta riffs, a
+              lotta time on my hands, and this really cool box. The
+              possibilities are endless."
             </p>
             <p>
-              "It's great to hide, but we all gotta come out sometime rur real."
+              Check back in to catch a new single &amp; video every month from
+              here til the well runs dry.
             </p>
           </SinglesPRBox>
         </div>

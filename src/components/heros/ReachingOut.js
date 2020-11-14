@@ -3,10 +3,8 @@ import SinglesReachingOut from "../singles/ReachingOut"
 import BackgroundImage from "gatsby-background-image"
 import { useStaticQuery, graphql } from "gatsby"
 import styled, { css } from "styled-components"
-import ExternalLink from "../ExternalLink"
 import VideoResponsive from "../VideoResponsive"
 import { reachingOut } from "../../music-release-manifest"
-import PrBox from "../PrBox"
 
 const background = css`
   background: black;
@@ -37,6 +35,7 @@ const HeroReachingOut = ({ className }) => {
     >
       <div className="hero-body">
         <div className="container has-text-centered">
+          <h2 className="title">Reaching Out (for Higher Ground)</h2>
           <div className="mb-6">
             <VideoResponsive
               url={`https://www.youtube.com/embed/${reachingOut.youTubeId}`}
@@ -44,40 +43,9 @@ const HeroReachingOut = ({ className }) => {
             />
           </div>
 
-          <h2 className="title">Reaching Out (for Higher Ground)</h2>
           <div className="pb-6">
             <SinglesReachingOut />
           </div>
-          <PrBox>
-            <h4>For Immediate Release - October 20, 2020</h4>
-            <p>
-              Official FURBABY video for the new single "Reaching Out (for
-              Higher Ground)" out now.
-            </p>
-
-            <p>
-              This tune asks, what is it about higher places? Why do living
-              things climb mountains, build houses on hills, go to the top of
-              the Sears tower in Chicago, or climb a tree? What do we get out of
-              that vantage point, and why go there?"
-            </p>
-
-            <p>
-              Armed with a cheap green screen getup, a wicked thrift-store
-              fringe and some space videos from NASA's digital archives, Furbaby
-              uses these rudimentary tools to see what's up. Outer space seems
-              an increasingly decent alternative these days as well.
-            </p>
-
-            <p>
-              Special thanks to the mad man from Spain,{" "}
-              <ExternalLink url="https://www.facebook.com/ivan.t.bachiller">
-                Iván Tambac
-              </ExternalLink>{" "}
-              for laying some awesome drums down on Reaching Out (for Higher
-              Ground).
-            </p>
-          </PrBox>
         </div>
       </div>
     </BackgroundImage>

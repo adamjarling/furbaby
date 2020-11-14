@@ -11,10 +11,9 @@ export const behindTheDoor = {
 export const boxedIn = {
   amazonMusic: "https://www.amazon.com/gp/product/B08BQZ7VS9",
   appleMusic: "https://music.apple.com/us/album/boxed-in-single/1520141383",
-  googlePlay:
-    "https://play.google.com/store/music/album/Furbaby_Behind_the_Door?id=B7q2zo3uyqqw3lrol32rbq23vc4",
+  googlePlay: "https://music.youtube.com/watch?v=P_JNbFp2-DU&feature=share",
   spotify:
-    "https://open.spotify.com/artist/1hpsUJGJST9u6Qf8KWn8CR?si=Faiv2grEQX6vwJ9z_4sMQQ",
+    "https://open.spotify.com/album/0Lcf5Z0R7d0ScKJ2Wm0Pl7?si=WqeYgVAoTTWQQ_E6Ee4itA",
   youTubeId: "piCdPUIlJlw",
 }
 

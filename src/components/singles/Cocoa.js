@@ -8,6 +8,10 @@ import {
   FaApple,
   FaItunes,
 } from "react-icons/fa"
+import MusicButton from "../MusicButton"
+import MusicButtonsWrapper from "../MusicButtonsWrapper"
+import SinglesPRBox from "../SinglesPRBox"
+import ExternalLink from "../../components/ExternalLink"
 
 export const musicSources = [
   {
@@ -34,17 +38,6 @@ export const musicSources = [
   },
 ]
 
-function MusicButton({ label, url, icon }) {
-  return (
-    <div className="column is-half">
-      <a href={url} target="_blank" className="button is-fullwidth">
-        <span className="icon">{icon}</span>
-        <span>{label}</span>
-      </a>
-    </div>
-  )
-}
-
 export default function SinglesCocoa() {
   var data = useStaticQuery(graphql`
     query {
@@ -64,11 +57,11 @@ export default function SinglesCocoa() {
   return (
     <>
       <div className="columns is-centered">
-        <div className="column is-8">
+        <div className="column is-half">
           <div className="mb-4">
             <Img fluid={data.boxedInSingle.childImageSharp.fluid} />
           </div>
-          <div className="columns is-multiline">
+          <MusicButtonsWrapper>
             {musicSources.map(item => (
               <MusicButton
                 key={item.label}
@@ -77,7 +70,69 @@ export default function SinglesCocoa() {
                 icon={item.icon}
               />
             ))}
-          </div>
+          </MusicButtonsWrapper>
+        </div>
+
+        <div className="column is-half">
+          <SinglesPRBox>
+            <h4 className="has-text-dark">
+              For Immediate Release - August 4, 2020
+            </h4>
+            <p>
+              Chicago's FURBABY releases it's second single, "Cocoa" on August
+              4, 2020.
+            </p>
+            <p>
+              A fuzzed-out romp through Chicago's northside{" "}
+              <ExternalLink url="https://en.wikipedia.org/wiki/Rogers_Park,_Chicago">
+                Rogers Park neighborhood
+              </ExternalLink>{" "}
+              and beachfront, Cocoa reflects on the world which people share
+              with others.
+            </p>
+            <p>
+              "There's this stretch of the Loyola beach where benches connect
+              into{" "}
+              <ExternalLink url="http://loyolaphoenix.com/2019/09/artists-of-the-wall-27-years-of-community/">
+                one giant, flowing, mural painted annually by community artists
+              </ExternalLink>
+              . It's a peak inside the local's heads, their lives, and what they
+              feel comfortable or inspired to share with their neighbors."
+            </p>
+            <p>
+              "Whatever it is, it creates some kind of chill zone where people
+              of all ages, races, and genders blend together at the beach and
+              the diversity shines when amplified. It's like, 'why isnt it like
+              this all the time?'"
+            </p>
+            <p>
+              Tonally the song cranks up{" "}
+              <a href="https://www.daredevilpedals.com/" target="_blank">
+                Daredevil Pedal's fuzz boxes
+              </a>{" "}
+              to 11, and features Chicago's{" "}
+              <ExternalLink url="https://www.instagram.com/lifebygoose/">
+                Andrew "Goose" Giese
+              </ExternalLink>{" "}
+              playing some mean drums.
+            </p>
+            <p>
+              Furbaby comments, "I kinda wanted Cocoa's music to sound like{" "}
+              <ExternalLink url="https://ramones.com/">
+                The Ramones
+              </ExternalLink>{" "}
+              and{" "}
+              <ExternalLink url="https://www.smashingpumpkins.com/">
+                Smashing Pumpkins
+              </ExternalLink>{" "}
+              got in a fight, and <strong>Billy Corgan</strong> lost only cause
+              it's after the year 2000.{" "}
+              <ExternalLink url="https://www.billboard.com/articles/columns/rock/7386036/the-smashing-pumpkins-billy-corgan-gish-at-25-classic-track-by-track-look-back">
+                Gish
+              </ExternalLink>{" "}
+              still rules."
+            </p>
+          </SinglesPRBox>
         </div>
       </div>
     </>

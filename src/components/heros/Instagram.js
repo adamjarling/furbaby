@@ -21,9 +21,9 @@ const Subtitle = styled.h3`
 const HeroInstagram = () => {
   var data = useStaticQuery(graphql`
     query {
-      bgImage: file(relativePath: { eq: "screenprint-colors.jpg" }) {
+      bgImage: file(relativePath: { eq: "IMG_2669.jpg" }) {
         childImageSharp {
-          fluid(quality: 70, maxWidth: 1920) {
+          fluid(quality: 60, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -50,7 +50,7 @@ const HeroInstagram = () => {
             <a
               href="https://www.instagram.com/furbaby_rocks/"
               target="_blank"
-              className="button is-outlined is-black is-inverted"
+              className="button is-black"
             >
               Go to Instagram
             </a>

@@ -85,29 +85,34 @@ export default function Navbar() {
       >
         <div className="navbar-end">
           <div className="navbar-item">
-            <Link to="/singles">Singles</Link>
-          </div>
-          <div className="navbar-item">
             <Link to="/press-kit">Press Kit</Link>
           </div>
+          <div className="navbar-item">
+            <Link to="/singles">Singles</Link>
+          </div>
+
           <div className="navbar-item">
             <Link to="/videos">Videos</Link>
           </div>
 
-          {socialMedia.map(sm => (
-            <div key={sm.service} className="navbar-item">
-              <a
-                href={sm.url}
-                className="is-flex"
-                target="_blank"
-                style={{ alignItems: "center" }}
-                title={sm.service}
-              >
-                <span className="icon is-size-4">{sm.icon}</span>
-              </a>
-            </div>
-          ))}
-          <div className="navbar-item">
+          {socialMedia
+            .filter(item =>
+              ["Spotify", "Instagram", "YouTube"].includes(item.service)
+            )
+            .map(sm => (
+              <div key={sm.service} className="navbar-item">
+                <a
+                  href={sm.url}
+                  className="is-flex"
+                  target="_blank"
+                  style={{ alignItems: "center" }}
+                  title={sm.service}
+                >
+                  <span className="icon is-size-4">{sm.icon}</span>
+                </a>
+              </div>
+            ))}
+          {/* <div className="navbar-item">
             <Obfuscate
               email="aarling@gmail.com"
               headers={{
@@ -119,7 +124,7 @@ export default function Navbar() {
                 <FaEnvelope />
               </span>
             </Obfuscate>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

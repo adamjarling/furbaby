@@ -2,7 +2,6 @@ import React from "react"
 import BackgroundImage from "gatsby-background-image"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import styled, { css } from "styled-components"
-import { FaSpotify } from "react-icons/fa"
 
 const background = css`
   background: rgba(0, 0, 0, 0.6);
@@ -19,12 +18,12 @@ const Subtitle = styled.h3`
   padding: 0.25rem 0.5rem;
 `
 
-const HeroSpotify = () => {
+const HeroYouTube = () => {
   var data = useStaticQuery(graphql`
     query {
-      bgImage: file(relativePath: { eq: "cocoa-vid-thumb3.jpg" }) {
+      bgImage: file(relativePath: { eq: "topanga.jpg" }) {
         childImageSharp {
-          fluid(quality: 70, maxWidth: 1920) {
+          fluid(quality: 50, maxWidth: 1920, grayscale: true) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -42,21 +41,18 @@ const HeroSpotify = () => {
       <div className="hero-body">
         <div className="container">
           <h2 className="title">
-            <Title>Spotify</Title>
+            <Title>YouTube</Title>
           </h2>
           <div className="subtitle">
-            <Subtitle>Get all the singles on Spotify</Subtitle>
+            <Subtitle>Stay hip &amp; follow Furbaby's channel </Subtitle>
           </div>
           <div className="buttons">
             <a
-              href="https://open.spotify.com/artist/1hpsUJGJST9u6Qf8KWn8CR?si=3Z6sOxHvTUG9P-lqLf3Gvg"
+              href="https://www.youtube.com/channel/UCSoulFKYB6zGzHhbV-rkPzg"
               target="_blank"
-              className="button is-black"
+              className="button is-outlined is-black is-inverted"
             >
-              <span className="icon">
-                <FaSpotify />
-              </span>
-              <span>Go to Spotify artist</span>
+              Go to channel
             </a>
           </div>
         </div>
@@ -66,7 +62,7 @@ const HeroSpotify = () => {
 }
 
 // TODO: Make background darker on mobile below
-const StyledCocoa = styled(HeroSpotify)`
+const StyledCocoa = styled(HeroYouTube)`
   &:before {
     opacity: 0.7 !important;
   }

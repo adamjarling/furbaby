@@ -2,7 +2,6 @@ import React from "react"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ExplodingFur from "../components/heros/ExplodingFur"
 import HeroBoxedIn from "../components/heros/BoxedIn"
 import { Link } from "gatsby"
 import HeroAboutTeaser from "../components/heros/AboutTeaser"
@@ -16,23 +15,7 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
 
-    {/* <section className={`hero has-background is-medium`}>
-      <Img
-        fluid={data.bgImage.childImageSharp.fluid}
-        className="hero-background"
-      />
-      <div className="hero-body is-flex">
-        <div className="container">
-          <h1 className="is-sr-only">
-            <span className="title hero-image-bg-title is-inline-block">
-              Furbaby garage rock
-            </span>
-          </h1>
-        </div>
-      </div>
-    </section> */}
-
-    {/* <HomeSlider /> */}
+    <HomeSlider />
 
     <HeroReachingOut />
 
@@ -42,7 +25,7 @@ const IndexPage = ({ data }) => (
 
     <HeroBoxedIn />
 
-    <HeroAboutTeaser />
+    {/* <HeroAboutTeaser /> */}
 
     <InspiredBy />
   </Layout>
@@ -86,7 +69,7 @@ export const pageQuery = graphql`
     }
     boxPic: file(
       sourceInstanceName: { eq: "images" }
-      relativePath: { eq: "IMG_2203.jpeg" }
+      relativePath: { eq: "photo-box-lake.jpg" }
     ) {
       childImageSharp {
         fluid(maxWidth: 2048, quality: 100, grayscale: true) {
