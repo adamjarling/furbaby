@@ -61,8 +61,8 @@ export default function Navbar() {
       aria-label="main navigation"
     >
       <div className="navbar-brand">
-        <Link to="/" className="navbar-item is-size-4 ">
-          <img src={logo} alt="Furbaby logo" />
+        <Link to="/" className="logo-wrapper">
+          <img src={logo} alt="Furbaby logo" className="logo" />
         </Link>
 
         <a
@@ -83,18 +83,18 @@ export default function Navbar() {
         id="navbarBasicExample"
         className={`navbar-menu ${burgerOpen ? "is-active" : ""}`}
       >
-        <div className="navbar-end">
+        <div className="navbar-start">
+          <div className="navbar-item">
+            <Link to="/singles">Singles</Link>
+          </div>
           <div className="navbar-item">
             <Link to="/press-kit">Press Kit</Link>
           </div>
           <div className="navbar-item">
-            <Link to="/singles">Singles</Link>
-          </div>
-
-          <div className="navbar-item">
             <Link to="/videos">Videos</Link>
           </div>
-
+        </div>
+        <div className="navbar-end">
           {socialMedia
             .filter(item =>
               ["Spotify", "Instagram", "YouTube"].includes(item.service)

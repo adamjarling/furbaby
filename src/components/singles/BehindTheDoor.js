@@ -39,7 +39,7 @@ export const musicSources = [
 export default function SinglesBehindTheDoor() {
   var data = useStaticQuery(graphql`
     query {
-      boxedInSingle: file(
+      behindTheDoor: file(
         sourceInstanceName: { eq: "images" }
         relativePath: { eq: "behind-the-door-cover-art-v2.jpg" }
       ) {
@@ -58,7 +58,7 @@ export default function SinglesBehindTheDoor() {
         <div className="column is-half">
           <div className="mb-4">
             <Img
-              fluid={data.boxedInSingle.childImageSharp.fluid}
+              fluid={data.behindTheDoor.childImageSharp.fluid}
               style={{ border: "1px solid white" }}
             />
           </div>

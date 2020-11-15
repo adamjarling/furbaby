@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
+import AlbumsAnimated from "../components/AlbumsAnimated"
 
 const SinglesPage = ({ data }) => (
   <Layout>
@@ -12,7 +13,8 @@ const SinglesPage = ({ data }) => (
       <p className="subtitle">A new single every month, fur u.</p>
     </div>
     <section className="section">
-      <div className="columns is-multiline">
+      <AlbumsAnimated />
+      {/* <div className="columns is-multiline">
         <div className="column is-half">
           <Link to="/reaching-out">
             <Img fluid={data.reachingOut.childImageSharp.fluid} />
@@ -33,7 +35,7 @@ const SinglesPage = ({ data }) => (
             <Img fluid={data.boxedIn.childImageSharp.fluid} />
           </Link>
         </div>
-      </div>
+      </div> */}
     </section>
   </Layout>
 )

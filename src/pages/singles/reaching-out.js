@@ -1,7 +1,7 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import HeroReachingOut from "../components/heros/ReachingOut"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
+import HeroReachingOut from "../../components/heros/ReachingOut"
 
 const ReachingOutPage = ({ data }) => (
   <Layout>

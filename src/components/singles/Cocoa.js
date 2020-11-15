@@ -41,7 +41,7 @@ export const musicSources = [
 export default function SinglesCocoa() {
   var data = useStaticQuery(graphql`
     query {
-      boxedInSingle: file(
+      single: file(
         sourceInstanceName: { eq: "images" }
         relativePath: { eq: "cocoa-single-cover.jpg" }
       ) {
@@ -59,7 +59,7 @@ export default function SinglesCocoa() {
       <div className="columns is-centered">
         <div className="column is-half">
           <div className="mb-4">
-            <Img fluid={data.boxedInSingle.childImageSharp.fluid} />
+            <Img fluid={data.single.childImageSharp.fluid} />
           </div>
           <MusicButtonsWrapper>
             {musicSources.map(item => (

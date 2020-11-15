@@ -40,7 +40,7 @@ export const musicSources = [
 export default function SinglesReachingOut() {
   var data = useStaticQuery(graphql`
     query {
-      boxedInSingle: file(
+      reachingOut: file(
         sourceInstanceName: { eq: "images" }
         relativePath: { eq: "reaching-out-album-art-v2.jpg" }
       ) {
@@ -57,7 +57,7 @@ export default function SinglesReachingOut() {
     <>
       <div className="columns is-centered">
         <div className="column is-half">
-          <Img fluid={data.boxedInSingle.childImageSharp.fluid} />
+          <Img fluid={data.reachingOut.childImageSharp.fluid} />
           <MusicButtonsWrapper>
             {musicSources.map(item => (
               <MusicButton

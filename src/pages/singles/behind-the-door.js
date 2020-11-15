@@ -1,7 +1,7 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import HeroBehindTheDoor from "../components/heros/BehindTheDoor"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
+import HeroBehindTheDoor from "../../components/heros/BehindTheDoor"
 
 const BehindTheDoorPage = ({ data }) => (
   <Layout>

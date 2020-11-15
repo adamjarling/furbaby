@@ -1,7 +1,7 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import HeroCocoa from "../components/heros/Cocoa"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
+import HeroCocoa from "../../components/heros/Cocoa"
 
 const CocoaPage = ({ data }) => (
   <Layout>
