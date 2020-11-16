@@ -8,34 +8,17 @@ import AlbumsAnimated from "../components/AlbumsAnimated"
 const SinglesPage = ({ data }) => (
   <Layout>
     <SEO title="Singles" />
-    <div className="container mt-6">
-      <h1 className="title">Singles</h1>
-      <p className="subtitle">A new single every month, fur u.</p>
-    </div>
+    <section className="section">
+      <div className="container mt-6">
+        <h1 className="title">Singles</h1>
+        <p className="subtitle">
+          A new single every month until life returns to normal?
+        </p>
+      </div>
+    </section>
+
     <section className="section">
       <AlbumsAnimated />
-      {/* <div className="columns is-multiline">
-        <div className="column is-half">
-          <Link to="/reaching-out">
-            <Img fluid={data.reachingOut.childImageSharp.fluid} />
-          </Link>
-        </div>
-        <div className="column is-half">
-          <Link to="/behind-the-door">
-            <Img fluid={data.behindTheDoor.childImageSharp.fluid} />
-          </Link>
-        </div>
-        <div className="column is-half">
-          <Link to="/cocoa">
-            <Img fluid={data.cocoa.childImageSharp.fluid} />
-          </Link>
-        </div>
-        <div className="column is-half">
-          <Link to="/boxed-in">
-            <Img fluid={data.boxedIn.childImageSharp.fluid} />
-          </Link>
-        </div>
-      </div> */}
     </section>
   </Layout>
 )

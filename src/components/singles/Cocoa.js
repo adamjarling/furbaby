@@ -26,7 +26,7 @@ export const musicSources = [
     icon: <FaApple />,
   },
   {
-    label: "Google Play",
+    label: "YouTube Music",
     url:
       "https://play.google.com/store/music/album/Furbaby_Cocoa?id=Bxfjxlvr7uqh5ismdtyo5ftrp2e",
     icon: <FaGooglePlay />,
@@ -57,27 +57,28 @@ export default function SinglesCocoa() {
   return (
     <>
       <div className="columns is-centered">
-        <div className="column is-half">
+        <div className="column is-two-thirds">
           <div className="mb-4">
             <Img fluid={data.single.childImageSharp.fluid} />
           </div>
-          <MusicButtonsWrapper>
-            {musicSources.map(item => (
-              <MusicButton
-                key={item.label}
-                label={item.label}
-                url={item.url}
-                icon={item.icon}
-              />
-            ))}
-          </MusicButtonsWrapper>
         </div>
 
-        <div className="column is-half">
-          <SinglesPRBox>
-            <h4 className="has-text-dark">
+        <div className="column is-one-third">
+          {musicSources.map(item => (
+            <a href={item.url} className="button is-large is-fullwidth mb-4">
+              <span className="icon">{item.icon}</span>
+              <span>{item.label}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <SinglesPRBox>
+        <div className="columns">
+          <div className="column is-two-thirds">
+            <h3 className="title has-text-dark">
               For Immediate Release - August 4, 2020
-            </h4>
+            </h3>
             <p>
               Chicago's FURBABY releases it's second single, "Cocoa" on August
               4, 2020.
@@ -125,16 +126,54 @@ export default function SinglesCocoa() {
               <ExternalLink url="https://www.smashingpumpkins.com/">
                 Smashing Pumpkins
               </ExternalLink>{" "}
-              got in a fight, and <strong>Billy Corgan</strong> lost only cause
-              it's after the year 2000.{" "}
+              got in a fight, and Billy Corgan lost only cause it's after the
+              year 2000.{" "}
               <ExternalLink url="https://www.billboard.com/articles/columns/rock/7386036/the-smashing-pumpkins-billy-corgan-gish-at-25-classic-track-by-track-look-back">
                 Gish
               </ExternalLink>{" "}
               still rules."
             </p>
-          </SinglesPRBox>
+          </div>
+          <div className="column is-one-third">
+            <div className="notification content is-dark">
+              <h4 className="title">Credits</h4>
+              <h5>Video</h5>
+              <ul>
+                <li>
+                  Filming:{" "}
+                  <ExternalLink url="https://www.instagram.com/caseymurtaugh/?hl=en">
+                    Casey Murtaugh
+                  </ExternalLink>
+                </li>
+                <li>
+                  Editing:{" "}
+                  <ExternalLink url="https://adamarling.com">
+                    Adam J. Arling
+                  </ExternalLink>
+                </li>
+                <li>Artist Wall Mural: Cole ...</li>
+              </ul>
+
+              <h5>Music</h5>
+              <ul>
+                <li>Music &amp; lyrics, guitars/bass/vocals: FURBABY</li>
+                <li>
+                  Drums:{" "}
+                  <ExternalLink url="https://www.instagram.com/lifebygoose/">
+                    Andrew "Goose" Giese
+                  </ExternalLink>
+                </li>
+                <li>
+                  Mixing/Mastering:{" "}
+                  <ExternalLink url="https://adamarling.com">
+                    Adam J. Arling
+                  </ExternalLink>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
+      </SinglesPRBox>
     </>
   )
 }

@@ -33,27 +33,24 @@ const PressKitPage = ({ data }) => (
             <h2 className="title">Bio</h2>
             <div className="content">
               <p>
-                <Furbaby>FURBABY</Furbaby> is a garage rock band for the 2020s,
-                born in the middle of a global pandemic. Great timing, we know.
+                <Furbaby>FURBABY</Furbaby> is an alt/garage/psych side-project
+                hatched for the 2020s. It's a vehicle for experimenting with
+                music, videos, photography and reflecting what's going on in a
+                world that just got fast-forwarded into the future.
               </p>
               <p>
-                Well maybe. Given time to think a little differently about
-                everything, <Furbaby>FURBABY</Furbaby> records demos, does yoga,
+                <Furbaby>FURBABY</Furbaby> records demos, reads, does yoga,
                 drinks wine and takes long walks on the beach in the diverse,
                 arts-centric Rogers Park neighborhood of Chicago USA.
               </p>
               <p className="is-italic">
-                "When things shut down in the USA in March 2020, Chicago had a
-                stay at home order. Each night I'd play a little guitar and a
-                lot of tunes fell out of my head. Now its filtering the wheat
-                from the chaff."
+                "When things shut down in the USA in March 2020, everyone had a
+                lot of time on their hands. After being an active musician for
+                years on end, it was a chance to sit down with some ideas and
+                flesh 'em out. Trying different tones, textures, ways of
+                writing. Saying "why not?" a lot."
               </p>
-              <p className="is-italic">
-                "What if the band released one tune a month instead of a full
-                album? What if a video was paired with each single? What if I
-                had fellow musicians guest cameo on the tunes? Basically a whole
-                lot of 'why nots'. Time to get to work."
-              </p>
+
               <p>
                 In past and current lives <Furbaby>FURBABY</Furbaby> has toured
                 and/or recorded with{" "}
@@ -97,8 +94,8 @@ const PressKitPage = ({ data }) => (
                 and others.
               </p>
               <p>
-                <Furbaby>FURBABY</Furbaby> will most likely never play live, but
-                if so it'd be nice to do a little tour of Spain.{" "}
+                <Furbaby>FURBABY</Furbaby> may or may not play live, but if so
+                it'd be nice to do a little tour of Spain.{" "}
                 <Obfuscate
                   email="aarling@gmail.com"
                   headers={{

@@ -57,7 +57,7 @@ const HeroBehindTheDoor = ({ className }) => {
 
 const StyledBackgroundSection = styled(HeroBehindTheDoor)`
   &:before {
-    opacity: 0.2 !important;
+    opacity: 0.5 !important;
   }
 `
 

@@ -1,17 +1,10 @@
 import React from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
-import {
-  FaSpotify,
-  FaAmazon,
-  FaGooglePlay,
-  FaApple,
-  FaItunes,
-} from "react-icons/fa"
+import { FaSpotify, FaAmazon, FaGooglePlay, FaApple } from "react-icons/fa"
 import { behindTheDoor } from "../../music-release-manifest"
-import MusicButton from "../MusicButton"
 import SinglesPRBox from "../SinglesPRBox"
-import MusicButtonsWrapper from "../MusicButtonsWrapper"
+import ExternalLink from "../../components/ExternalLink"
 
 export const musicSources = [
   {
@@ -25,8 +18,8 @@ export const musicSources = [
     icon: <FaApple />,
   },
   {
-    label: "Google Play",
-    url: behindTheDoor.googlePlay,
+    label: "YouTube Music",
+    url: behindTheDoor.youTubeMusic,
     icon: <FaGooglePlay />,
   },
   {
@@ -39,7 +32,7 @@ export const musicSources = [
 export default function SinglesBehindTheDoor() {
   var data = useStaticQuery(graphql`
     query {
-      behindTheDoor: file(
+      boxedInSingle: file(
         sourceInstanceName: { eq: "images" }
         relativePath: { eq: "behind-the-door-cover-art-v2.jpg" }
       ) {
@@ -55,29 +48,29 @@ export default function SinglesBehindTheDoor() {
   return (
     <>
       <div className="columns is-centered">
-        <div className="column is-half">
+        <div className="column is-two-thirds">
           <div className="mb-4">
             <Img
-              fluid={data.behindTheDoor.childImageSharp.fluid}
+              fluid={data.boxedInSingle.childImageSharp.fluid}
               style={{ border: "1px solid white" }}
             />
           </div>
-          <MusicButtonsWrapper>
-            {musicSources.map(item => (
-              <MusicButton
-                key={item.label}
-                label={item.label}
-                url={item.url}
-                icon={item.icon}
-              />
-            ))}
-          </MusicButtonsWrapper>
         </div>
-        <div className="column is-half">
-          <SinglesPRBox>
-            <h4 className="has-text-dark">
+        <div className="column is-one-third">
+          {musicSources.map(item => (
+            <a href={item.url} className="button is-large is-fullwidth mb-4">
+              <span className="icon">{item.icon}</span>
+              <span>{item.label}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+      <SinglesPRBox>
+        <div className="columns">
+          <div className="column is-two-thirds">
+            <h3 className="title has-text-dark">
               For Immediate Release - September 10, 2020
-            </h4>
+            </h3>
             <p>
               Chicago's FURBABY releases it's third single, "Behind The Door" on
               September 10, 2020.
@@ -97,11 +90,41 @@ export default function SinglesBehindTheDoor() {
               from which to approach a tune.
             </p>
             <p>
-              "It's great to hide, but we all gotta come out sometime rur real."
+              "It's great to hide, but we all gotta come out sometime fur real."
             </p>
-          </SinglesPRBox>
+          </div>
+          <div className="column is-one-third ">
+            <div className="notification content is-dark">
+              <h4 className="title">Credits</h4>
+              <h5>Video</h5>
+              <ul>
+                <li>
+                  Filming:{" "}
+                  <ExternalLink url="https://www.instagram.com/caseymurtaugh/?hl=en">
+                    Casey Murtaugh
+                  </ExternalLink>
+                </li>
+                <li>
+                  Editing:{" "}
+                  <ExternalLink url="https://adamarling.com">
+                    Adam J. Arling
+                  </ExternalLink>
+                </li>
+              </ul>
+              <h5>Music</h5>
+              <ul>
+                <li>Written &amp; performed by: FURBABY</li>
+                <li>
+                  Mixing/Mastering:{" "}
+                  <ExternalLink url="https://adamarling.com">
+                    Adam J. Arling
+                  </ExternalLink>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
+      </SinglesPRBox>
     </>
   )
 }

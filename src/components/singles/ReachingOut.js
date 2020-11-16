@@ -10,8 +10,6 @@ import {
 } from "react-icons/fa"
 import { reachingOut } from "../../music-release-manifest"
 import ExternalLink from "../../components/ExternalLink"
-import MusicButton from "../MusicButton"
-import MusicButtonsWrapper from "../MusicButtonsWrapper"
 import SinglesPRBox from "../SinglesPRBox"
 
 export const musicSources = [
@@ -26,8 +24,8 @@ export const musicSources = [
     icon: <FaApple />,
   },
   {
-    label: "Google Play",
-    url: reachingOut.googlePlay,
+    label: "YouTube Music",
+    url: reachingOut.youTubeMusic,
     icon: <FaGooglePlay />,
   },
   {
@@ -56,24 +54,27 @@ export default function SinglesReachingOut() {
   return (
     <>
       <div className="columns is-centered">
-        <div className="column is-half">
-          <Img fluid={data.reachingOut.childImageSharp.fluid} />
-          <MusicButtonsWrapper>
-            {musicSources.map(item => (
-              <MusicButton
-                key={item.label}
-                label={item.label}
-                url={item.url}
-                icon={item.icon}
-              />
-            ))}
-          </MusicButtonsWrapper>
+        <div className="column is-two-thirds">
+          <Img
+            fluid={data.reachingOut.childImageSharp.fluid}
+            className="has-shadow"
+          />
         </div>
-        <div className="column is-half">
-          <SinglesPRBox>
-            <h4 className="has-text-dark">
-              For Immediate Release - October 20, 2020
-            </h4>
+        <div className="column is-one-third">
+          {musicSources.map(item => (
+            <a href={item.url} className="button is-large is-fullwidth mb-4">
+              <span className="icon">{item.icon}</span>
+              <span>{item.label}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+      <SinglesPRBox>
+        <div className="columns">
+          <div className="column is-two-thirds">
+            <h3 className="title has-text-dark">
+              Fur Immediate Release - October 20, 2020
+            </h3>
             <p>
               Official FURBABY video for the new single "Reaching Out (for
               Higher Ground)" out now.
@@ -101,9 +102,39 @@ export default function SinglesReachingOut() {
               for laying some awesome drums down on Reaching Out (for Higher
               Ground).
             </p>
-          </SinglesPRBox>
+          </div>
+          <div className="column is-one-third ">
+            <div className="notification content is-dark">
+              <h4 className="title">Credits</h4>
+              <h5>Video</h5>
+              <ul>
+                <li>
+                  Filming:{" "}
+                  <ExternalLink url="https://www.instagram.com/caseymurtaugh/?hl=en">
+                    Casey Murtaugh
+                  </ExternalLink>
+                </li>
+                <li>
+                  Editing:{" "}
+                  <ExternalLink url="https://adamarling.com">
+                    Adam J. Arling
+                  </ExternalLink>
+                </li>
+              </ul>
+              <h5>Music</h5>
+              <ul>
+                <li>Written &amp; performed by: FURBABY</li>
+                <li>
+                  Mixing/Mastering:{" "}
+                  <ExternalLink url="https://adamarling.com">
+                    Adam J. Arling
+                  </ExternalLink>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
+      </SinglesPRBox>
     </>
   )
 }

@@ -22,7 +22,7 @@ export const musicSources = [
     icon: <FaApple />,
   },
   {
-    label: "Google Play",
+    label: "YouTube Music",
     url:
       "https://play.google.com/store/music/album/Furbaby_Boxed_In?id=Bfzfwy4277nj3eer6wsleaj2zce",
     icon: <FaGooglePlay />,

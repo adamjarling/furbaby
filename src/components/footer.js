@@ -47,7 +47,7 @@ var socialMedia = [
     icon: <FaFacebook />,
   },
   {
-    service: "Google Play",
+    service: "YouTube Music",
     url:
       "https://play.google.com/store/music/album/Furbaby_Boxed_In?id=Bfzfwy4277nj3eer6wsleaj2zce",
     icon: <FaGooglePlay />,

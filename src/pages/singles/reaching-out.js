@@ -2,6 +2,8 @@ import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import HeroReachingOut from "../../components/heros/ReachingOut"
+import SinglesPRBox from "../../components/SinglesPRBox"
+import ExternalLink from "../../components/ExternalLink"
 
 const ReachingOutPage = ({ data }) => (
   <Layout>

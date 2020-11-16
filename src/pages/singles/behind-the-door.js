@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import HeroBehindTheDoor from "../../components/heros/BehindTheDoor"
+import Img from "gatsby-image"
 
 const BehindTheDoorPage = ({ data }) => (
   <Layout>
