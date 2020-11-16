@@ -1,19 +1,19 @@
 import React from "react"
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
-import HeroReachingOut from "../../components/heros/ReachingOut"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import HeroReachingOut from "../components/heros/ReachingOut"
 
-const ReachingOutPage = ({ data }) => (
+const ReachingOutPlaceholderPage = ({ data }) => (
   <Layout>
     <SEO title="Reaching Out (for Higher Ground)" />
     <HeroReachingOut />
   </Layout>
 )
 
-export default ReachingOutPage
+export default ReachingOutPlaceholderPage
 
-export const ReachingOutPageQuery = graphql`
-  query ReachingOutPageTemplate {
+export const ReachingOutPlaceholderPageQuery = graphql`
+  query ReachingOutPlaceholderPageTemplate {
     behindTheDoor: file(
       sourceInstanceName: { eq: "images" }
       relativePath: { eq: "behind-the-door-cover-art-v2.jpg" }
