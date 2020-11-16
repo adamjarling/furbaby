@@ -140,13 +140,11 @@ export default function SinglesCocoa() {
               <h5>Video</h5>
               <ul>
                 <li>
-                  Filming:{" "}
+                  Filming &amp; Editing:{" "}
                   <ExternalLink url="https://www.instagram.com/caseymurtaugh/?hl=en">
                     Casey Murtaugh
-                  </ExternalLink>
-                </li>
-                <li>
-                  Editing:{" "}
+                  </ExternalLink>{" "}
+                  and{" "}
                   <ExternalLink url="https://adamarling.com">
                     Adam J. Arling
                   </ExternalLink>
