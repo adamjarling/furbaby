@@ -1,6 +1,7 @@
 import React from "react"
 import {
-  FaItunes,
+  FaAmazon,
+  FaApple,
   FaInstagram,
   FaFacebook,
   FaEnvelope,
@@ -13,6 +14,7 @@ import ExternalLink from "../components/ExternalLink"
 import Obfuscate from "react-obfuscate"
 import LogoInline from "../components/LogoInline"
 import MailingListSignup from "./MailingListSignup"
+import { useStaticQuery, graphql } from "gatsby"
 
 const Icon = styled.a`
   display: inline-block;
@@ -20,42 +22,67 @@ const Icon = styled.a`
   border-bottom: none !important;
 `
 
-var socialMedia = [
-  {
-    service: "Spotify",
-    url:
-      "https://open.spotify.com/artist/1hpsUJGJST9u6Qf8KWn8CR?si=Faiv2grEQX6vwJ9z_4sMQQ",
-    icon: <FaSpotify />,
-  },
-  {
-    service: "Apple Music",
-    url: "https://music.apple.com/us/artist/furbaby/1520136448",
-    icon: <FaItunes />,
-  },
-  {
-    service: "Instagram",
-    url: "https://www.instagram.com/furbaby_rocks/",
-    icon: <FaInstagram />,
-  },
-  {
-    service: "YouTube",
-    url: "https://www.youtube.com/channel/UCSoulFKYB6zGzHhbV-rkPzg",
-    icon: <FaYoutube />,
-  },
-  {
-    service: "Facebook",
-    url: "https://www.facebook.com/adam.arling",
-    icon: <FaFacebook />,
-  },
-  {
-    service: "YouTube Music",
-    url:
-      "https://play.google.com/store/music/album/Furbaby_Boxed_In?id=Bfzfwy4277nj3eer6wsleaj2zce",
-    icon: <FaGooglePlay />,
-  },
-]
-
 export default function Footer() {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            distributors {
+              amazonMusic
+              appleMusic
+              facebook
+              instagram
+              spotify
+              youTubeChannel
+              youTubeMusic
+            }
+          }
+        }
+      }
+    `
+  )
+
+  const { distributors } = site.siteMetadata
+
+  var socialMedia = [
+    {
+      service: "Spotify",
+      url: distributors.spotify,
+      icon: <FaSpotify />,
+    },
+    {
+      service: "Apple Music",
+      url: distributors.appleMusic,
+      icon: <FaApple />,
+    },
+    {
+      service: "YouTube",
+      url: distributors.youTubeChannel,
+      icon: <FaYoutube />,
+    },
+    {
+      service: "Instagram",
+      url: distributors.instagram,
+      icon: <FaInstagram />,
+    },
+    {
+      service: "Facebook",
+      url: distributors.facebook,
+      icon: <FaFacebook />,
+    },
+    {
+      service: "YouTube Music",
+      url: distributors.youTubeMusic,
+      icon: <FaGooglePlay />,
+    },
+    {
+      service: "Amazon Music",
+      url: distributors.amazonMusic,
+      icon: <FaAmazon />,
+    },
+  ]
+
   return (
     <footer className="footer">
       <div className="content has-text-centered">

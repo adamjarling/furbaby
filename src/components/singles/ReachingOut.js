@@ -123,7 +123,13 @@ export default function SinglesReachingOut() {
               </ul>
               <h5>Music</h5>
               <ul>
-                <li>Written &amp; performed by: FURBABY</li>
+                <li>Music &amp; lyrics, guitars/bass/vocals: FURBABY</li>
+                <li>
+                  Drums:{" "}
+                  <ExternalLink url="https://www.facebook.com/ivan.t.bachiller">
+                    Iván Tambac
+                  </ExternalLink>{" "}
+                </li>
                 <li>
                   Mixing/Mastering:{" "}
                   <ExternalLink url="https://adamarling.com">
