@@ -10,8 +10,10 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
       <HeroSplash1 />
-      <AlbumsAnimated />
-      <InspiredBy />
+      <div className="mt-4">
+        <AlbumsAnimated />
+      </div>
+      {/* <InspiredBy /> */}
     </Layout>
   )
 }

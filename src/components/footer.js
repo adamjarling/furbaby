@@ -12,6 +12,7 @@ import styled from "styled-components"
 import ExternalLink from "../components/ExternalLink"
 import Obfuscate from "react-obfuscate"
 import LogoInline from "../components/LogoInline"
+import MailingListSignup from "./MailingListSignup"
 
 const Icon = styled.a`
   display: inline-block;
@@ -59,6 +60,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="content has-text-centered">
         <LogoInline /> <br />
+        <MailingListSignup />
         {socialMedia.map(sm => (
           <Icon
             key={sm.service}
