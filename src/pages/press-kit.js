@@ -14,12 +14,10 @@ import reachingOutWav from "../assets/reaching-out-(higher-ground)_44.1k_16bit-m
 import * as musicManifest from "../music-release-manifest"
 import DownloadAudioButton from "../components/DownloadAudioButton"
 import DownloadPhoto from "../components/DownloadPhoto"
+import { Link } from "gatsby"
 
 const Furbaby = styled.span`
   text-transform: uppercase;
-`
-const AudioEl = styled.audio`
-  width: 100%;
 `
 
 const PressKitPage = ({ data }) => (
@@ -114,8 +112,11 @@ const PressKitPage = ({ data }) => (
 
           <div className="column is-one-third content">
             <h2 className="title">Latest Release</h2>
-            <Img fluid={data.reachingOut.childImageSharp.fluid} />
-            <DownloadAudioButton fileStr={reachingOutWav} />
+            <Link to="singles/i-can-only-give-you-everything">
+              <Img
+                fluid={data.iCanOnlyGiveYouEverything.childImageSharp.fluid}
+              />
+            </Link>
           </div>
         </div>
 
@@ -153,19 +154,34 @@ const PressKitPage = ({ data }) => (
           <h2 className="title">Music</h2>
           <div className="columns is-multiline">
             <div className="column content is-one-third">
-              <Img fluid={data.reachingOut.childImageSharp.fluid} />
+              <Link to="singles/i-can-only-give-you-everyhing">
+                <Img
+                  fluid={data.iCanOnlyGiveYouEverything.childImageSharp.fluid}
+                />
+              </Link>
+            </div>
+            <div className="column content is-one-third">
+              <Link to="singles/reaching-out">
+                <Img fluid={data.reachingOut.childImageSharp.fluid} />
+              </Link>
               <DownloadAudioButton fileStr={reachingOutWav} />
             </div>
             <div className="column content is-one-third">
-              <Img fluid={data.behindTheDoor.childImageSharp.fluid} />
+              <Link to="singles/behind-the-door">
+                <Img fluid={data.behindTheDoor.childImageSharp.fluid} />
+              </Link>
               <DownloadAudioButton fileStr={behindTheDoorWav} />
             </div>
             <div className="column content is-one-third">
-              <Img fluid={data.cocoa.childImageSharp.fluid} />
+              <Link to="singles/cocoa">
+                <Img fluid={data.cocoa.childImageSharp.fluid} />
+              </Link>
               <DownloadAudioButton fileStr={cocoaWav} />
             </div>
             <div className="column content is-one-third">
-              <Img fluid={data.boxedIn.childImageSharp.fluid} />
+              <Link to="singles/boxed-in">
+                <Img fluid={data.boxedIn.childImageSharp.fluid} />
+              </Link>
               <DownloadAudioButton fileStr={boxedInWav} />
             </div>
           </div>
@@ -220,6 +236,16 @@ export const pressKitPageQuery = graphql`
     cocoa: file(
       sourceInstanceName: { eq: "images" }
       relativePath: { eq: "cocoa-single-cover.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 80, grayscale: false) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    iCanOnlyGiveYouEverything: file(
+      sourceInstanceName: { eq: "images" }
+      relativePath: { eq: "give-u-everything-album-art-v1.jpg" }
     ) {
       childImageSharp {
         fluid(maxWidth: 1600, quality: 80, grayscale: false) {

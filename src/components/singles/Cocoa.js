@@ -1,15 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
-import {
-  FaSpotify,
-  FaAmazon,
-  FaGooglePlay,
-  FaApple,
-  FaItunes,
-} from "react-icons/fa"
-import MusicButton from "../MusicButton"
-import MusicButtonsWrapper from "../MusicButtonsWrapper"
+import { FaSpotify, FaAmazon, FaGooglePlay, FaApple } from "react-icons/fa"
 import SinglesPRBox from "../SinglesPRBox"
 import ExternalLink from "../../components/ExternalLink"
 
@@ -65,7 +57,11 @@ export default function SinglesCocoa() {
 
         <div className="column is-one-third">
           {musicSources.map(item => (
-            <a href={item.url} className="button is-large is-fullwidth mb-4">
+            <a
+              key={item.url}
+              href={item.url}
+              className="button is-large is-fullwidth mb-4"
+            >
               <span className="icon">{item.icon}</span>
               <span>{item.label}</span>
             </a>

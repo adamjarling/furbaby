@@ -27,6 +27,18 @@ export const cocoa = {
   youTubeId: "5bRFZN4X_3g",
 }
 
+export const iCanOnlyGiveYouEverything = {
+  amazonMusic:
+    "https://www.amazon.com/gp/product/B08NXB3HQF/?tag=distrokid06-20",
+  appleMusic:
+    "https://music.apple.com/us/album/i-can-only-give-you-everything-single/1541170568",
+  coverFileTitle: "give-u-everything-album-art-v1.jpg",
+  spotify:
+    "https://open.spotify.com/album/6hoCZu6E08IzWuLVDfa4qo?si=DbXgxv3wRaWrDXev6MRI4Q",
+  youTubeId: "",
+  youTubeMusic: "https://music.youtube.com/watch?v=pSCeBgvsXFQ&feature=share",
+}
+
 export const reachingOut = {
   amazonMusic:
     "https://www.amazon.com/Reaching-Out-For-Higher-Ground/dp/B08LC6H6YW",

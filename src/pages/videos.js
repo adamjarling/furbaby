@@ -3,10 +3,15 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
 import VideoResponsive from "../components/VideoResponsive"
-import { behindTheDoor, cocoa, boxedIn } from "../music-release-manifest"
+import {
+  behindTheDoor,
+  cocoa,
+  boxedIn,
+  reachingOut,
+} from "../music-release-manifest"
 
-const Furbaby = styled.span`
-  font-family: "Faster One", cursive;
+const VideoWrapper = styled.div`
+  padding: 1rem 0 8rem;
 `
 
 const VideosPage = ({ data }) => (
@@ -17,25 +22,41 @@ const VideosPage = ({ data }) => (
       <div className="container">
         <h1 className="title is-sr-only">Videos</h1>
 
-        <h2 className="title is-size-2 has-text-centered">Behind The Door</h2>
-        <VideoResponsive
-          url={`https://www.youtube.com/embed/${behindTheDoor.youTubeId}`}
-          title="Behind The Door by FURBABY"
-        />
+        <VideoWrapper>
+          <h2 className="title is-size-2 has-text-centered">
+            Reaching Out (For Higher Ground)
+          </h2>
+          <VideoResponsive
+            url={`https://www.youtube.com/embed/${reachingOut.youTubeId}`}
+            title="Reaching Out (For Higher Ground) by FURBABY"
+          />
+        </VideoWrapper>
 
-        <h2 className="title is-size-2 has-text-centered mt-6">Cocoa</h2>
-        <VideoResponsive
-          url={`https://www.youtube.com/embed/${cocoa.youTubeId}`}
-          title="Cocoa by FURBABY"
-        />
+        <VideoWrapper>
+          <h2 className="title is-size-2 has-text-centered">Behind The Door</h2>
+          <VideoResponsive
+            url={`https://www.youtube.com/embed/${behindTheDoor.youTubeId}`}
+            title="Behind The Door by FURBABY"
+          />
+        </VideoWrapper>
 
-        <h2 className="title is-size-2 has-text-centered mt-6">Boxed In</h2>
-        <VideoResponsive
-          url={`https://www.youtube.com/embed/${boxedIn.youTubeId}`}
-          title="Boxed In by FURBABY"
-        />
+        <VideoWrapper>
+          <h2 className="title is-size-2 has-text-centered">Cocoa</h2>
+          <VideoResponsive
+            url={`https://www.youtube.com/embed/${cocoa.youTubeId}`}
+            title="Cocoa by FURBABY"
+          />
+        </VideoWrapper>
 
-        <h2 className="title is-size-2 has-text-centered mt-6">Promo Videos</h2>
+        <VideoWrapper>
+          <h2 className="title is-size-2 has-text-centered">Boxed In</h2>
+          <VideoResponsive
+            url={`https://www.youtube.com/embed/${boxedIn.youTubeId}`}
+            title="Boxed In by FURBABY"
+          />
+        </VideoWrapper>
+
+        <h2 className="title is-size-2 has-text-centered">Promo Videos</h2>
         <div className="columns is-multiline">
           <div className="column is-half">
             <VideoResponsive
