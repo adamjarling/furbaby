@@ -7,6 +7,7 @@ import {
   behindTheDoor,
   cocoa,
   boxedIn,
+  iCanOnlyGiveYouEverything,
   reachingOut,
 } from "../music-release-manifest"
 
@@ -21,6 +22,16 @@ const VideosPage = ({ data }) => (
     <section className="section">
       <div className="container">
         <h1 className="title is-sr-only">Videos</h1>
+
+        <VideoWrapper>
+          <h2 className="title is-size-2 has-text-centered">
+            I Can Only Give You Everything
+          </h2>
+          <VideoResponsive
+            url={`https://www.youtube.com/embed/${iCanOnlyGiveYouEverything.youTubeId}`}
+            title="I Can Only Give You Everything by FURBABY"
+          />
+        </VideoWrapper>
 
         <VideoWrapper>
           <h2 className="title is-size-2 has-text-centered">

@@ -125,14 +125,20 @@ const PressKitPage = ({ data }) => (
           <div className="columns is-multiline">
             <div className="column content is-half">
               <VideoResponsive
+                url={`https://www.youtube.com/embed/${musicManifest.iCanOnlyGiveYouEverything.youTubeId}`}
+                title="I Can Only Give You Everything by FURBABY"
+              />
+            </div>
+            <div className="column content is-half">
+              <VideoResponsive
                 url={`https://www.youtube.com/embed/${musicManifest.reachingOut.youTubeId}`}
-                title="Reaching Out (for Higher Ground) FURBABY"
+                title="Reaching Out (for Higher Ground) by FURBABY"
               />
             </div>
             <div className="column content is-half">
               <VideoResponsive
                 url={`https://www.youtube.com/embed/${musicManifest.behindTheDoor.youTubeId}`}
-                title="Behind the Door FURBABY"
+                title="Behind the Door by FURBABY"
               />
             </div>
             <div className="column content is-half">

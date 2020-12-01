@@ -35,7 +35,7 @@ export const iCanOnlyGiveYouEverything = {
   coverFileTitle: "give-u-everything-album-art-v1.jpg",
   spotify:
     "https://open.spotify.com/album/6hoCZu6E08IzWuLVDfa4qo?si=DbXgxv3wRaWrDXev6MRI4Q",
-  youTubeId: "",
+  youTubeId: "-054IlsCbGQ",
   youTubeMusic: "https://music.youtube.com/watch?v=pSCeBgvsXFQ&feature=share",
 }
 

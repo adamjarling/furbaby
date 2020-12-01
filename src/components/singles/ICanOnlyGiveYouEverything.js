@@ -75,43 +75,53 @@ export default function SinglesICanOnlyGiveYouEverything() {
               For Immediate Release - November 24, 2020
             </h3>
             <p>
+              Official FURBABY video for the new single "I Can Only Give You
+              Everything" out now.
+            </p>
+
+            <p>
               "Well I try, and I try, but you know that I, can only give you
-              everything.""
+              everything."
             </p>
+
             <p>
-              What month November 2020 has been in the United States. A new
-              president. A pandemic heating back up. A country divided or coming
-              back together? Are our differences really as stark as polarizing,
-              profiteering, cable news channels tell us?
+              Everything. Well what a month November 2020 has been, living in
+              the United States. A heated election, pandemic, lockdown, and
+              glimpses of hope on the horizon all wrapped up together. It can
+              get overwhelming.
             </p>
+
             <p>
-              It's hard to tell. Our parents say this year has felt at times,
-              like the 1960s. Change is in the air. What will we do with the
-              opportunity this time?
-            </p>
-            <p>
-              The 60s were an explosion of music, ideas, fashion, change. A
-              reaction to the 50s, in which we tried to put society back in
-              order, post WWII.{" "}
-            </p>
-            <p>
-              Life is fluid, and a series of reactions to what has come before.
-              Those reactions are like waves. Changemakers can ride those waves,
-              and champion just causes and illustrate new ways of doing and
-              thinking about our world.
-            </p>
-            <p>
-              Furbaby drank too much coffee and is going on a weird tangent
-              here, but the new single, "I Can Only Give You Everything" is a
-              nod to{" "}
+              This video is a story of what happens when it gets overwhelming,
+              and you take a little trip via a 60's pop classic tune, say{" "}
               <ExternalLink url="https://en.wikipedia.org/wiki/Them_(band)">
                 Them
-              </ExternalLink>
-              ,{" "}
+              </ExternalLink>{" "}
+              or the{" "}
               <ExternalLink url="https://en.wikipedia.org/wiki/MC5">
-                The MC5
-              </ExternalLink>
-              , and changemakers from the 60s to the 2020s.
+                The MC5's
+              </ExternalLink>{" "}
+              I Can Only Give You Everything. The record spins. You become
+              sleepy, hypnotized and maybe wake up in a dreamy place like a
+              groovy lava lamp.
+            </p>
+
+            <p>
+              But you can't live there forever; you're in a bubble. So you reach
+              out to a special someone. They grab you, jostle you around some,
+              and set you free.
+            </p>
+
+            <p>
+              You're released into the rejuvenating sea, and see beautiful
+              things.
+            </p>
+
+            <p>
+              Refreshed, you return from this trip just as the song marches on.
+              You're pulled back into the record spinning. Was it real, was it a
+              dream? Things are different now, and that's ok. Everything must
+              go. Sometimes I can only give you everything.
             </p>
           </div>
           <div className="column is-one-third">

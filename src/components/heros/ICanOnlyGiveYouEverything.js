@@ -32,10 +32,10 @@ const ICanOnlyGiveYouEverythingHero = ({ className }) => {
         <div className="container has-text-centered">
           <h2 className="title">I Can Only Give You Everything</h2>
           <div className="mb-6">
-            {/* <VideoResponsive
-              url="https://www.youtube.com/embed/5bRFZN4X_3g"
+            <VideoResponsive
+              url="https://www.youtube.com/embed/-054IlsCbGQ"
               title="I Can Only Give You Everything by FURBABY"
-            /> */}
+            />
           </div>
           <div className="pb-6">
             <SinglesICanOnlyGiveYouEverything />
