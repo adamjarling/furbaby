@@ -9,6 +9,7 @@ import {
   boxedIn,
   iCanOnlyGiveYouEverything,
   reachingOut,
+  waiting,
 } from "../music-release-manifest"
 
 const VideoWrapper = styled.div`
@@ -22,6 +23,14 @@ const VideosPage = ({ data }) => (
     <section className="section">
       <div className="container">
         <h1 className="title is-sr-only">Videos</h1>
+
+        <VideoWrapper>
+          <h2 className="title is-size-2 has-text-centered">Waiting</h2>
+          <VideoResponsive
+            url={`https://www.youtube.com/embed/${waiting.youTubeId}`}
+            title="Waiting by FURBABY and the Tight Spaces"
+          />
+        </VideoWrapper>
 
         <VideoWrapper>
           <h2 className="title is-size-2 has-text-centered">

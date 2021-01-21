@@ -112,10 +112,8 @@ const PressKitPage = ({ data }) => (
 
           <div className="column is-one-third content">
             <h2 className="title">Latest Release</h2>
-            <Link to="singles/i-can-only-give-you-everything">
-              <Img
-                fluid={data.iCanOnlyGiveYouEverything.childImageSharp.fluid}
-              />
+            <Link to="singles/waiting">
+              <Img fluid={data.waiting.childImageSharp.fluid} />
             </Link>
           </div>
         </div>
@@ -125,32 +123,38 @@ const PressKitPage = ({ data }) => (
           <div className="columns is-multiline">
             <div className="column content is-half">
               <VideoResponsive
+                url={`https://www.youtube.com/embed/${musicManifest.waiting.youTubeId}`}
+                title="Waiting by FURBABY and the Tight Spaces"
+              />
+            </div>
+            <div className="column content is-half">
+              <VideoResponsive
                 url={`https://www.youtube.com/embed/${musicManifest.iCanOnlyGiveYouEverything.youTubeId}`}
-                title="I Can Only Give You Everything by FURBABY"
+                title="I Can Only Give You Everything by FURBABY and the Tight Spaces"
               />
             </div>
             <div className="column content is-half">
               <VideoResponsive
                 url={`https://www.youtube.com/embed/${musicManifest.reachingOut.youTubeId}`}
-                title="Reaching Out (for Higher Ground) by FURBABY"
+                title="Reaching Out (for Higher Ground) by FURBABY and the Tight Spaces"
               />
             </div>
             <div className="column content is-half">
               <VideoResponsive
                 url={`https://www.youtube.com/embed/${musicManifest.behindTheDoor.youTubeId}`}
-                title="Behind the Door by FURBABY"
+                title="Behind the Door by FURBABY and the Tight Spaces"
               />
             </div>
             <div className="column content is-half">
               <VideoResponsive
                 url="https://www.youtube.com/embed/5bRFZN4X_3g"
-                title="Cocoa by FURBABY"
+                title="Cocoa by FURBABY and the Tight Spaces"
               />
             </div>
             <div className="column content is-half">
               <VideoResponsive
                 url="https://www.youtube.com/embed/piCdPUIlJlw"
-                title="Boxed In by FURBABY"
+                title="Boxed In by FURBABY and the Tight Spaces"
               />
             </div>
           </div>
@@ -159,6 +163,11 @@ const PressKitPage = ({ data }) => (
         <section className="section">
           <h2 className="title">Music</h2>
           <div className="columns is-multiline">
+            <div className="column content is-one-third">
+              <Link to="singles/waiting">
+                <Img fluid={data.waiting.childImageSharp.fluid} />
+              </Link>
+            </div>
             <div className="column content is-one-third">
               <Link to="singles/i-can-only-give-you-everyhing">
                 <Img
@@ -292,6 +301,16 @@ export const pressKitPageQuery = graphql`
     triangleWall: file(
       sourceInstanceName: { eq: "images" }
       relativePath: { eq: "photo-triangle-wall.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 80, grayscale: false) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    waiting: file(
+      sourceInstanceName: { eq: "images" }
+      relativePath: { eq: "waiting-album-art.jpg" }
     ) {
       childImageSharp {
         fluid(maxWidth: 1600, quality: 80, grayscale: false) {

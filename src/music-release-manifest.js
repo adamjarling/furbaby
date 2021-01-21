@@ -49,3 +49,13 @@ export const reachingOut = {
     "https://open.spotify.com/album/4Yi5mSplUm16yKifHA4dVh?si=jgQm9E4LR96FfTCGy_NSIw",
   youTubeId: "vU_-n-9qmPk",
 }
+
+export const waiting = {
+  amazonMusic:
+    "https://music.amazon.com/albums/B08SP1Q1TL?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&trackAsin=B08SNW8TFM",
+  appleMusic: "https://music.apple.com/us/album/waiting-single/1548340167",
+  youTubeMusic: "https://music.youtube.com/watch?v=-tcbnRprB_E&feature=share",
+  spotify:
+    "https://open.spotify.com/album/2DehkhwXjRx1MslSY4yi9R?si=rX6cLldvTU2lgm2zt2MmZA",
+  youTubeId: "e05rIyfWE9Y",
+}

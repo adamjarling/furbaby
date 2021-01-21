@@ -20,6 +20,11 @@ var socialMedia = [
     icon: <FaSpotify />,
   },
   {
+    service: "Facebook",
+    url: "https://www.facebook.com/furBabyAndtheTightSpaces",
+    icon: <FaFacebook />,
+  },
+  {
     service: "Apple Music",
     url: "https://music.apple.com/us/artist/furbaby/1520136448",
     icon: <FaItunes />,
@@ -34,11 +39,7 @@ var socialMedia = [
     url: "https://www.youtube.com/channel/UCSoulFKYB6zGzHhbV-rkPzg",
     icon: <FaYoutube />,
   },
-  {
-    service: "Facebook",
-    url: "https://www.facebook.com/adam.arling",
-    icon: <FaFacebook />,
-  },
+
   {
     service: "YouTube Music",
     url:
@@ -97,7 +98,9 @@ export default function Navbar() {
         <div className="navbar-end">
           {socialMedia
             .filter(item =>
-              ["Spotify", "Instagram", "YouTube"].includes(item.service)
+              ["Spotify", "Facebook", "Instagram", "YouTube"].includes(
+                item.service
+              )
             )
             .map(sm => (
               <div key={sm.service} className="navbar-item">

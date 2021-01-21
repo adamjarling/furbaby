@@ -102,12 +102,27 @@ export default function AlbumsAnimated() {
           }
         }
       }
+
+      waiting: file(
+        sourceInstanceName: { eq: "images" }
+        relativePath: { eq: "waiting-album-art.jpg" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 1000, quality: 80) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
-  const { reachingOut, behindTheDoor, cocoa, boxedIn } = data
+  const { reachingOut, behindTheDoor, cocoa, boxedIn, waiting } = data
 
   const albums = [
+    {
+      fluid: data.waiting.childImageSharp.fluid,
+      to: "/singles/waiting",
+    },
     {
       fluid: data.iCanOnlyGiveYouEverything.childImageSharp.fluid,
       to: "/singles/i-can-only-give-you-everything",
