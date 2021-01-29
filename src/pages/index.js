@@ -4,12 +4,18 @@ import SEO from "../components/seo"
 import InspiredBy from "../components/InspiredBy"
 import HeroSplash1 from "../components/heros/Splash1"
 import AlbumsAnimated from "../components/AlbumsAnimated"
+import Press2021NwiTimes from "../components/news/2021-nwitimes"
 
 const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
       <HeroSplash1 />
+      {/* <section className="section">
+        <div className="container">
+          <Press2021NwiTimes />
+        </div>
+      </section> */}
       <div className="mt-4">
         <AlbumsAnimated />
       </div>
