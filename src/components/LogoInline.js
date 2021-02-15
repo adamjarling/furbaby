@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 export default function LogoInline() {
   var data = useStaticQuery(graphql`
     query {
-      logo: file(relativePath: { eq: "furbaby-handwriting-logo-white.png" }) {
+      logo: file(relativePath: { eq: "furbaby-tight-spaces-logo.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 500, grayscale: false) {
             ...GatsbyImageSharpFluid_withWebp
@@ -18,7 +18,7 @@ export default function LogoInline() {
   return (
     <Img
       fluid={data.logo.childImageSharp.fluid}
-      style={{ display: "inline-block", width: "120px" }}
+      style={{ display: "inline-block", width: "220px" }}
     />
   )
 }

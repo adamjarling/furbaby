@@ -6,7 +6,6 @@ import Img from "gatsby-image"
 import { iCanOnlyGiveYouEverything } from "../music-release-manifest"
 
 function Album({ fluid, to }) {
-  console.log("Album to", to)
   const [state, toggle] = React.useState(true)
   const { x } = useSpring({
     from: { x: 0 },
@@ -25,22 +24,27 @@ function Album({ fluid, to }) {
     100 % { transform: scale(1); }
 `*/
   return (
-    <div className="column is-half" onMouseEnter={() => toggle(!state)}>
-      <animated.div
-        style={{
-          opacity: x.interpolate({ range: [0, 1], output: [0.7, 1] }),
-          transform: x
-            .interpolate({
-              range: [0, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 1],
-              output: [1, 0.97, 0.9, 1.1, 0.9, 1.1, 1.03, 1],
-            })
-            .interpolate(x => `scale(${x})`),
-        }}
-      >
-        <Link to={to}>
-          <Img fluid={fluid} />
-        </Link>
-      </animated.div>
+    // <div className="column is-half" onMouseEnter={() => toggle(!state)}>
+    //   <animated.div
+    //     style={{
+    //       opacity: x.interpolate({ range: [0, 1], output: [0.7, 1] }),
+    //       transform: x
+    //         .interpolate({
+    //           range: [0, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 1],
+    //           output: [1, 0.97, 0.9, 1.1, 0.9, 1.1, 1.03, 1],
+    //         })
+    //         .interpolate(x => `scale(${x})`),
+    //     }}
+    //   >
+    //     <Link to={to}>
+    //       <Img fluid={fluid} />
+    //     </Link>
+    //   </animated.div>
+    // </div>
+    <div className="column is-half hvr-grow-rotate">
+      <Link to={to}>
+        <Img fluid={fluid} className="bright-hover" />
+      </Link>
     </div>
   )
 }

@@ -25,6 +25,13 @@ figcaption {
   font-size: $size-7;
 }
 
+.bright-hover {
+  opacity: 0.9;
+  :hover {
+    opacity: 1;
+  }
+}
+
 .button {
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -79,7 +86,7 @@ figcaption {
   align-items: flex-start;
 
   .logo {
-    width: 200px;
+    width: 268px;
   }
 }
 

@@ -5,6 +5,8 @@ import InspiredBy from "../components/InspiredBy"
 import HeroSplash1 from "../components/heros/Splash1"
 import AlbumsAnimated from "../components/AlbumsAnimated"
 import Press2021NwiTimes from "../components/news/2021-nwitimes"
+import NewSection from "../components/news/Section"
+import NewsSection from "../components/news/Section"
 
 const IndexPage = ({ data }) => {
   return (
@@ -16,6 +18,7 @@ const IndexPage = ({ data }) => {
           <Press2021NwiTimes />
         </div>
       </section> */}
+      <NewsSection />
       <div className="mt-4">
         <AlbumsAnimated />
       </div>
