@@ -96,6 +96,17 @@ export default function AlbumsAnimated() {
         }
       }
 
+      nextYear: file(
+        sourceInstanceName: { eq: "images" }
+        relativePath: { eq: "next-year-album-art-v2-sharp.jpg" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 1000, quality: 80) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
       reachingOut: file(
         sourceInstanceName: { eq: "images" }
         relativePath: { eq: "reaching-out-album-art-v2.jpg" }
@@ -120,9 +131,13 @@ export default function AlbumsAnimated() {
     }
   `)
 
-  const { reachingOut, behindTheDoor, cocoa, boxedIn, waiting } = data
+  const { reachingOut, behindTheDoor, cocoa, boxedIn, nextYear, waiting } = data
 
   const albums = [
+    {
+      fluid: data.nextYear.childImageSharp.fluid,
+      to: "/singles/next-year",
+    },
     {
       fluid: data.waiting.childImageSharp.fluid,
       to: "/singles/waiting",
