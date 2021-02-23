@@ -4,27 +4,27 @@ import { useStaticQuery, graphql } from "gatsby"
 import { FaSpotify, FaAmazon, FaGooglePlay, FaApple } from "react-icons/fa"
 import SinglesPRBox from "../SinglesPRBox"
 import ExternalLink from "../../components/ExternalLink"
-import { waiting } from "../../music-release-manifest"
+import { nextYear } from "../../music-release-manifest"
 
 export const musicSources = [
   {
     label: "Spotify",
-    url: waiting.spotify,
+    url: nextYear.spotify,
     icon: <FaSpotify />,
   },
   {
     label: "Apple Music",
-    url: waiting.appleMusic,
+    url: nextYear.appleMusic,
     icon: <FaApple />,
   },
   {
     label: "YouTube Music",
-    url: waiting.youTubeMusic,
+    url: nextYear.youTubeMusic,
     icon: <FaGooglePlay />,
   },
   {
     label: "Amazon Music",
-    url: waiting.amazonMusic,
+    url: nextYear.amazonMusic,
     icon: <FaAmazon />,
   },
 ]

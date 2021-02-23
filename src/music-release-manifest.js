@@ -39,6 +39,16 @@ export const iCanOnlyGiveYouEverything = {
   youTubeMusic: "https://music.youtube.com/watch?v=pSCeBgvsXFQ&feature=share",
 }
 
+export const nextYear = {
+  amazonMusic: "https://www.amazon.com/Next-Year/dp/B08WCM1VW7",
+  appleMusic: "https://music.apple.com/us/album/next-year-single/1552984262",
+  coverFileTitle: "next-year-album-art-v2-sharp.jpg",
+  spotify:
+    "https://open.spotify.com/album/0ZTaXZhsM6e6uhvntzjPHO?si=yN4wYy85R7mfN7wlXzDkmw",
+  youTubeId: "",
+  youTubeMusic: "https://music.youtube.com/watch?v=v3Uh66fr2Yc&feature=share",
+}
+
 export const reachingOut = {
   amazonMusic:
     "https://www.amazon.com/Reaching-Out-For-Higher-Ground/dp/B08LC6H6YW",
