@@ -8,6 +8,7 @@ import {
   cocoa,
   boxedIn,
   iCanOnlyGiveYouEverything,
+  nextYear,
   reachingOut,
   waiting,
 } from "../music-release-manifest"
@@ -23,6 +24,14 @@ const VideosPage = ({ data }) => (
     <section className="section">
       <div className="container">
         <h1 className="title is-sr-only">Videos</h1>
+
+        <VideoWrapper>
+          <h2 className="title is-size-2 has-text-centered">Next Year</h2>
+          <VideoResponsive
+            url={`https://www.youtube.com/embed/${nextYear.youTubeId}`}
+            title="Next Year by FURBABY and the Tight Spaces"
+          />
+        </VideoWrapper>
 
         <VideoWrapper>
           <h2 className="title is-size-2 has-text-centered">Waiting</h2>

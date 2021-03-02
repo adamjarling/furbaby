@@ -53,6 +53,16 @@ export default function PressKitMusic() {
           }
         }
       }
+      nextYear: file(
+        sourceInstanceName: { eq: "images" }
+        relativePath: { eq: "next-year-album-art-v2-sharp.jpg" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 1600, quality: 80, grayscale: false) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       promoPhotoBox: file(
         sourceInstanceName: { eq: "images" }
         relativePath: { eq: "photo-box-lake.jpg" }
@@ -101,37 +111,43 @@ export default function PressKitMusic() {
       <h2 className="title">Music</h2>
       <div className="columns is-multiline">
         <div className="column content is-one-third">
-          <Link to="singles/waiting">
+          <Link to="/singles/next-year">
+            <Img fluid={data.nextYear.childImageSharp.fluid} />
+          </Link>
+          {/* <DownloadAudioButton fileStr={waitingAudio} /> */}
+        </div>
+        <div className="column content is-one-third">
+          <Link to="/singles/waiting">
             <Img fluid={data.waiting.childImageSharp.fluid} />
           </Link>
           <DownloadAudioButton fileStr={waitingAudio} />
         </div>
         <div className="column content is-one-third">
-          <Link to="singles/i-can-only-give-you-everyhing">
+          <Link to="/singles/i-can-only-give-you-everyhing">
             <Img fluid={data.iCanOnlyGiveYouEverything.childImageSharp.fluid} />
           </Link>
           <DownloadAudioButton fileStr={iCanOnlyGiveYou} />
         </div>
         <div className="column content is-one-third">
-          <Link to="singles/reaching-out">
+          <Link to="/singles/reaching-out">
             <Img fluid={data.reachingOut.childImageSharp.fluid} />
           </Link>
           <DownloadAudioButton fileStr={reachingOutWav} />
         </div>
         <div className="column content is-one-third">
-          <Link to="singles/behind-the-door">
+          <Link to="/singles/behind-the-door">
             <Img fluid={data.behindTheDoor.childImageSharp.fluid} />
           </Link>
           <DownloadAudioButton fileStr={behindTheDoorWav} />
         </div>
         <div className="column content is-one-third">
-          <Link to="singles/cocoa">
+          <Link to="/singles/cocoa">
             <Img fluid={data.cocoa.childImageSharp.fluid} />
           </Link>
           <DownloadAudioButton fileStr={cocoaWav} />
         </div>
         <div className="column content is-one-third">
-          <Link to="singles/boxed-in">
+          <Link to="/singles/boxed-in">
             <Img fluid={data.boxedIn.childImageSharp.fluid} />
           </Link>
           <DownloadAudioButton fileStr={boxedInWav} />

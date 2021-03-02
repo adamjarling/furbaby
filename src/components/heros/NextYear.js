@@ -31,10 +31,10 @@ const NextYearHero = ({ className }) => {
         <div className="container has-text-centered">
           <h2 className="title">Next Year</h2>
           <div className="mb-6">
-            {/* <VideoResponsive
-              url={`https://www.youtube.com/embed/${waiting.youTubeId}`}
+            <VideoResponsive
+              url={`https://www.youtube.com/embed/${nextYear.youTubeId}`}
               title="Waiting by FURBABY and the Tight Spaces"
-            /> */}
+            />
           </div>
           <div className="pb-6">
             <SinglesNextYear />

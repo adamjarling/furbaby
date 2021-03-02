@@ -45,7 +45,7 @@ export const nextYear = {
   coverFileTitle: "next-year-album-art-v2-sharp.jpg",
   spotify:
     "https://open.spotify.com/album/0ZTaXZhsM6e6uhvntzjPHO?si=yN4wYy85R7mfN7wlXzDkmw",
-  youTubeId: "",
+  youTubeId: "9jNy5Kvsi68",
   youTubeMusic: "https://music.youtube.com/watch?v=v3Uh66fr2Yc&feature=share",
 }
 

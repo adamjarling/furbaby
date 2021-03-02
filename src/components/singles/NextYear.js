@@ -75,14 +75,62 @@ export default function SinglesNextYear() {
               For Immediate Release - February 22, 2021
             </h3>
             <p>
-              Official FURBABY and the TIGHT SPACES "Next Year (say I love you
-              like I should)" video/single out now.
+              Official FURBABY and the TIGHT SPACES "Next Year" video/single out
+              now.
             </p>
+
             <p>
-              I don't have anything clever yet for context around the single,
-              except we pulled Bryan Wilkinson into the mix for some mean guitar
-              on this one, alongside Joe Winters and Calvin Marty. The band that
-              isn't a band is sounding tight!
+              Written and recorded in January, "Next Year" reflects on the
+              time-honored tradition of crafting New Years intentions as one
+              year ends and a new begins. And then mid-January, as Next Year
+              fast becomes This Year, what was it you said you were going to do
+              Next Year? What's holding us back from acting on these intentions
+              in the past, or the present? How/why are we conditioned to think
+              ahead and perhaps overlook being present in the moment? Man, we
+              live in a busy world.
+            </p>
+
+            <p>
+              Notwithstanding such existential crisis, the most dangerous band
+              that's not a band in the land, The Tight Spaces, is back and roped
+              in a new contributor. You may know Bryan Wilkinson from his tenure
+              in Chicago punk icons{" "}
+              <ExternalLink url="https://www.facebook.com/blackactresschicago/">
+                Black Actress
+              </ExternalLink>
+              , guitar slinger in{" "}
+              <ExternalLink url="https://thelastvegas.com">
+                The Last Vegas
+              </ExternalLink>
+              , touring the world working lasers w/{" "}
+              <ExternalLink url="https://toolband.com/">Tool</ExternalLink>, or
+              capturing the world via photographs as{" "}
+              <ExternalLink url="https://www.instagram.com/isolated.eyes/?hl=en">
+                Isolated Eyes
+              </ExternalLink>
+              . BW tore it up on lead guitar and his signature smooth vocals.
+            </p>
+
+            <p>
+              And on drums... rocking Keith Moon fills is Joe Winters of
+              Steepwater Band fame, holding it d-o-w-n and getting a little
+              crazy. Thanks Tony Maietta for capturing the magic, engineering
+              drums at The Ranch.
+            </p>
+
+            <p>
+              Calvin Marty comes through again big time with some tasty Abbey
+              Road vibe piano parts and vocals. The chimey and percussive
+              approach give the track an extra layer of rhythm and melody that
+              guitar alone can't do.
+            </p>
+
+            <p>
+              The funny thing is that everyone recorded their parts remotely (I
+              don't even know where besides The Ranch), to only drums, one
+              scratch guitar and a half-baked vocal track. When mixing, it all
+              just mysteriously fit together with no overlap. Bizarre, but maybe
+              we'll do it the "right" way....next year.
             </p>
           </div>
           <div className="column is-one-third">
@@ -99,6 +147,10 @@ export default function SinglesNextYear() {
               <ul>
                 <li>
                   Filming &amp; Editing:{" "}
+                  <ExternalLink url="https://www.instagram.com/stories/thebryanw/2519994367008475573/">
+                    Bryan Wilkinson
+                  </ExternalLink>
+                  , <ExternalLink url="">Joe Winters</ExternalLink>,
                   <ExternalLink url="https://www.instagram.com/caseymurtaugh/?hl=en">
                     Casey Murtaugh
                   </ExternalLink>{" "}
