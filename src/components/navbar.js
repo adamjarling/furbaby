@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa"
 import { Link } from "gatsby"
 import Obfuscate from "react-obfuscate"
-import logo from "../images/furbaby-tight-spaces-logo.png"
+import logo from "../images/f-and-ts-logo.png"
 
 var socialMedia = [
   {

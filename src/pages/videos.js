@@ -26,7 +26,7 @@ const VideosPage = ({ data }) => (
         <h1 className="title is-sr-only">Videos</h1>
 
         <VideoWrapper>
-          <h2 className="title is-size-2 has-text-centered">Next Year</h2>
+          <h2 className="title is-size-2 has-text-centered mt-6">Next Year</h2>
           <VideoResponsive
             url={`https://www.youtube.com/embed/${nextYear.youTubeId}`}
             title="Next Year by FURBABY and the Tight Spaces"

@@ -1,7 +1,7 @@
 import React from "react"
 import ExternalLink from "../../components/ExternalLink"
 import Obfuscate from "react-obfuscate"
-import styled from "styled-components"
+import FandTS from "../FandTS"
 
 function PressKitBio(props) {
   return (
@@ -9,15 +9,15 @@ function PressKitBio(props) {
       <h2 className="title">Bio</h2>
       <div className="content">
         <p>
-          <strong>furBaby and the Tight Spaces</strong> is an alt/garage/psych
-          side-project hatched for the 2020s. It's a vehicle for experimenting
-          with music, videos, photography and reflecting what's going on in a
-          world that just got fast-forwarded into the future.
+          <FandTS /> is an alt/garage/psych side-project hatched for the 2020s.
+          It's a vehicle for experimenting with music, videos, photography and
+          reflecting what's going on in a world that just got fast-forwarded
+          into the future.
         </p>
         <p>
-          <strong>furBaby and the Tight Spaces</strong> records demos, reads,
-          does yoga, drinks wine and takes long walks on the beach in the
-          diverse, arts-centric Rogers Park neighborhood of Chicago USA.
+          <FandTS /> records demos, reads, does yoga, drinks wine and takes long
+          walks on the beach in the diverse, arts-centric Rogers Park
+          neighborhood of Chicago USA.
         </p>
         <p className="is-italic">
           "When things shut down in the USA in March 2020, everyone had a lot of
@@ -27,8 +27,7 @@ function PressKitBio(props) {
         </p>
 
         <p>
-          In past and current lives furBaby and the Tight Spaces have toured
-          and/or recorded with{" "}
+          In past and current lives <FandTS /> have toured and/or recorded with{" "}
           <ExternalLink url="https://thelastvegas.com">
             The Last Vegas
           </ExternalLink>
@@ -65,8 +64,8 @@ function PressKitBio(props) {
           others.
         </p>
         <p>
-          <strong>furBaby and the Tight Spaces</strong> may or may not play
-          live, but if so it'd be nice to do a little tour of Spain.{" "}
+          <FandTS /> may or may not play live, but if so it'd be nice to do a
+          little tour of Spain.{" "}
           <Obfuscate
             email="aarling@gmail.com"
             headers={{

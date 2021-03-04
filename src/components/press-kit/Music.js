@@ -10,6 +10,10 @@ import reachingOutWav from "../../assets/reaching-out-(higher-ground)_44.1k_16bi
 import iCanOnlyGiveYou from "../../assets/i-can-only-give-u_44.1k_16bit-master2.wav"
 import waitingAudio from "../../assets/waiting_44.1k_16bit-master5.wav"
 
+const SingleWrapper = ({ children }) => (
+  <div className="column content is-one-third bright-hover">{children}</div>
+)
+
 export default function PressKitMusic() {
   var data = useStaticQuery(graphql`
     query {
@@ -110,48 +114,47 @@ export default function PressKitMusic() {
     <>
       <h2 className="title">Music</h2>
       <div className="columns is-multiline">
-        <div className="column content is-one-third">
+        <SingleWrapper>
           <Link to="/singles/next-year">
             <Img fluid={data.nextYear.childImageSharp.fluid} />
           </Link>
-          {/* <DownloadAudioButton fileStr={waitingAudio} /> */}
-        </div>
-        <div className="column content is-one-third">
+        </SingleWrapper>
+        <SingleWrapper>
           <Link to="/singles/waiting">
             <Img fluid={data.waiting.childImageSharp.fluid} />
           </Link>
           <DownloadAudioButton fileStr={waitingAudio} />
-        </div>
-        <div className="column content is-one-third">
+        </SingleWrapper>
+        <SingleWrapper>
           <Link to="/singles/i-can-only-give-you-everyhing">
             <Img fluid={data.iCanOnlyGiveYouEverything.childImageSharp.fluid} />
           </Link>
           <DownloadAudioButton fileStr={iCanOnlyGiveYou} />
-        </div>
-        <div className="column content is-one-third">
+        </SingleWrapper>
+        <SingleWrapper>
           <Link to="/singles/reaching-out">
             <Img fluid={data.reachingOut.childImageSharp.fluid} />
           </Link>
           <DownloadAudioButton fileStr={reachingOutWav} />
-        </div>
-        <div className="column content is-one-third">
+        </SingleWrapper>
+        <SingleWrapper>
           <Link to="/singles/behind-the-door">
             <Img fluid={data.behindTheDoor.childImageSharp.fluid} />
           </Link>
           <DownloadAudioButton fileStr={behindTheDoorWav} />
-        </div>
-        <div className="column content is-one-third">
+        </SingleWrapper>
+        <SingleWrapper>
           <Link to="/singles/cocoa">
             <Img fluid={data.cocoa.childImageSharp.fluid} />
           </Link>
           <DownloadAudioButton fileStr={cocoaWav} />
-        </div>
-        <div className="column content is-one-third">
+        </SingleWrapper>
+        <SingleWrapper>
           <Link to="/singles/boxed-in">
             <Img fluid={data.boxedIn.childImageSharp.fluid} />
           </Link>
           <DownloadAudioButton fileStr={boxedInWav} />
-        </div>
+        </SingleWrapper>
       </div>
     </>
   )

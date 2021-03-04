@@ -26,8 +26,9 @@ figcaption {
 }
 
 .bright-hover {
-  opacity: 0.9;
-  :hover {
+  opacity: 0.7;
+  transition: 1s;
+  &:hover {
     opacity: 1;
   }
 }
