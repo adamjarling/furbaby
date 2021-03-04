@@ -12,10 +12,6 @@ import PressKitPhotos from "../components/press-kit/Photos"
 import DownloadAudioButton from "../components/DownloadAudioButton"
 import waitingAudio from "../assets/waiting_44.1k_16bit-master5.wav"
 
-const Furbaby = styled.span`
-  text-transform: uppercase;
-`
-
 const PressKitPage = ({ data }) => (
   <Layout>
     <SEO title="Press Kit" />

@@ -5,12 +5,17 @@ import styled, { css } from "styled-components"
 
 const background = css`
   background: rgba(0, 0, 0, 0.6);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   color: white;
   display: inline-block;
 `
 const Title = styled.span`
   ${background}
+  font-size: 7rem;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 3rem;
+  }
 `
 const Subtitle = styled.span`
   ${background}

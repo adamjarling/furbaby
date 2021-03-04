@@ -88,6 +88,9 @@ figcaption {
 
   .logo {
     width: 268px;
+    @media only screen and (max-width: 600px) {
+      width: 150px;
+    }
   }
 }
 
