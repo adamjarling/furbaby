@@ -40,7 +40,9 @@ export default function MailingListSignup() {
             />
           </div>
           <div className="control">
-            <button className="button is-dark">Join the mailing list</button>
+            <button className="button is-dark is-size-7-mobile">
+              Join the mailing list
+            </button>
           </div>
         </div>
       </form>

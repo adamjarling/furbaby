@@ -6,6 +6,16 @@ import { useStaticQuery, graphql } from "gatsby"
 export default function PressKitPhotos() {
   var data = useStaticQuery(graphql`
     query {
+      nextYear: file(
+        sourceInstanceName: { eq: "images" }
+        relativePath: { eq: "next-year-video-cover.jpg" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 1600, quality: 70, grayscale: false) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       polkaDot: file(
         sourceInstanceName: { eq: "images" }
         relativePath: { eq: "polka-dot-lava-furbaby.jpg" }
@@ -46,6 +56,11 @@ export default function PressKitPhotos() {
         <div className="column">
           <Img fluid={data.polkaDot.childImageSharp.fluid} />
           <DownloadPhoto fileStr={data.polkaDot.childImageSharp.fluid.src} />
+        </div>
+
+        <div className="column">
+          <Img fluid={data.nextYear.childImageSharp.fluid} />
+          <DownloadPhoto fileStr={data.nextYear.childImageSharp.fluid.src} />
         </div>
 
         <div className="column">

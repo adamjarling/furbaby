@@ -14,8 +14,14 @@ import {
 } from "../music-release-manifest"
 
 const VideoWrapper = styled.div`
-  padding: 1rem 0 8rem;
+  padding: 1rem 0 2rem;
 `
+
+const Title = ({ children }) => (
+  <h2 className="title is-size-2 is-size-4-mobile has-text-centered">
+    {children}
+  </h2>
+)
 
 const VideosPage = ({ data }) => (
   <Layout>
@@ -26,7 +32,7 @@ const VideosPage = ({ data }) => (
         <h1 className="title is-sr-only">Videos</h1>
 
         <VideoWrapper>
-          <h2 className="title is-size-2 has-text-centered mt-6">Next Year</h2>
+          <Title>Next Year</Title>
           <VideoResponsive
             url={`https://www.youtube.com/embed/${nextYear.youTubeId}`}
             title="Next Year by FURBABY and the Tight Spaces"
@@ -34,7 +40,7 @@ const VideosPage = ({ data }) => (
         </VideoWrapper>
 
         <VideoWrapper>
-          <h2 className="title is-size-2 has-text-centered">Waiting</h2>
+          <Title>Waiting</Title>
           <VideoResponsive
             url={`https://www.youtube.com/embed/${waiting.youTubeId}`}
             title="Waiting by FURBABY and the Tight Spaces"
@@ -42,9 +48,7 @@ const VideosPage = ({ data }) => (
         </VideoWrapper>
 
         <VideoWrapper>
-          <h2 className="title is-size-2 has-text-centered">
-            I Can Only Give You Everything
-          </h2>
+          <Title>I Can Only Give You Everything</Title>
           <VideoResponsive
             url={`https://www.youtube.com/embed/${iCanOnlyGiveYouEverything.youTubeId}`}
             title="I Can Only Give You Everything by FURBABY"
@@ -52,9 +56,7 @@ const VideosPage = ({ data }) => (
         </VideoWrapper>
 
         <VideoWrapper>
-          <h2 className="title is-size-2 has-text-centered">
-            Reaching Out (For Higher Ground)
-          </h2>
+          <Title>Reaching Out (For Higher Ground)</Title>
           <VideoResponsive
             url={`https://www.youtube.com/embed/${reachingOut.youTubeId}`}
             title="Reaching Out (For Higher Ground) by FURBABY"
@@ -62,7 +64,7 @@ const VideosPage = ({ data }) => (
         </VideoWrapper>
 
         <VideoWrapper>
-          <h2 className="title is-size-2 has-text-centered">Behind The Door</h2>
+          <Title>Behind The Door</Title>
           <VideoResponsive
             url={`https://www.youtube.com/embed/${behindTheDoor.youTubeId}`}
             title="Behind The Door by FURBABY"
@@ -70,7 +72,7 @@ const VideosPage = ({ data }) => (
         </VideoWrapper>
 
         <VideoWrapper>
-          <h2 className="title is-size-2 has-text-centered">Cocoa</h2>
+          <Title>Cocoa</Title>
           <VideoResponsive
             url={`https://www.youtube.com/embed/${cocoa.youTubeId}`}
             title="Cocoa by FURBABY"
@@ -78,14 +80,14 @@ const VideosPage = ({ data }) => (
         </VideoWrapper>
 
         <VideoWrapper>
-          <h2 className="title is-size-2 has-text-centered">Boxed In</h2>
+          <Title>Boxed In</Title>
           <VideoResponsive
             url={`https://www.youtube.com/embed/${boxedIn.youTubeId}`}
             title="Boxed In by FURBABY"
           />
         </VideoWrapper>
 
-        <h2 className="title is-size-2 has-text-centered">Promo Videos</h2>
+        <h2 className="title is-size-2 has-text-centered mt-6">Promo Videos</h2>
         <div className="columns is-multiline">
           <div className="column is-half">
             <VideoResponsive

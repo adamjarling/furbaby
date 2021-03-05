@@ -5,24 +5,33 @@ import InspiredBy from "../components/InspiredBy"
 import HeroSplash1 from "../components/heros/Splash1"
 import AlbumsAnimated from "../components/AlbumsAnimated"
 import Press2021NwiTimes from "../components/news/2021-nwitimes"
-import NewSection from "../components/news/Section"
-import NewsSection from "../components/news/Section"
+import FandTS from "../components/FandTS"
 
 const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
       <HeroSplash1 />
-      {/* <section className="section">
-        <div className="container">
-          <Press2021NwiTimes />
+      <section className="section">
+        <div className="container content">
+          {/* <Press2021NwiTimes /> */}
+          {/* <p>
+            <FandTS /> records demos, reads, does yoga, drinks wine and takes
+            long walks on the beach in Chicago USA.
+          </p> */}
+          <p>
+            <FandTS /> is an alt/garage/psych art project band that reflects
+            what's going on in a world that just got fast-forwarded into the
+            future.
+          </p>
+          <p>Enjoy the jams!</p>
         </div>
-      </section> */}
-      <NewsSection />
+      </section>
+
       <div className="mt-4">
         <AlbumsAnimated />
       </div>
-      {/* <InspiredBy /> */}
+      <InspiredBy />
     </Layout>
   )
 }

@@ -113,7 +113,9 @@ export default function Footer() {
             <FaEnvelope />
           </span>
         </Obfuscate>
-        <p>© {new Date().getFullYear()}. Made in Chicago, USA</p>
+        <p className="is-size-7-mobile">
+          © {new Date().getFullYear()}. Made in Chicago, USA
+        </p>
       </div>
     </footer>
   )

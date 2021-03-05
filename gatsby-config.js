@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     url: "https://www.furbaby.rocks/",
-    title: `Furbaby garage rock art project`,
-    description: `FURBABY is a garage rock experiment for the 2020s, fronted by Chicago musician Adam J. Arling.`,
+    title: `Furbaby and the Tight Spaces - garage rock art project`,
+    description: `FURBABY and the TIGHT SPACES is a garage rock experiment for the 2020s, fronted by Chicago musician Adam J. Arling.`,
     author: `Adam J. Arling`,
     distributors: {
       amazonMusic: `https://music.amazon.com/artists/B08BR4TXGF/furbaby?marketplaceId=ATVPDKIKX0DER&musicTerritory=US`,

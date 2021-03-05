@@ -9,22 +9,21 @@ function PressKitBio(props) {
       <h2 className="title">Bio</h2>
       <div className="content">
         <p>
-          <FandTS /> is an alt/garage/psych side-project hatched for the 2020s.
-          It's a vehicle for experimenting with music, videos, photography and
-          reflecting what's going on in a world that just got fast-forwarded
-          into the future.
+          <FandTS /> records demos, reads, does yoga, drinks wine and takes long
+          walks on the beach in Chicago USA.
         </p>
         <p>
-          <FandTS /> records demos, reads, does yoga, drinks wine and takes long
-          walks on the beach in the diverse, arts-centric Rogers Park
-          neighborhood of Chicago USA.
+          <FandTS /> is an alt/garage/psych art project hatched for the 2020s.
+          The band experiments with music, videos, photography and reflects
+          what's going on in a world that just got fast-forwarded into the
+          future.
         </p>
-        <p className="is-italic">
-          "When things shut down in the USA in March 2020, everyone had a lot of
-          time on their hands. After being an active musician for years on end,
-          it was a chance to sit down with some ideas and flesh 'em out. Trying
-          different tones, textures, ways of writing. Saying "why not?" a lot."
-        </p>
+        {/* <p className="is-italic">
+          "There once was a year where everyone had a lot of time on their
+          hands. For all the musicians out there, why not finish up old demos
+          and write a lot of new stuff? Total no pressure way to try different
+          tones, textures, lyrics and saying "why not?" a lot."
+        </p> */}
 
         <p>
           In past and current lives <FandTS /> have toured and/or recorded with{" "}

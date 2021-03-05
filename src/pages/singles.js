@@ -4,18 +4,12 @@ import SEO from "../components/seo"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 import AlbumsAnimated from "../components/AlbumsAnimated"
+import HeroSingles from "../components/heros/Singles"
 
 const SinglesPage = ({ data }) => (
   <Layout>
     <SEO title="Singles" />
-    <section className="section">
-      <div className="container mt-6">
-        <h1 className="title">Singles</h1>
-        <p className="subtitle">
-          A new single every month until life returns to normal?
-        </p>
-      </div>
-    </section>
+    <HeroSingles />
 
     <section className="section">
       <AlbumsAnimated />
