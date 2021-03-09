@@ -14,7 +14,7 @@ import waitingAudio from "../assets/waiting_44.1k_16bit-master5.wav"
 
 const PressKitPage = ({ data }) => (
   <Layout>
-    <SEO title="Press Kit" />
+    <SEO title="Press Kit - - Furbaby and the Tight Spaces" />
     <HeroPressKit />
     <section className="section">
       <div className="container">

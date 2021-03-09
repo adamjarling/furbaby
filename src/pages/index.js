@@ -10,7 +10,7 @@ import FandTS from "../components/FandTS"
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Home - Furbaby and the Tight Spaces" />
       <HeroSplash1 />
       <section className="section">
         <div className="container content">
@@ -19,12 +19,14 @@ const IndexPage = ({ data }) => {
             <FandTS /> records demos, reads, does yoga, drinks wine and takes
             long walks on the beach in Chicago USA.
           </p> */}
-          <p>
-            <FandTS /> is an alt/garage/psych art project band that reflects
-            what's going on in a world that just got fast-forwarded into the
-            future.
-          </p>
-          <p>Enjoy the jams!</p>
+          <div className="columns is-mobile is-centered">
+            <div className="column is-three-fifths">
+              <p className="is-size-3 has-text-centered">
+                <FandTS /> is an alt/garage/psych art-project band for a world
+                fast-forwarded into the future.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

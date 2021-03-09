@@ -26,9 +26,14 @@ function PressKitBio(props) {
         </p> */}
 
         <p>
-          In past and current lives <FandTS /> have toured and/or recorded with{" "}
+          In past and current lives <FandTS /> have played, toured-in, and/or
+          recorded with{" "}
           <ExternalLink url="https://thelastvegas.com">
             The Last Vegas
+          </ExternalLink>
+          ,{" "}
+          <ExternalLink url="https://www.steepwater.com/">
+            The Steepwater Band
           </ExternalLink>
           ,{" "}
           <ExternalLink url="https://urgeoverkill.com/">
@@ -64,9 +69,9 @@ function PressKitBio(props) {
         </p>
         <p>
           <FandTS /> may or may not play live, but if so it'd be nice to do a
-          little tour of Spain.{" "}
+          little tour of Europe.{" "}
           <Obfuscate
-            email="aarling@gmail.com"
+            email="furbabyferguson@gmail.com"
             headers={{
               subject: "Email from Furbaby.rocks",
             }}
@@ -75,8 +80,8 @@ function PressKitBio(props) {
           </Obfuscate>
         </p>
         <p>
-          Coming up...10 singles &amp; accompanying videos over the next few
-          months.
+          Coming up...continued recording of a "slow album", 10 singles &amp;
+          accompanying videos released once a month.
         </p>
       </div>
     </>

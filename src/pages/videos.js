@@ -25,19 +25,21 @@ const Title = ({ children }) => (
 
 const VideosPage = ({ data }) => (
   <Layout>
-    <SEO title="Videos" />
+    <SEO title="Videos - Furbaby and the Tight Spaces" />
 
     <section className="section">
       <div className="container">
         <h1 className="title is-sr-only">Videos</h1>
 
-        <VideoWrapper>
-          <Title>Next Year</Title>
-          <VideoResponsive
-            url={`https://www.youtube.com/embed/${nextYear.youTubeId}`}
-            title="Next Year by FURBABY and the Tight Spaces"
-          />
-        </VideoWrapper>
+        <div className="mt-4">
+          <VideoWrapper>
+            <Title>Next Year</Title>
+            <VideoResponsive
+              url={`https://www.youtube.com/embed/${nextYear.youTubeId}`}
+              title="Next Year by FURBABY and the Tight Spaces"
+            />
+          </VideoWrapper>
+        </div>
 
         <VideoWrapper>
           <Title>Waiting</Title>

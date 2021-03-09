@@ -6,5 +6,5 @@ const Furbaby = styled.span`
 `
 
 export default function FandTS() {
-  return <Furbaby>FURBABY &amp; The TIGHT SPACES</Furbaby>
+  return <Furbaby>FURBABY &amp; the TIGHT SPACES</Furbaby>
 }

@@ -8,7 +8,7 @@ import HeroSingles from "../components/heros/Singles"
 
 const SinglesPage = ({ data }) => (
   <Layout>
-    <SEO title="Singles" />
+    <SEO title="Singles - Furbaby and the Tight Spaces" />
     <HeroSingles />
 
     <section className="section">
