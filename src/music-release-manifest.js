@@ -5,6 +5,8 @@ export const behindTheDoor = {
   youTubeMusic:
     "https://play.google.com/store/music/album/Furbaby_Behind_the_Door?id=B7q2zo3uyqqw3lrol32rbq23vc4",
   spotify: "https://open.spotify.com/album/21kD3vVagNLZjO0qI5t96v",
+  wav:
+    "https://drive.google.com/file/d/1N8ZIxEHX7jQpQK2kGmbrEHGsaIwIeSl0/view?usp=sharing",
   youTubeId: "eT_O6nHaa58",
 }
 
@@ -14,6 +16,8 @@ export const boxedIn = {
   youTubeMusic: "https://music.youtube.com/watch?v=P_JNbFp2-DU&feature=share",
   spotify:
     "https://open.spotify.com/album/0Lcf5Z0R7d0ScKJ2Wm0Pl7?si=WqeYgVAoTTWQQ_E6Ee4itA",
+  wav:
+    "https://drive.google.com/file/d/1P4-LZJ3Zils__1Al1cbz4PzRCG1loqKg/view?usp=sharing",
   youTubeId: "piCdPUIlJlw",
 }
 
@@ -24,6 +28,8 @@ export const cocoa = {
     "https://play.google.com/store/music/album/Furbaby_Cocoa?id=Bxfjxlvr7uqh5ismdtyo5ftrp2e",
   spotify:
     "https://open.spotify.com/album/2BUiOdFxCOYRRt2sWUj2Bk?si=PpTgsQeeSeOrE8HoVpL2cg",
+  wav:
+    "https://drive.google.com/file/d/1AlTyd7anINoin_t3Sv3NJVu9b52TRBMY/view?usp=sharing",
   youTubeId: "5bRFZN4X_3g",
 }
 
@@ -35,6 +41,8 @@ export const iCanOnlyGiveYouEverything = {
   coverFileTitle: "give-u-everything-album-art-v1.jpg",
   spotify:
     "https://open.spotify.com/album/6hoCZu6E08IzWuLVDfa4qo?si=DbXgxv3wRaWrDXev6MRI4Q",
+  wav:
+    "https://drive.google.com/file/d/15u2BApk2XaZQYeMITNEwJHjEaS2ikR4B/view?usp=sharing",
   youTubeId: "-054IlsCbGQ",
   youTubeMusic: "https://music.youtube.com/watch?v=pSCeBgvsXFQ&feature=share",
 }
@@ -45,6 +53,8 @@ export const nextYear = {
   coverFileTitle: "next-year-album-art-v2-sharp.jpg",
   spotify:
     "https://open.spotify.com/album/0ZTaXZhsM6e6uhvntzjPHO?si=yN4wYy85R7mfN7wlXzDkmw",
+  wav:
+    "https://drive.google.com/file/d/17Ecqw-KDG-0gy0O67QJgG-FlWlk_yYym/view?usp=sharing",
   youTubeId: "9jNy5Kvsi68",
   youTubeMusic: "https://music.youtube.com/watch?v=v3Uh66fr2Yc&feature=share",
 }
@@ -54,6 +64,8 @@ export const reachingOut = {
     "https://www.amazon.com/Reaching-Out-For-Higher-Ground/dp/B08LC6H6YW",
   appleMusic:
     "https://music.apple.com/us/album/reaching-out-for-higher-ground-single/1535390059",
+  wav:
+    "https://drive.google.com/file/d/1IO8bGV1ftSgQ7VMGOu5FbPSI-rHBsrkP/view?usp=sharing",
   youTubeMusic: "https://music.youtube.com/watch?v=vU_-n-9qmPk&feature=share",
   spotify:
     "https://open.spotify.com/album/4Yi5mSplUm16yKifHA4dVh?si=jgQm9E4LR96FfTCGy_NSIw",
@@ -67,5 +79,7 @@ export const waiting = {
   youTubeMusic: "https://music.youtube.com/watch?v=-tcbnRprB_E&feature=share",
   spotify:
     "https://open.spotify.com/album/2DehkhwXjRx1MslSY4yi9R?si=rX6cLldvTU2lgm2zt2MmZA",
+  wav:
+    "https://drive.google.com/file/d/1KGG28quJNrJ700tW1fyOb4zFqz4pHAVI/view?usp=sharing",
   youTubeId: "e05rIyfWE9Y",
 }

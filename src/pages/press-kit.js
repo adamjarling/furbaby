@@ -25,10 +25,14 @@ const PressKitPage = ({ data }) => (
 
           <div className="column is-one-third content">
             <h2 className="title">Latest Release</h2>
-            <Link to="singles/waiting" className="bright-hover">
+            <Link to="/singles/next-year" className="bright-hover">
               <Img fluid={data.nextYear.childImageSharp.fluid} />
             </Link>
-            {/* <DownloadAudioButton fileStr={waitingAudio} /> */}
+            <DownloadAudioButton
+              fileStr={
+                "https://drive.google.com/file/d/17Ecqw-KDG-0gy0O67QJgG-FlWlk_yYym/view?usp=sharing"
+              }
+            />
           </div>
         </div>
 

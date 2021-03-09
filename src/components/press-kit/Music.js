@@ -3,12 +3,15 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 import DownloadAudioButton from "../../components/DownloadAudioButton"
 import { useStaticQuery, graphql } from "gatsby"
-import boxedInWav from "../../assets/boxed-in_44.1k_16bit-master3.wav"
-import cocoaWav from "../../assets/cocoa_44.1k_16bit-master4.wav"
-import behindTheDoorWav from "../../assets/behind-the-door_44.1k_16bit-master4.wav"
-import reachingOutWav from "../../assets/reaching-out-(higher-ground)_44.1k_16bit-master2.wav"
-import iCanOnlyGiveYou from "../../assets/i-can-only-give-u_44.1k_16bit-master2.wav"
-import waitingAudio from "../../assets/waiting_44.1k_16bit-master5.wav"
+import {
+  behindTheDoor,
+  boxedIn,
+  cocoa,
+  iCanOnlyGiveYouEverything,
+  nextYear,
+  reachingOut,
+  waiting,
+} from "../../music-release-manifest"
 
 const SingleWrapper = ({ children }) => (
   <div className="column content is-one-third bright-hover">{children}</div>
@@ -118,42 +121,43 @@ export default function PressKitMusic() {
           <Link to="/singles/next-year">
             <Img fluid={data.nextYear.childImageSharp.fluid} />
           </Link>
+          <DownloadAudioButton fileStr={nextYear.wav} />
         </SingleWrapper>
         <SingleWrapper>
           <Link to="/singles/waiting">
             <Img fluid={data.waiting.childImageSharp.fluid} />
           </Link>
-          <DownloadAudioButton fileStr={waitingAudio} />
+          <DownloadAudioButton fileStr={waiting.wav} />
         </SingleWrapper>
         <SingleWrapper>
           <Link to="/singles/i-can-only-give-you-everyhing">
             <Img fluid={data.iCanOnlyGiveYouEverything.childImageSharp.fluid} />
           </Link>
-          <DownloadAudioButton fileStr={iCanOnlyGiveYou} />
+          <DownloadAudioButton fileStr={iCanOnlyGiveYouEverything.wav} />
         </SingleWrapper>
         <SingleWrapper>
           <Link to="/singles/reaching-out">
             <Img fluid={data.reachingOut.childImageSharp.fluid} />
           </Link>
-          <DownloadAudioButton fileStr={reachingOutWav} />
+          <DownloadAudioButton fileStr={reachingOut.wav} />
         </SingleWrapper>
         <SingleWrapper>
           <Link to="/singles/behind-the-door">
             <Img fluid={data.behindTheDoor.childImageSharp.fluid} />
           </Link>
-          <DownloadAudioButton fileStr={behindTheDoorWav} />
+          <DownloadAudioButton fileStr={behindTheDoor.wav} />
         </SingleWrapper>
         <SingleWrapper>
           <Link to="/singles/cocoa">
             <Img fluid={data.cocoa.childImageSharp.fluid} />
           </Link>
-          <DownloadAudioButton fileStr={cocoaWav} />
+          <DownloadAudioButton fileStr={cocoa.wav} />
         </SingleWrapper>
         <SingleWrapper>
           <Link to="/singles/boxed-in">
             <Img fluid={data.boxedIn.childImageSharp.fluid} />
           </Link>
-          <DownloadAudioButton fileStr={boxedInWav} />
+          <DownloadAudioButton fileStr={boxedIn.wav} />
         </SingleWrapper>
       </div>
     </>
