@@ -150,7 +150,11 @@ export default function SinglesNextYear() {
                   <ExternalLink url="https://www.instagram.com/stories/thebryanw/2519994367008475573/">
                     Bryan Wilkinson
                   </ExternalLink>
-                  , <ExternalLink url="">Joe Winters</ExternalLink>,
+                  ,{" "}
+                  <ExternalLink url="https://www.facebook.com/joseph.winters.75">
+                    Joe Winters
+                  </ExternalLink>
+                  ,
                   <ExternalLink url="https://www.instagram.com/caseymurtaugh/?hl=en">
                     Casey Murtaugh
                   </ExternalLink>{" "}

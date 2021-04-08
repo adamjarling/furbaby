@@ -79,14 +79,39 @@ export default function SinglesSocialDistance() {
               video/single out now.
             </p>
             <p>
-              "Social distance"...a term we've heard hundreds of times over the
-              past year. How will life be the same or different after a year of
-              social distance? What's it like to sit on an airplane, a bus, go
-              to a show, see a movie? Will you or I ever think about life
-              outside the confines of "social distance" again? Is social
-              distance a passing phase or a new way in which human being's
-              social behavior has evolved?
+              "Social distance"...now it's a thing. Will we still be talking
+              about social distance next year, in 5 years? Will the 21st century
+              be forever social distanced? And/or what about people who've
+              always felt socially distanced?
             </p>
+            <p>
+              Just some random thoughts which inspired "Social Distance", the
+              single. This particular song has a special place in the furry
+              heart of Furbaby as the lyrics were written by my step-mom, penned
+              (I believe), in late March 2020 in response to a lot of stuff. I
+              told her I'd put some music to it, and the song was dreadful but
+              she loved it and made a really cool montage video of some family
+              vacation photos from years past. This family collaboration was a
+              nice reminder that even in super weird times, friends &amp; family
+              can still connect with each other.
+            </p>
+            <p>
+              Fast forward about 12 months and hot damn, the tightest non-band
+              in the land delivers another round of tasteful performances.{" "}
+              <ExternalLink url="https://www.facebook.com/joseph.winters.75">
+                Joe Winters
+              </ExternalLink>{" "}
+              ruling on drums.{" "}
+              <ExternalLink url="http://www.calvinmarty.com/">
+                Calvin Marty
+              </ExternalLink>{" "}
+              pulls out a vintage, trippy organ. And classic{" "}
+              <ExternalLink url="https://www.instagram.com/stories/thebryanw/2519994367008475573/">
+                Bryan Wilkinson
+              </ExternalLink>{" "}
+              rythm rock swagger.{" "}
+            </p>
+            <p>Thanks dudes!</p>
           </div>
           <div className="column is-one-third">
             <div className="notification content is-dark">
