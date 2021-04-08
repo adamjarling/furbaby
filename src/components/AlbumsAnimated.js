@@ -1,9 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { useSpring, animated } from "react-spring"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
-import { iCanOnlyGiveYouEverything } from "../music-release-manifest"
 
 function Album({ fluid, to }) {
   return (
@@ -84,6 +82,17 @@ export default function AlbumsAnimated() {
         }
       }
 
+      socialDistance: file(
+        sourceInstanceName: { eq: "images" }
+        relativePath: { eq: "social-distance-album-art-v1b.jpg" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 1000, quality: 70) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
       waiting: file(
         sourceInstanceName: { eq: "images" }
         relativePath: { eq: "waiting-album-art.jpg" }
@@ -97,15 +106,27 @@ export default function AlbumsAnimated() {
     }
   `)
 
-  const { reachingOut, behindTheDoor, cocoa, boxedIn, nextYear, waiting } = data
+  const {
+    reachingOut,
+    behindTheDoor,
+    cocoa,
+    boxedIn,
+    nextYear,
+    socialDistance,
+    waiting,
+  } = data
 
   const albums = [
     {
-      fluid: data.nextYear.childImageSharp.fluid,
+      fluid: socialDistance.childImageSharp.fluid,
+      to: "/singles/social-distance",
+    },
+    {
+      fluid: nextYear.childImageSharp.fluid,
       to: "/singles/next-year",
     },
     {
-      fluid: data.waiting.childImageSharp.fluid,
+      fluid: waiting.childImageSharp.fluid,
       to: "/singles/waiting",
     },
     {

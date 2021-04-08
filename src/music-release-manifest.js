@@ -72,6 +72,19 @@ export const reachingOut = {
   youTubeId: "vU_-n-9qmPk",
 }
 
+export const socialDistance = {
+  amazonMusic: "https://www.amazon.com/Social-Distance-Furbaby/dp/B0917QFCZH/",
+  appleMusic:
+    "https://music.apple.com/us/album/social-distance-single/1560641225",
+  youTubeMusic:
+    "https://music.youtube.com/playlist?list=OLAK5uy_l3XSNL8D8wmSpqzk3cMKfurmAvYKEkp-U&feature=share",
+  spotify:
+    "https://open.spotify.com/track/59Lfr7Yn11azHcmzimEQ7q?si=6l5MhBqkTBm9Ee5i78yhLA",
+  wav:
+    "https://drive.google.com/file/d/1QWK-VWIgbTH0iZP1aSizeVMpGZaM_epz/view?usp=sharing",
+  youTubeId: "",
+}
+
 export const waiting = {
   amazonMusic:
     "https://music.amazon.com/albums/B08SP1Q1TL?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&trackAsin=B08SNW8TFM",

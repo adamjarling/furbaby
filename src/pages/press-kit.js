@@ -10,7 +10,6 @@ import PressKitVideos from "../components/press-kit/Videos"
 import PressKitMusic from "../components/press-kit/Music"
 import PressKitPhotos from "../components/press-kit/Photos"
 import DownloadAudioButton from "../components/DownloadAudioButton"
-import waitingAudio from "../assets/waiting_44.1k_16bit-master5.wav"
 
 const PressKitPage = ({ data }) => (
   <Layout>
