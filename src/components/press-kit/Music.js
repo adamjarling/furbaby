@@ -10,6 +10,7 @@ import {
   iCanOnlyGiveYouEverything,
   nextYear,
   reachingOut,
+  socialDistance,
   waiting,
 } from "../../music-release-manifest"
 
@@ -100,6 +101,16 @@ export default function PressKitMusic() {
           }
         }
       }
+      socialDistance: file(
+        sourceInstanceName: { eq: "images" }
+        relativePath: { eq: "social-distance-album-art-v1b.jpg" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 1600, quality: 80, grayscale: false) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       waiting: file(
         sourceInstanceName: { eq: "images" }
         relativePath: { eq: "waiting-album-art.jpg" }
@@ -117,6 +128,12 @@ export default function PressKitMusic() {
     <>
       <h2 className="title">Music</h2>
       <div className="columns is-multiline">
+        <SingleWrapper>
+          <Link to="/singles/social-distance">
+            <Img fluid={data.socialDistance.childImageSharp.fluid} />
+          </Link>
+          <DownloadAudioButton fileStr={socialDistance.wav} />
+        </SingleWrapper>
         <SingleWrapper>
           <Link to="/singles/next-year">
             <Img fluid={data.nextYear.childImageSharp.fluid} />

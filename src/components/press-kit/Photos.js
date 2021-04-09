@@ -53,23 +53,23 @@ export default function PressKitPhotos() {
     <div>
       <h2 className="title">Photos</h2>
       <div className="columns">
-        <div className="column">
+        <div className="column is-one-quarter">
           <Img fluid={data.polkaDot.childImageSharp.fluid} />
           <DownloadPhoto fileStr={data.polkaDot.childImageSharp.fluid.src} />
         </div>
 
-        <div className="column">
+        <div className="column is-one-quarter">
           <Img fluid={data.nextYear.childImageSharp.fluid} />
           <DownloadPhoto fileStr={data.nextYear.childImageSharp.fluid.src} />
         </div>
 
-        <div className="column">
+        <div className="column is-one-quarter">
           <Img fluid={data.promoPhotoBox.childImageSharp.fluid} />
           <DownloadPhoto
             fileStr={data.promoPhotoBox.childImageSharp.fluid.src}
           />
         </div>
-        <div className="column">
+        <div className="column is-one-quarter">
           <Img fluid={data.triangleWall.childImageSharp.fluid} />
           <DownloadPhoto
             fileStr={data.triangleWall.childImageSharp.fluid.src}

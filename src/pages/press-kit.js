@@ -10,10 +10,11 @@ import PressKitVideos from "../components/press-kit/Videos"
 import PressKitMusic from "../components/press-kit/Music"
 import PressKitPhotos from "../components/press-kit/Photos"
 import DownloadAudioButton from "../components/DownloadAudioButton"
+import { socialDistance as sd } from "../music-release-manifest"
 
 const PressKitPage = ({ data }) => (
   <Layout>
-    <SEO title="Press Kit - - Furbaby and the Tight Spaces" />
+    <SEO title="Press Kit - Furbaby and the Tight Spaces" />
     <HeroPressKit />
     <section className="section">
       <div className="container">
@@ -25,13 +26,9 @@ const PressKitPage = ({ data }) => (
           <div className="column is-one-third content">
             <h2 className="title">Latest Release</h2>
             <Link to="/singles/next-year" className="bright-hover">
-              <Img fluid={data.nextYear.childImageSharp.fluid} />
+              <Img fluid={data.socialDistance.childImageSharp.fluid} />
             </Link>
-            <DownloadAudioButton
-              fileStr={
-                "https://drive.google.com/file/d/17Ecqw-KDG-0gy0O67QJgG-FlWlk_yYym/view?usp=sharing"
-              }
-            />
+            <DownloadAudioButton fileStr={sd.wav} />
           </div>
         </div>
 
@@ -58,6 +55,16 @@ export const pressKitPageQuery = graphql`
     nextYear: file(
       sourceInstanceName: { eq: "images" }
       relativePath: { eq: "next-year-album-art-v2-sharp.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1600, quality: 80, grayscale: false) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    socialDistance: file(
+      sourceInstanceName: { eq: "images" }
+      relativePath: { eq: "social-distance-album-art-v1b.jpg" }
     ) {
       childImageSharp {
         fluid(maxWidth: 1600, quality: 80, grayscale: false) {
