@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import HeroICanOnlyGiveYouEverything from "../../components/heros/ICanOnlyGiveYouEverything"
+import { graphql } from "gatsby"
 
 const ICanOnlyGiveYouEverythingPage = ({ data }) => (
   <Layout>

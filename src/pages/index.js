@@ -6,6 +6,7 @@ import HeroSplash1 from "../components/heros/Splash1"
 import AlbumsAnimated from "../components/AlbumsAnimated"
 import Press2021NwiTimes from "../components/news/2021-nwitimes"
 import FandTS from "../components/FandTS"
+import { graphql } from "gatsby"
 
 const IndexPage = ({ data }) => {
   return (

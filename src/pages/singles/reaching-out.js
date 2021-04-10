@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import HeroReachingOut from "../../components/heros/ReachingOut"
+import { graphql } from "gatsby"
 
 const ReachingOutPage = ({ data }) => (
   <Layout>

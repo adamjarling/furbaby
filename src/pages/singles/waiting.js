@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import HeroWaiting from "../../components/heros/Waiting"
+import { graphql } from "gatsby"
 
 const WaitingPage = ({ data }) => (
   <Layout>

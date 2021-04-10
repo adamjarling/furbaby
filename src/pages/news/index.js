@@ -5,6 +5,7 @@ import styled from "styled-components"
 import Card from "../../components/Card"
 import imgGravel from "../../images/news/gravelroad.jpg"
 import imgNwi from "../../images/news/nwi-newspaper.jpg"
+import { graphql } from "gatsby"
 
 const Title = styled.span`
   font-size: 7rem;

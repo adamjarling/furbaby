@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import HeroBoxedIn from "../../components/heros/BoxedIn"
+import { graphql } from "gatsby"
 
 const BoxedInPage = ({ data }) => (
   <Layout>

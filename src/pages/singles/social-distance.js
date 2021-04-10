@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import HeroSocialDistance from "../../components/heros/SocialDistance"
+import { graphql } from "gatsby"
 
 const SocialDistancePage = ({ data }) => (
   <Layout>

@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import { Link } from "gatsby"
 import AlbumsAnimated from "../components/AlbumsAnimated"
 import HeroSingles from "../components/heros/Singles"
+import { graphql } from "gatsby"
 
 const SinglesPage = ({ data }) => (
   <Layout>

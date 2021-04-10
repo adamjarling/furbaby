@@ -12,6 +12,7 @@ import {
   reachingOut,
   waiting,
 } from "../music-release-manifest"
+import { graphql } from "gatsby"
 
 const VideoWrapper = styled.div`
   padding: 1rem 0 2rem;

@@ -3,6 +3,7 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import HeroBehindTheDoor from "../../components/heros/BehindTheDoor"
 import Img from "gatsby-image"
+import { graphql } from "gatsby"
 
 const BehindTheDoorPage = ({ data }) => (
   <Layout>

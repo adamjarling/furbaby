@@ -11,6 +11,7 @@ import PressKitMusic from "../components/press-kit/Music"
 import PressKitPhotos from "../components/press-kit/Photos"
 import DownloadAudioButton from "../components/DownloadAudioButton"
 import { socialDistance as sd } from "../music-release-manifest"
+import { graphql } from "gatsby"
 
 const PressKitPage = ({ data }) => (
   <Layout>
