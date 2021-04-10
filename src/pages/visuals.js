@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeroVisuals from "../components/heros/Visuals"
 import Img from "gatsby-image"
+import { graphql } from 'gatsby'
 
 const VisualsPage = ({ data }) => (
   <Layout>

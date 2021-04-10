@@ -25,7 +25,7 @@ const PressKitPage = ({ data }) => (
 
           <div className="column is-one-third content">
             <h2 className="title">Latest Release</h2>
-            <Link to="/singles/next-year" className="bright-hover">
+            <Link to="/singles/social-distance" className="bright-hover">
               <Img fluid={data.socialDistance.childImageSharp.fluid} />
             </Link>
             <DownloadAudioButton fileStr={sd.wav} />

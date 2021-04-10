@@ -5,6 +5,7 @@ import HeroAbout from "../components/heros/About"
 import Img from "gatsby-image"
 import styled from "styled-components"
 import ExternalLink from "../components/ExternalLink"
+import { graphql } from 'gatsby'
 
 const Furbaby = styled.span`
   font-family: "Faster One", cursive;
