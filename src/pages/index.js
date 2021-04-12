@@ -7,6 +7,8 @@ import AlbumsAnimated from "../components/AlbumsAnimated"
 import Press2021NwiTimes from "../components/news/2021-nwitimes"
 import FandTS from "../components/FandTS"
 import { graphql } from "gatsby"
+import * as musicManifest from "../music-release-manifest"
+import VideoResponsive from "../components/VideoResponsive"
 
 const IndexPage = ({ data }) => {
   return (
@@ -28,6 +30,11 @@ const IndexPage = ({ data }) => {
               </p>
             </div>
           </div>
+
+          <VideoResponsive
+            url={`https://www.youtube.com/embed/${musicManifest.socialDistance.youTubeId}`}
+            title="Social Distance by FURBABY and the Tight Spaces"
+          />
         </div>
       </section>
 

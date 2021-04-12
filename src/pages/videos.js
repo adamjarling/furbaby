@@ -11,6 +11,7 @@ import {
   nextYear,
   reachingOut,
   waiting,
+  socialDistance,
 } from "../music-release-manifest"
 import { graphql } from "gatsby"
 
@@ -34,13 +35,21 @@ const VideosPage = ({ data }) => (
 
         <div className="mt-4">
           <VideoWrapper>
-            <Title>Next Year</Title>
+            <Title>Social Distance</Title>
             <VideoResponsive
-              url={`https://www.youtube.com/embed/${nextYear.youTubeId}`}
-              title="Next Year by FURBABY and the Tight Spaces"
+              url={`https://www.youtube.com/embed/${socialDistance.youTubeId}`}
+              title="Social Distance by FURBABY and the Tight Spaces"
             />
           </VideoWrapper>
         </div>
+
+        <VideoWrapper>
+          <Title>Next Year</Title>
+          <VideoResponsive
+            url={`https://www.youtube.com/embed/${nextYear.youTubeId}`}
+            title="Next Year by FURBABY and the Tight Spaces"
+          />
+        </VideoWrapper>
 
         <VideoWrapper>
           <Title>Waiting</Title>

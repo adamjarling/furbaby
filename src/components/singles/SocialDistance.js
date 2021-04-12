@@ -78,23 +78,38 @@ export default function SinglesSocialDistance() {
               Official FURBABY and the TIGHT SPACES "Social Distance"
               video/single out now.
             </p>
+
             <p>
-              "Social distance"...now it's a thing. Will we still be talking
-              about social distance next year, in 5 years? Will the 21st century
-              be forever social distanced? And/or what about people who've
-              always felt socially distanced?
+              "Social distance"...now is some kind of thing. Will we still be
+              talking about social distance next year? In 5 years? Will the 21st
+              century be forever social distanced? Will you ever feel the same
+              way about being sweat upon say at a punk rock show? Or to flip the
+              coin, consider us who now feel more comfortable, more empowered
+              with some distance.{" "}
             </p>
+
+            <p>How does this whole thing unwind? </p>
+
             <p>
               Just some random thoughts which inspired "Social Distance", the
-              single. This particular song has a special place in the furry
-              heart of Furbaby as the lyrics were written by my step-mom, penned
-              (I believe), in late March 2020 in response to a lot of stuff. I
-              told her I'd put some music to it, and the song was dreadful but
-              she loved it and made a really cool montage video of some family
-              vacation photos from years past. This family collaboration was a
-              nice reminder that even in super weird times, friends &amp; family
-              can still connect with each other.
+              latest F&TS single release. This particular song is a bit
+              full-circle as the lyrics were written by my step-mom, penned in
+              late March 2020, probably in response to a lot of stuff maybe past
+              and present. I told her I'd put some music to it, and the initial
+              music attempt was pretty rough but she approved, and put together
+              a really cool montage video of some family vacation photos from
+              years past. This collaboration in tricky times was a gentle
+              reminder that despite whatever conditions life throws at us all,
+              friends & family have avenues to connect.
             </p>
+
+            <p>
+              The song sat uncomfortably with me however, and provided a dose of
+              inspiration to get better and making demos...and thus began the
+              first attempt with "Boxed In", and every single/experiment since
+              with some musician friends along the way.{" "}
+            </p>
+
             <p>
               Fast forward about 12 months and hot damn, the tightest non-band
               in the land delivers another round of tasteful performances.{" "}
@@ -105,13 +120,13 @@ export default function SinglesSocialDistance() {
               <ExternalLink url="http://www.calvinmarty.com/">
                 Calvin Marty
               </ExternalLink>{" "}
-              pulls out a vintage, trippy organ. And classic{" "}
+              pulls out a vintage, trippy organ delivering haunting and
+              infectious counter melodies. And classic{" "}
               <ExternalLink url="https://www.instagram.com/stories/thebryanw/2519994367008475573/">
                 Bryan Wilkinson
               </ExternalLink>{" "}
-              rythm rock swagger.{" "}
+              bad-ass rhythm rock swagger.
             </p>
-            <p>Thanks dudes!</p>
           </div>
           <div className="column is-one-third">
             <div className="notification content is-dark">

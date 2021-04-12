@@ -9,6 +9,12 @@ export default function PressKitVideos() {
       <div className="columns is-multiline">
         <div className="column content is-half">
           <VideoResponsive
+            url={`https://www.youtube.com/embed/${musicManifest.socialDistance.youTubeId}`}
+            title="Social Distance by FURBABY and the Tight Spaces"
+          />
+        </div>
+        <div className="column content is-half">
+          <VideoResponsive
             url={`https://www.youtube.com/embed/${musicManifest.nextYear.youTubeId}`}
             title="Next Year by FURBABY and the Tight Spaces"
           />

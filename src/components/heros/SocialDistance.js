@@ -29,12 +29,12 @@ const SocialDistanceHero = ({ className }) => {
       <div className="hero-body">
         <div className="container has-text-centered">
           <h2 className="title">Social Distance</h2>
-          {/* <div className="mb-6">
+          <div className="mb-6">
             <VideoResponsive
-              url={`https://www.youtube.com/embed/${nextYear.youTubeId}`}
+              url={`https://www.youtube.com/embed/${socialDistance.youTubeId}`}
               title="Waiting by FURBABY and the Tight Spaces"
             />
-          </div> */}
+          </div>
           <div className="pb-6">
             <SinglesSocialDistance />
           </div>
