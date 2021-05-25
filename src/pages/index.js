@@ -9,6 +9,31 @@ import FandTS from "../components/FandTS"
 import { graphql } from "gatsby"
 import * as musicManifest from "../music-release-manifest"
 import VideoResponsive from "../components/VideoResponsive"
+import useRandomNumber from "../hooks/use-random-number"
+import { Link } from "gatsby"
+
+const sampleVids = [
+  {
+    url: `https://www.youtube.com/embed/${musicManifest.socialDistance.youTubeId}`,
+    title: "Social Distance by FURBABY and the Tight Spaces",
+  },
+  {
+    url: `https://www.youtube.com/embed/${musicManifest.nextYear.youTubeId}`,
+    title: "Next Year by FURBABY and the Tight Spaces",
+  },
+  {
+    url: `https://www.youtube.com/embed/${musicManifest.iCanOnlyGiveYouEverything.youTubeId}`,
+    title: "Next Year by FURBABY and the Tight Spaces",
+  },
+  {
+    url: `https://www.youtube.com/embed/${musicManifest.waiting.youTubeId}`,
+    title: "Next Year by FURBABY and the Tight Spaces",
+  },
+  {
+    url: `https://www.youtube.com/embed/${musicManifest.reachingOut.youTubeId}`,
+    title: "Next Year by FURBABY and the Tight Spaces",
+  },
+]
 
 const IndexPage = ({ data }) => {
   return (
@@ -31,10 +56,23 @@ const IndexPage = ({ data }) => {
             </div>
           </div>
 
-          <VideoResponsive
-            url={`https://www.youtube.com/embed/${musicManifest.socialDistance.youTubeId}`}
-            title="Social Distance by FURBABY and the Tight Spaces"
-          />
+          <VideoResponsive {...sampleVids[useRandomNumber(5)]} />
+        </div>
+      </section>
+
+      <section className="hero is-white">
+        <div className="hero-body has-text-centered">
+          <p className="title is-uppercase">LIVE SHOW!</p>
+          <p className="subtitle">
+            Flatts and Sharpe Music Festival
+            <br />
+            July 10, 2021
+            <br />
+            Rogers Park, Chicago, IL
+          </p>
+          <Link to="shows" className="button">
+            Get Details
+          </Link>
         </div>
       </section>
 

@@ -94,6 +94,9 @@ export default function Navbar() {
           <div className="navbar-item">
             <Link to="/videos">Videos</Link>
           </div>
+          <div className="navbar-item">
+            <Link to="/shows">Shows</Link>
+          </div>
         </div>
         <div className="navbar-end">
           {socialMedia
