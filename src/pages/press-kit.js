@@ -12,6 +12,7 @@ import PressKitPhotos from "../components/press-kit/Photos"
 import DownloadAudioButton from "../components/DownloadAudioButton"
 import { socialDistance as sd } from "../music-release-manifest"
 import { graphql } from "gatsby"
+import ExternalLink from "../components/ExternalLink"
 
 const PressKitPage = ({ data }) => (
   <Layout>
@@ -22,6 +23,19 @@ const PressKitPage = ({ data }) => (
         <div className="columns">
           <div className="column is-two-thirds has-text-justified">
             <PressKitBio />
+            <div className="content">
+              <h2 className="title mt-6">Latest News</h2>
+              <p className="block">
+                Cargo Records UK will be selling and distributing the full album
+                of singles (including 2 unreleased) on Vinyl and CD in
+                UK/Europe/Japan. Release date: <strong>OCTOBER 1, 2021</strong>
+              </p>
+              <div style={{ maxWidth: "300px" }}>
+                <ExternalLink url="https://www.cargorecords.co.uk/">
+                  <Img fluid={data.cargoRecords.childImageSharp.fluid} />
+                </ExternalLink>
+              </div>
+            </div>
           </div>
 
           <div className="column is-one-third content">
@@ -53,6 +67,16 @@ export default PressKitPage
 
 export const pressKitPageQuery = graphql`
   query PressKitPageTemplate {
+    cargoRecords: file(
+      sourceInstanceName: { eq: "images" }
+      relativePath: { eq: "cargo-records.jpeg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 800, quality: 80, grayscale: false) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     nextYear: file(
       sourceInstanceName: { eq: "images" }
       relativePath: { eq: "next-year-album-art-v2-sharp.jpg" }

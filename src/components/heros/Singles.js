@@ -15,6 +15,7 @@ const Title = styled.span`
 
   @media only screen and (max-width: 600px) {
     font-size: 3rem;
+    padding: 0.5rem 1rem;
   }
 `
 const Subtitle = styled.span`

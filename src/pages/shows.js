@@ -13,7 +13,7 @@ const ShowsPage = ({ data }) => (
     <HeroShows />
     <section className="section">
       <div className="container has-text-centered">
-        <article className="is-size-2">
+        <article className="is-size-2 is-size-4-mobile">
           <span className="title">JULY 10, 2021</span>
           <br />
           Flatts and Sharpe Music Festival

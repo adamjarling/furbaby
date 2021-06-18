@@ -68,8 +68,8 @@ function PressKitBio(props) {
           others.
         </p>
         <p>
-          <FandTS /> may or may not play live, but if so it'd be nice to do a
-          little tour of Europe.{" "}
+          <FandTS /> has evolved from a bedroom studio project into a full live
+          band.{" "}
           <Obfuscate
             email="furbabyferguson@gmail.com"
             headers={{
@@ -78,10 +78,6 @@ function PressKitBio(props) {
           >
             Interested?
           </Obfuscate>
-        </p>
-        <p>
-          Coming up...continued recording of a "slow album", 10 singles &amp;
-          accompanying videos released once a month.
         </p>
       </div>
     </>

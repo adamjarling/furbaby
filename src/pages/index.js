@@ -48,8 +48,8 @@ const IndexPage = ({ data }) => {
             long walks on the beach in Chicago USA.
           </p> */}
           <div className="columns is-mobile is-centered">
-            <div className="column is-three-fifths">
-              <p className="is-size-3 has-text-centered">
+            <div className="column is-three-fifths-desktop">
+              <p className="is-size-3 is-size-5-mobile has-text-centered">
                 <FandTS /> is an alt/garage/psych art-project band for a world
                 fast-forwarded into the future.
               </p>
